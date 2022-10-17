@@ -36,15 +36,15 @@ Sci-Fi Bridge | 666666 | 0.4
 To use the tool:<br/>
 1. Open image in any image editting software - I prefer Krita it's free and fairly powerful
 2. Adjust image with a solid square brush - Krita has a pixel art brush which is ideal
-  * Use colours tabulated above to correspond with desired tiles
+    * Use colours tabulated above to correspond with desired tiles
 3. Export the output overwriting past image - or export new output but make sure to encode it properly with JPEG max quality
-  * If you export a new image when in Unity:
-    * Enable read/write in image properties
-    * Set format to RGBA32
-    * Set non power of 2 to None
+    * If you export a new image when in Unity:
+      * Enable read/write in image properties
+      * Set format to RGBA32
+      * Set non power of 2 to None
 4. Within the world map scene there is already an object called world builder that contains the builder script
-  * Make sure the correct prefabs are assigned
-  * Make sure the correct world generator texture is assigned
+    * Make sure the correct prefabs are assigned
+    * Make sure the correct world generator texture is assigned
 5. It is recommenended that you delete the game object called **Parent** that holds all of the tiles within it's heirarchy
 6. Go back to your world builder GameObject and click the execute boolean button - Your updated world will be built 
 ##Camera control in world map
