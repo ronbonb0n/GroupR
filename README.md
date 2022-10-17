@@ -13,7 +13,7 @@ For some reason only jpeg seemed to work. This might be due to encoding methods 
 whilst PNG encodes for each scan-line of pixel.<br/>
 
 The generator script runs within the engine editor for ease of use.<br/>
-####The pixel values currently used are tabulated below
+######The pixel values currently used are tabulated below
 Tile Type | Hex Code(#) | Decimal
 --- | --- | ---
 Grass | FFFFFF | 1.0
