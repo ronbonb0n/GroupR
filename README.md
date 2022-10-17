@@ -48,14 +48,14 @@ To use the tool:<br/>
 5. It is recommenended that you delete the game object called **Parent** that holds all of the tiles within it's heirarchy
 6. Go back to your world builder GameObject and click the execute boolean button - Your updated world will be built<br/>
 
-##Player Control in world map
+##Player Control in world map 
 Player control is powered by Unity's Navmesh system.<br/>
 
 Click on a tile with the left mouse button and go.<br/>
 
 Initially the plan was to build a custom A* pathfinder - but with the functionality and performance of Unity's NavMesh system I decided there wasn't much point in reinventing the wheel. Time could be better spent elsewhere.<br/>
  
-##Camera control in world map
+##Camera control in world map 
 Camera is controlled via a combination of mouse and keyboard inputs.<br/>
 
 Consideration has been taken to allow a user to control the camera with either a laptop touchpad or mouse to improve accessibilty.<br/>
