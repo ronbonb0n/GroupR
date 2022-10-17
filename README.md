@@ -13,7 +13,10 @@ For some reason only jpeg seemed to work. This might be due to encoding methods 
 whilst PNG encodes for each scan-line of pixel.<br/>
 
 The generator script runs within the engine editor for ease of use.<br/>
-######The pixel values currently used are tabulated below
+
+The generator will build the navmesh required for the topdown nav for you but this can be overwritten manually via Unity's Navigation tab.<br/>
+
+**The pixel values currently used are tabulated below**
 Tile Type | Hex Code(#) | Decimal
 --- | --- | ---
 Grass | FFFFFF | 1.0
@@ -22,26 +25,29 @@ Dying Grass | CCCCCC | 0.8
 Dead Space | B2B2B2 | 0.7
 Bridge | 999999 | 0.6
 Coast | 808080 | 0.5
-Water | 000000 ! 0.0
+Water | 000000 | 0.0
 Sci-Fi Bridge | 666666 | 0.4
 
-_Currently the Coast block is not being used and may be dropped_<br/>
-_Water block technically represents a lack of a block for render efficiency as we can represent the water with just a single plain_<br/>
+**_Note_:Currently the Coast block is not being used and may be dropped**<br/>
+**_Note_:Water block technically represents a lack of a block for render efficiency as we can represent the water with just a single plain**<br/>
+
 **Updates to the generator will be placed in the table when neccassary**<br/>
+
 To use the tool:<br/>
 1. Open image in any image editting software - I prefer Krita it's free and fairly powerful
 2. Adjust image with a solid square brush - Krita has a pixel art brush which is ideal
-..* Use colours tabulated above to correspond with desired tiles
+  * Use colours tabulated above to correspond with desired tiles
 3. Export the output overwriting past image - or export new output but make sure to encode it properly with JPEG max quality
-..* If you export a new image when in Unity:
-....* Enable read/write in image properties
-....* Set format to RGBA32
-....* Set non power of 2 to None
+  * If you export a new image when in Unity:
+    * Enable read/write in image properties
+    * Set format to RGBA32
+    * Set non power of 2 to None
 4. Within the world map scene there is already an object called world builder that contains the builder script
-..* Make sure the correct prefabs are assigned
-..* Make sure the correct world generator texture is assigned
+  * Make sure the correct prefabs are assigned
+  * Make sure the correct world generator texture is assigned
 5. It is recommenended that you delete the game object called **Parent** that holds all of the tiles within it's heirarchy
 6. Go back to your world builder GameObject and click the execute boolean button - Your updated world will be built 
 ##Camera control in world map
+
 ##Level transitioning
 ##Frame Rate Cap
