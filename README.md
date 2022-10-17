@@ -18,6 +18,7 @@ Bridge | 999999 | 0.6
 Coast | 808080 | 0.5
 Water | 000000 ! 0.0
 Sci-Fi Bridge | 666666 | 0.4
+
 _Currently the Coast block is not being used and may be dropped_<br/>
 _Water block technically represents a lack of a block for render efficiency as we can represent the water with just a single plain_<br/>
 **Updates to the generator will be placed in the table when neccassary**<br/>
