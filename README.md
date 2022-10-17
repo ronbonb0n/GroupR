@@ -46,8 +46,32 @@ To use the tool:<br/>
     * Make sure the correct prefabs are assigned
     * Make sure the correct world generator texture is assigned
 5. It is recommenended that you delete the game object called **Parent** that holds all of the tiles within it's heirarchy
-6. Go back to your world builder GameObject and click the execute boolean button - Your updated world will be built 
+6. Go back to your world builder GameObject and click the execute boolean button - Your updated world will be built<br/>
+
+##Player Control in world map
+Player control is powered by Unity's Navmesh system.<br/>
+
+Click on a tile with the left mouse button and go.<br/>
+
+Initially the plan was to build a custom A* pathfinder - but with the functionality and performance of Unity's NavMesh system I decided there wasn't much point in reinventing the wheel. Time could be better spent elsewhere.<br/>
+ 
 ##Camera control in world map
+Camera is controlled via a combination of mouse and keyboard inputs.<br/>
+
+Consideration has been taken to allow a user to control the camera with either a laptop touchpad or mouse to improve accessibilty.<br/>
+
+**Controls tabulated below**
+Output | Keyboard | Mouse | Gesture
+--- | --- | --- | ---
+Pan-Left | A | N/A | N/A
+Pan-Right | D | N/A | N/A
+Pan-Foward | W | N/A | N/A
+Pan-Back | S | N/A | N/A
+Rotate | Q or E (Direction dependent) | N/A | N/A
+Zoom In | R | Scroll Up | MousePad - Two finger swipe up
+Zoom Out | F | Scroll Down | MousePad - Two finger swipe down
+
+**Remapping yet to be implemented**
 
 ##Level transitioning
 ##Frame Rate Cap
