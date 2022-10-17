@@ -80,7 +80,7 @@ Level transitioning is driven by a simple trigger overlap with the player charac
 
 Once the player overlaps the trigger - is within one tile of the level trigger they can click on the map object which will call the level transition.<br/>
 
-**Some kind of element will be rendered to highlight that the player can call the transition**<br/>
+**Some kind of element will be rendered to highlight that the player can call the transition to act as positive feedback for improved accessibility**<br/>
 
 ## Frame Rate Cap
 Simple script to cap the number of frames - cap is public.<br/>
