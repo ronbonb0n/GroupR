@@ -54,6 +54,8 @@ Player control is powered by Unity's Navmesh system.<br/>
 Click on a tile with the left mouse button and go.<br/>
 
 Initially the plan was to build a custom A* pathfinder - but with the functionality and performance of Unity's NavMesh system I decided there wasn't much point in reinventing the wheel. Time could be better spent elsewhere.<br/>
+
+**Plans to implement a tile highlighting system for improved accessibility**<br/>
  
 ## Camera control in world map
 Camera is controlled via a combination of mouse and keyboard inputs.<br/>
@@ -74,4 +76,13 @@ Zoom Out | F | Scroll Down | MousePad - Two finger swipe down
 **Remapping yet to be implemented**
 
 ## Level transitioning
+Level transitioning is driven by a simple trigger overlap with the player character.<br/>
+
+Once the player overlaps the trigger - is within one tile of the level trigger they can click on the map object which will call the level transition.<br/>
+
+**Some kind of element will be rendered to highlight that the player can call the transition**<br/>
+
 ## Frame Rate Cap
+Simple script to cap the number of frames - cap is public.<br/>
+
+**Cap will be adjustable to allow for higher and lower end machines**<br/>
