@@ -3,7 +3,11 @@ using UnityEngine.AI;
 
 public class PlayerNavMesh_Controller : MonoBehaviour
 {
-    public NavMeshAgent navMeshAgent;
+    NavMeshAgent navMeshAgent;
+
+    private void Start() {
+        navMeshAgent = GetComponent<NavMeshAgent>();
+    }
 
     void Update() {
         if (Input.GetMouseButtonDown(0))
