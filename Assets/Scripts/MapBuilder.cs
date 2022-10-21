@@ -16,7 +16,7 @@ public class MapBuilder : MonoBehaviour
     public  GameObject DyingGrassCube;
     public  GameObject DeadCube;
     public  GameObject Bridge;
-    public  GameObject CoastCube;
+    public  GameObject TowerCube;
     // public  GameObject WaterCube;
     public  GameObject SciFiBridge;
     Dictionary<float, GameObject> TileDict = new Dictionary<float, GameObject>();
@@ -44,7 +44,7 @@ public class MapBuilder : MonoBehaviour
         TileDict.Add(0.8f, DyingGrassCube);
         TileDict.Add(0.7f, DeadCube);
         TileDict.Add(0.6f, Bridge);
-        TileDict.Add(0.5f, CoastCube);
+        TileDict.Add(0.5f, TowerCube);
         // TileDict.Add(0.0f, WaterCube);
         TileDict.Add(0.4f, SciFiBridge);
         
