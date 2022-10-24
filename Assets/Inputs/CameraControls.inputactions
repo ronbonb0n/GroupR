@@ -1,0 +1,162 @@
+{
+    "name": "CameraControls",
+    "maps": [
+        {
+            "name": "Camera",
+            "id": "371d7817-b577-4e15-b719-53ea26b9feff",
+            "actions": [
+                {
+                    "name": "Pan",
+                    "type": "Value",
+                    "id": "6b1f1954-df3c-463f-9be6-eb6025c5c27a",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Rotate",
+                    "type": "Value",
+                    "id": "6b2bfa54-60c3-4527-84c5-b063578d0355",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Zoom",
+                    "type": "Value",
+                    "id": "e2d9b157-81a8-4621-a904-610617b622c5",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "WASD",
+                    "id": "edb41a08-1493-49f7-90d4-56fff7d020ef",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pan",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "67df6309-741a-432d-bdd7-effa61208b28",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pan",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "253f3165-fd54-4c7c-9bbb-1315883dce95",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pan",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "6751ff83-ac22-4859-85e9-724d721e1c64",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pan",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "636a10ee-3648-4e13-ad0f-ea4438689c78",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pan",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "QE",
+                    "id": "01ea77d9-944f-465d-a21b-de33337788e4",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "bcbe317d-4827-4d2e-b7c1-50e2073fbfd5",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "83b86d45-bc7e-4f58-acfb-cfb75aca660a",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Scroll",
+                    "id": "3dc0ccf5-8234-4f1d-9b4a-0337f0e073cb",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "Clamp(min=-1,max=1)",
+                    "groups": "",
+                    "action": "Zoom",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "24e4aae5-08cd-4272-acce-69d9878fa0ef",
+                    "path": "<Mouse>/scroll/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Zoom",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "c3ceeefb-63e0-4da1-8996-f88bbd4407d6",
+                    "path": "<Mouse>/scroll/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Zoom",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
