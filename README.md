@@ -24,7 +24,7 @@ Deep Grass | E6E6E6 | 0.9
 Dying Grass | CCCCCC | 0.8
 Dead Space | B2B2B2 | 0.7
 Bridge | 999999 | 0.6
-Coast | 808080 | 0.5
+Tower/Level | 808080 | 0.5
 Water | 000000 | 0.0
 Sci-Fi Bridge | 666666 | 0.4
 
@@ -61,6 +61,8 @@ Initially the plan was to build a custom A* pathfinder - but with the functional
 Camera is controlled via a combination of mouse and keyboard inputs.<br/>
 
 Consideration has been taken to allow a user to control the camera with either a laptop touchpad or mouse to improve accessibilty.<br/>
+
+Controls have been updated with Unity's new input system to allow for easier remapping <br/>
 
 **Controls tabulated below**
 Output | Keyboard | Mouse | Gesture
