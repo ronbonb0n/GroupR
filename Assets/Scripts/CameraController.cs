@@ -23,7 +23,7 @@ public class CameraController : MonoBehaviour
     public float rotationAmount;
 
     // Zoom parameters
-    public Transform cameraTransform;
+    public Transform cameraTransform; // Required as we basically just move the camera in and out to zoom - explained below
     Vector3 newZoom;
     public Vector3 zoomAmount;
     public float maxZoom;
@@ -36,9 +36,6 @@ public class CameraController : MonoBehaviour
         newRotation = transform.rotation;
 
         newZoom = cameraTransform.localPosition;
-        // Convert zoom figures to -ve
-        maxZoom *= -1;
-        minZoom *= -1;
     }
 
     private void Awake() {
@@ -51,9 +48,11 @@ public class CameraController : MonoBehaviour
 
     private void OnEnable() {
         panAction.Enable();
-        // cameraControls.actions["Pan"].performed += panAction;
+        // panAction.performed += onPan; - Rohan 
         rotateAction.Enable();
+        // rotateAction.performed += onRotate; - Rohan
         zoomAction.Enable();
+        // zoomAction.performed += onZoom; - Rohan
     }
     // iv = in vector
     void onPan(Vector2 iv)
@@ -86,7 +85,11 @@ public class CameraController : MonoBehaviour
     // iz = in zoom
     void onZoom (float iz)
     {
-        // Jank central
+        // Jank central - this function only works at 45 degree camera rotation, can be fixed with basic trigonmetry though
+        // Current camera position is -144 on Z axis, by zooming out we subtract from this value
+        // Therefore zooming out requires a smaller value whilst zooming in requires a larger z value
+        // It works - that's all i care about
+        // Max and min zooms are public and defined within the scene
         if (iz > 0)
         {
             if (maxZoom < newZoom.z)
@@ -104,6 +107,8 @@ public class CameraController : MonoBehaviour
         cameraTransform.localPosition = Vector3.Lerp(cameraTransform.localPosition, newZoom, Time.deltaTime * movementTime);
     }
 
+    // Camera controls currently on fixed update
+    // Takes the value from the input and uses it to determine movement/rotation/zoom direction
     private void FixedUpdate() {
         onPan(iv : panAction.ReadValue<Vector2>());
         onRotate(ir : rotateAction.ReadValue<float>());
