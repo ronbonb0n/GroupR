@@ -28044,7 +28044,7 @@ Transform:
   m_GameObject: {fileID: 993296989}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 47.2, y: 0.12, z: 44.4}
-  m_LocalScale: {x: 25, y: 1, z: 25}
+  m_LocalScale: {x: 50, y: 1, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -60160,18 +60160,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 2104120127}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5cf166a537c45769b4332b2b3d3abc3, type: 3}
+  m_Script: {fileID: 11500000, guid: b73bef3d31c0c4043a64cad62c0ca261, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fastSpeed: 3
-  normalSpeed: 1
+  movementSpeed: 1.25
   movementTime: 5
-  rotationAmount: 2
+  rotationAmount: 2.5
   cameraTransform: {fileID: 20017307}
-  zoomAmount: {x: 0, y: -10, z: 10}
+  zoomAmount: {x: 0, y: -5, z: 5}
   maxZoom: 159
   minZoom: 39
-  cameraInputController: {fileID: 0}
 --- !u!114 &2104120133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60184,9 +60182,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 99f079762384406c19cdd281a2b4ff08,
+  m_Actions: {fileID: -944628639613478452, guid: cbba5614875053a1eb03e32ee082fc7d,
     type: 3}
-  m_NotificationBehavior: 3
+  m_NotificationBehavior: 2
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
     m_PersistentCalls:
@@ -60200,55 +60198,19 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls: []
-    m_ActionId: 49226fb9-9876-4fbf-88df-a745b8c26f75
-    m_ActionName: Player/Move[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
+    m_ActionId: 6b1f1954-df3c-463f-9be6-eb6025c5c27a
+    m_ActionName: Camera/Pan[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
   - m_PersistentCalls:
       m_Calls: []
-    m_ActionId: 357009d3-0fc7-40a7-bdf8-174d9eb792c0
-    m_ActionName: Player/Rotate[/Keyboard/q,/Keyboard/e]
+    m_ActionId: 6b2bfa54-60c3-4527-84c5-b063578d0355
+    m_ActionName: Camera/Rotate[/Keyboard/q,/Keyboard/e]
   - m_PersistentCalls:
       m_Calls: []
-    m_ActionId: ccbd5208-d5ac-45e3-af7d-7b6341f9391e
-    m_ActionName: UI/Navigate[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 7cb2b395-6eb4-40b5-b9e8-15ea6777f637
-    m_ActionName: UI/Submit[/Keyboard/enter]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 26578b9a-5ebd-4095-ba7b-0ae33356bddc
-    m_ActionName: UI/Cancel[/Keyboard/escape]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: ca9c28f7-696f-4b7b-ab7d-23f973d3763c
-    m_ActionName: UI/Point[/Mouse/position]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 9492c936-d83d-415f-85a8-300a387e9639
-    m_ActionName: UI/Click[/Mouse/leftButton]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 7af3c724-3be1-495e-8ac4-828ec1f7cc29
-    m_ActionName: UI/ScrollWheel[/Mouse/scroll]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: a8aeccc9-f156-4c0d-b773-6d7b077bd776
-    m_ActionName: UI/MiddleClick[/Mouse/middleButton]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 02c31231-22e7-44ef-bf80-1f954ef57446
-    m_ActionName: UI/RightClick[/Mouse/rightButton]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 4516c707-ae7b-4da4-9329-086e693fafb7
-    m_ActionName: UI/TrackedDevicePosition
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: f68e37a0-4b8a-4355-bf50-0c925495705f
-    m_ActionName: UI/TrackedDeviceOrientation
+    m_ActionId: e2d9b157-81a8-4621-a904-610617b622c5
+    m_ActionName: Camera/Zoom[/Mouse/scroll/down,/Mouse/scroll/up]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: Player
+  m_DefaultActionMap: Camera
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!1 &2107191133
