@@ -1,3 +1,4 @@
+using UnityEngine;
 using UnityEngine.AI;
 using Random = UnityEngine.Random;
 using Vector3 = UnityEngine.Vector3;
@@ -23,6 +24,7 @@ public class PatrolState : IDroneState
 
     public void onEnter(DroneController drone)
     {
+        drone.SetLinesColor(Color.green);
         drone.navMeshAgent.destination = GetRandomLocation(drone);
     }
 

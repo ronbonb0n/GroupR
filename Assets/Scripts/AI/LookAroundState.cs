@@ -22,7 +22,8 @@ public class LookAroundState : IDroneState
 
     public void onEnter(DroneController drone)
     {
-        drone.lookAroundCountDown = 2;
+        drone.SetLinesColor(Color.green);
+        drone.lookAroundCountDown = Random.Range(1.0f, 2.0f);
     }
 
     public void onExit(DroneController drone)

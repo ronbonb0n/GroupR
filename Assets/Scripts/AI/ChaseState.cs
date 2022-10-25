@@ -11,7 +11,7 @@ public class ChaseState : IDroneState
         if (drone.fieldOfView.canSeePlayer)
         {
             drone.transform.position = Vector3.MoveTowards(drone.transform.position, drone.player.transform.position, 15 * Time.deltaTime);
-            drone.transform.forward = drone.player.transform.position - drone.transform.position;
+            drone.transform.forward = new Vector3(drone.player.transform.position.x - drone.transform.position.x, 0, drone.player.transform.position.z - drone.transform.position.z);
             return drone.chaseState;
         }
         else
@@ -23,7 +23,9 @@ public class ChaseState : IDroneState
 
     public void onEnter(DroneController drone)
     {
+        drone.SetLinesColor(Color.yellow);
         drone.navMeshAgent.ResetPath();
+        drone.fieldOfView.angle = 360;
     }
 
     public void onExit(DroneController drone)

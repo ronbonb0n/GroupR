@@ -4,8 +4,8 @@ using UnityEngine.AI;
 public class DroneController : MonoBehaviour
 {
     public FieldOfView fieldOfView;
-    [SerializeField] public Transform movePositionTransform;
     public NavMeshAgent navMeshAgent;
+    public GameObject body;
     [SerializeField] private string currentStateName;
 
     private IDroneState currentState;
@@ -38,6 +38,7 @@ public class DroneController : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
+        body = transform.GetChild(0).gameObject;
     }
 
     // Update is called once per frame
@@ -56,5 +57,14 @@ public class DroneController : MonoBehaviour
         }
 
         currentStateName = currentState.ToString();
+    }
+
+    public void SetLinesColor(Color color)
+    {
+        var lines = transform.GetComponentsInChildren<LineRenderer>();
+        foreach (var line in lines)
+        {
+            line.SetColors(color, color);
+        }
     }
 }
