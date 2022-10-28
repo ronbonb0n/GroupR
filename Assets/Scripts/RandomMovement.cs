@@ -1,22 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
-using UnityEngine.AI; //important
+using UnityEngine.AI;
+using UnityEngine.UIElements;
 
-public class RandomMovement : MonoBehaviour //don't forget to change the script name if you haven't
+public class RandomMovement : MonoBehaviour
 {
     private NavMeshAgent agent;
     public SphereCollider surveyZone;
 
     // Can see you
     // public MeshCollider visualVolume;
-    // Can here you
+    // Can hear you
     public SphereCollider listeningTrigger;
 
+    private float time;
     public float searchDelay;
+
     // Searching booleans
     private bool isSearching = false;
-    private bool isPatrolling = false;
+    // private bool isPatrolling = false;
     public bool canPatrol = true;
     
     private enum state
@@ -28,11 +32,15 @@ public class RandomMovement : MonoBehaviour //don't forget to change the script 
 
     private state currentState;
 
+    //Number of times the drone will rotate (in 360 degrees) when searching
+    public float numRotate;
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         // visualVolume = GetComponent<MeshCollider>();
-        currentState = state.Patrol;        
+        currentState = state.Patrol;
+        time = 0f;
     }
 
     private void OnTriggerEnter(Collider other) {
@@ -59,8 +67,16 @@ public class RandomMovement : MonoBehaviour //don't forget to change the script 
         if (currentState == state.Search && !isSearching)
         {   
             isSearching = true;
-            currentState = state.Patrol;
-            isSearching = false;
+            // Pause - give the player some time to get out - similar concept to invisible overhang in platformers
+            time = time + 1f * Time.deltaTime;
+            if (time >= searchDelay)
+            {
+                Debug.Log("Searched");
+                currentState = state.Patrol;
+                isSearching = false;
+                time = 0f;
+            }
+            
         }
 
     }
@@ -77,7 +93,7 @@ public class RandomMovement : MonoBehaviour //don't forget to change the script 
             agent.SetDestination(point);
         }
     }
-
+    // Used by moveToLocation()
     bool RandomPoint(Vector3 center, float range, out Vector3 result)
     {
         Vector3 randomPoint = center + Random.insideUnitSphere * range; 
@@ -96,4 +112,30 @@ public class RandomMovement : MonoBehaviour //don't forget to change the script 
         return false;
     }
 
+
+
+    void search()
+    {
+        Quaternion newRotation = transform.rotation;
+        float rotateAmount = 360 / numRotate;
+        for (int j = 0; j < numRotate; j++)
+        {
+            if (j != 0)
+            {
+                time = time + 1f * Time.deltaTime;
+                if (time >= searchDelay)
+                {
+                    newRotation *= Quaternion.Euler(Vector3.up * rotateAmount);
+                    Debug.Log(newRotation);
+                    transform.rotation = Quaternion.Lerp(transform.rotation, newRotation, Time.deltaTime * searchDelay);
+                }
+            }
+            else
+            {
+                newRotation *= Quaternion.Euler(Vector3.up * rotateAmount);
+                Debug.Log(newRotation);
+                transform.rotation = Quaternion.Lerp(transform.rotation, newRotation, Time.deltaTime * searchDelay);
+            }
+        }
+    }
 }
