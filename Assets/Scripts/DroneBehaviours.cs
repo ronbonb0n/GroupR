@@ -2,23 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-using static UnityEngine.UI.ScrollRect;
 
 public class DroneBehaviours : MonoBehaviour
 {
     private NavMeshAgent agent;
     public SphereCollider surveyZone;
-
-    // Can see you
-    // public MeshCollider visualVolume;
-    // Can hear you
     public SphereCollider listeningTrigger;
+    public LayerMask listenLayerMask;
+    public List<GameObject> hitObjects = new List<GameObject>();
 
-    public int searchDelay;
+    public float searchDelay;
+    public float scanInterval;
+    public float scanSize;
+    //Number of times the drone will rotate (in 360 degrees) when searching
+    public float numRotate;
+    public GameObject target;
 
-    // Searching booleans
     private bool isSearching = false;
-    // private bool isPatrolling = false;
     public bool canPatrol = true;
 
     private enum state
@@ -27,45 +27,59 @@ public class DroneBehaviours : MonoBehaviour
         Search,
         Found
     }
-
     private state currentState;
 
-    //Number of times the drone will rotate (in 360 degrees) when searching
-    public float numRotate;
+    public Light statusLight;
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        // visualVolume = GetComponent<MeshCollider>();
+        // Light statusLight = GetComponent<Light>();
         currentState = state.Patrol;
         callState();
+        // Debug.Log(listenLayerMask.value);
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {
-            canPatrol = false;
             agent.SetDestination(this.transform.position);
             Debug.Log("Player Heard");
+
             currentState = state.Search;
             callState();
         }
     }
 
     // Different IEnumator events that are called on state - and also check the correct state for safety
+    IEnumerator FoundState()
+    {
+        Debug.Log("Player Found");
+        statusLight.color = Color.red;
+
+        yield return new WaitForSeconds(searchDelay * 2);
+
+        currentState = state.Patrol;
+        yield return null;
+    }
+    
     IEnumerator PatrolState()
     {
-        Debug.Log("Patrol: Enter");
-        while (currentState == state.Patrol)
+        if (canPatrol)
         {
-            if (agent.remainingDistance == agent.stoppingDistance)
+            statusLight.color = Color.cyan;
+            // Debug.Log("Patrol: Enter");
+            while (currentState == state.Patrol)
             {
-                moveToLocation();
+                if (agent.remainingDistance == agent.stoppingDistance)
+                {
+                    moveToLocation();
+                }
+                yield return null;
             }
-            yield return 0;
+            // Debug.Log("Patrol: Exit");
         }
-        Debug.Log("Patrol: Exit");
     }
 
     IEnumerator SearchState()
@@ -73,24 +87,102 @@ public class DroneBehaviours : MonoBehaviour
         Debug.Log("Search: Enter");
         while (currentState == state.Search)
         {
-            Debug.Log("Waiting");
+            statusLight.color = Color.yellow;
+            // Get rotation to look at player
+            Vector3 dir = target.transform.position - transform.position;
+            dir.y = 0;
+            Quaternion rot = Quaternion.LookRotation(dir);
+            
+            // Delay for balance - increases player reaction time window
             yield return new WaitForSeconds(searchDelay);
-            Debug.Log("Waited");
 
-            Quaternion newRotation = transform.rotation;
-            float rotateAmount = 360 / numRotate;
-            Debug.Log("Searching Start");
-
-            for (int i = 0; i < numRotate; i++)
+            // Initial scan
+            float elapsedTime = 0;
+            while (elapsedTime < scanInterval)
             {
-                newRotation *= Quaternion.Euler(Vector3.up * rotateAmount);
-                transform.rotation = Quaternion.Lerp(transform.rotation, newRotation, Time.deltaTime * searchDelay);
-                
-                Debug.Log($"Search stage: {i}");
-                yield return new WaitForSeconds(searchDelay);
+                transform.rotation = Quaternion.Slerp(transform.rotation, rot, elapsedTime/scanInterval);
+                elapsedTime += Time.deltaTime;
+            
+                yield return null;
+            }  
+            // Confirm that final rotation is correct
+            transform.rotation = rot;
+
+            // Fire off first ray sphere to check if player is infront
+            RaycastHit[] hits = Physics.SphereCastAll(
+                origin : transform.position, radius : scanSize, direction : transform.forward,
+                maxDistance : listeningTrigger.radius/2, layerMask : listenLayerMask,
+                queryTriggerInteraction : QueryTriggerInteraction.UseGlobal);
+            
+            // Public object designated at start - do not confuse with hits array
+            hitObjects.Clear();
+            foreach (var hit in hits)
+            {
+                hitObjects.Add(hit.transform.gameObject);
+                RaycastHit hitObject;
+                if (Physics.Raycast(
+                    origin: transform.position, direction : hit.transform.position - transform.position,
+                    out hitObject, maxDistance : 250f, layerMask : 2147483647,
+                    queryTriggerInteraction : QueryTriggerInteraction.Ignore)
+                )
+                {
+                    if (hitObject.collider.gameObject.tag.Equals(target.tag))
+                    {
+                        currentState = state.Found;
+                        callState();
+                        yield break;
+                    }
+                }
             }
+            // Rotating surviellance sequence
+            float rotateAmount = 360 / numRotate;
+            for (int i = 0; i < numRotate - 1; i++)
+            {
+                Debug.Log($"Scan: {i}");
+                Quaternion newRotation = transform.rotation;
+                newRotation *= Quaternion.Euler(Vector3.up * rotateAmount);
+
+                elapsedTime = 0;
+                while (elapsedTime < scanInterval)
+                {
+                    transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, elapsedTime/scanInterval);
+                    elapsedTime += Time.deltaTime;
+                    yield return null;
+                }  
+                // Confirm that final rotation is correct
+                transform.rotation = newRotation;
+                
+                hits = Physics.SphereCastAll(
+                    origin : transform.position, radius : scanSize, direction : transform.forward,
+                    maxDistance : listeningTrigger.radius/2, layerMask : listenLayerMask,
+                    queryTriggerInteraction : QueryTriggerInteraction.UseGlobal);
+                
+                // Public object designated at start - do not confuse with hits array
+                hitObjects.Clear();
+                foreach (var hit in hits)
+                {
+                    hitObjects.Add(hit.transform.gameObject);
+                    RaycastHit hitObject;
+                    if (Physics.Raycast(
+                        origin: transform.position, direction : hit.transform.position - transform.position,
+                        out hitObject, maxDistance : 250f, layerMask : 2147483647,
+                        queryTriggerInteraction : QueryTriggerInteraction.Ignore)
+                    )
+                    {
+                        if (hitObject.collider.gameObject.tag.Equals(target.tag))
+                        {
+                            currentState = state.Found;
+                            callState();
+                            yield break;
+                        }
+                    }
+                }
+
+                yield return new WaitForSeconds(0.1f);
+            }
+            
             currentState = state.Patrol;
-            yield return 0;
+            yield return null;
         }
         Debug.Log("Search: Exit");
         callState();
@@ -99,7 +191,7 @@ public class DroneBehaviours : MonoBehaviour
     void callState()
     {
         string methodName = currentState.ToString() + "State";
-        Debug.Log(methodName);
+        // Debug.Log(methodName);
         System.Reflection.MethodInfo info =
             GetType().GetMethod(methodName,
                                 System.Reflection.BindingFlags.NonPublic |
@@ -107,6 +199,7 @@ public class DroneBehaviours : MonoBehaviour
         StartCoroutine((IEnumerator)info.Invoke(this, null));
     }
 
+    // Used in patrol coroutine
     void moveToLocation()
     {
         Vector3 centrePoint = surveyZone.bounds.center;
@@ -137,4 +230,5 @@ public class DroneBehaviours : MonoBehaviour
         // Debug.Log("Not Available");
         return false;
     }
+
 }

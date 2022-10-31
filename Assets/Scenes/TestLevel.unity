@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18029143, g: 0.22572419, b: 0.30693057, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -740,9 +740,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.5321255, b: 1, a: 1}
   m_Intensity: 2500
-  m_Range: 40.16
+  m_Range: 49.97
   m_SpotAngle: 62.868484
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -818,9 +818,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   surveyZone: {fileID: 1859602482}
   listeningTrigger: {fileID: 427824630}
-  searchDelay: 2
+  listenLayerMask:
+    serializedVersion: 2
+    m_Bits: 8
+  hitObjects: []
+  searchDelay: 1
+  scanInterval: 1
+  scanSize: 100
+  numRotate: 4
+  target: {fileID: 1042876045}
   canPatrol: 1
-  numRotate: 6
+  statusLight: {fileID: 427824629}
 --- !u!1 &484918654
 GameObject:
   m_ObjectHideFlags: 0
@@ -1894,7 +1902,7 @@ GameObject:
   - component: {fileID: 1042876048}
   - component: {fileID: 1042876047}
   - component: {fileID: 1042876046}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
