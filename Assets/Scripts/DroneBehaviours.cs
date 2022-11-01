@@ -18,16 +18,16 @@ public class DroneBehaviours : MonoBehaviour
     public float numRotate;
     public GameObject target;
 
-    private bool isSearching = false;
+    private bool targetFound = false;
     public bool canPatrol = true;
 
-    private enum state
+    public enum state
     {
         Patrol,
         Search,
         Found
     }
-    private state currentState;
+    public state currentState;
 
     public Light statusLight;
 
@@ -47,8 +47,11 @@ public class DroneBehaviours : MonoBehaviour
             agent.SetDestination(this.transform.position);
             Debug.Log("Player Heard");
 
-            currentState = state.Search;
-            callState();
+            if (!targetFound)
+            {
+                currentState = state.Search;
+                callState();
+            }
         }
     }
 
@@ -56,11 +59,14 @@ public class DroneBehaviours : MonoBehaviour
     IEnumerator FoundState()
     {
         Debug.Log("Player Found");
+        targetFound = true;
         statusLight.color = Color.red;
 
-        yield return new WaitForSeconds(searchDelay * 2);
+        yield return new WaitForSeconds(searchDelay);
 
         currentState = state.Patrol;
+        callState();
+        
         yield return null;
     }
     
@@ -68,7 +74,8 @@ public class DroneBehaviours : MonoBehaviour
     {
         if (canPatrol)
         {
-            statusLight.color = Color.cyan;
+            targetFound = false;
+            statusLight.color = new Color(0f, 188f/255f, 1f, 1f);
             // Debug.Log("Patrol: Enter");
             while (currentState == state.Patrol)
             {
@@ -216,8 +223,6 @@ public class DroneBehaviours : MonoBehaviour
     bool RandomPoint(Vector3 center, float range, out Vector3 result)
     {
         Vector3 randomPoint = center + Random.insideUnitSphere * range;
-        // Vector3 playerLocation = this.transform.position;
-        // randomPoint.Set(randomPoint.x, playerLocation.y, randomPoint.z);
 
         NavMeshHit hit;
         if (NavMesh.SamplePosition(randomPoint, out hit, 2.0f, NavMesh.AllAreas))
