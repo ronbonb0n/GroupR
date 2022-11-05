@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18029143, g: 0.22572419, b: 0.30693057, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -386,8 +386,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockSize: 6
-  execute: 0
   dungeonTexture: {fileID: 2800000, guid: a95db313a0384e22f9b6bf68bc1bdaef, type: 3}
+  openArea: {fileID: 919132149155446097, guid: fb9001c6450da0d6fafef7ff2e94575b, type: 3}
+  topRightOuterCorner: {fileID: 919132149155446097, guid: 11020d4dacace38a6a7d3f15e5b2e0e8,
+    type: 3}
+  topLeftOuterCorner: {fileID: 919132149155446097, guid: 5be3a18e32a73476794821d6294460de,
+    type: 3}
+  bottomRightOuterCorner: {fileID: 919132149155446097, guid: 34c61dbbc1cf604f5977854603a9d65c,
+    type: 3}
+  bottomLeftOuterCorner: {fileID: 919132149155446097, guid: c2b4db52a3fc1e1429bc0961bddaaf47,
+    type: 3}
+  topRightInnerCorner: {fileID: 919132149155446097, guid: 267ccd4bb68ecb7b3968be3232922568,
+    type: 3}
+  topLeftInnerCorner: {fileID: 919132149155446097, guid: ee204da98ca15bba4bb1c147a37652e8,
+    type: 3}
+  bottomRightInnerCorner: {fileID: 919132149155446097, guid: 56ebe7bae2016279f920ca0fa7f493f0,
+    type: 3}
+  bottomLeftInnerCorner: {fileID: 919132149155446097, guid: 951e5f8cbf70b54e8bd2286798176ecc,
+    type: 3}
+  leftWall: {fileID: 919132149155446097, guid: 3c8d5f5918eef216abc27d5222a240f5, type: 3}
+  rightWall: {fileID: 919132149155446097, guid: 1c2dc046723694a78a22766ecf15c489,
+    type: 3}
+  topWall: {fileID: 919132149155446097, guid: c5907e4db1c58448f9f8aebf03ab6ece, type: 3}
+  bottomWall: {fileID: 919132149155446097, guid: dd9ce4636fab9f93ca21f2c3983e5b5d,
+    type: 3}
+  upDownCorridor: {fileID: 919132149155446097, guid: 913e7a0029fc9c6c3a036f967503810b,
+    type: 3}
+  acrossCorridor: {fileID: 919132149155446097, guid: 6bdb5871f25b1128994b578a5edac1c0,
+    type: 3}
+  leftDoorway: {fileID: 919132149155446097, guid: aa54ee5f711abc634889c819f1c29983,
+    type: 3}
+  rightDoorway: {fileID: 919132149155446097, guid: 3bdfddfb6403574d4bedcc12687f4c0d,
+    type: 3}
+  topDoorway: {fileID: 919132149155446097, guid: 848b4a08a1f5e2df5b1065abeb9a9dd4,
+    type: 3}
+  bottomDoorway: {fileID: 919132149155446097, guid: 9afe44e091078b7aebad1f9d7b4ddac0,
+    type: 3}
+  execute: 0
 --- !u!4 &1240342889
 Transform:
   m_ObjectHideFlags: 0
@@ -402,4 +437,35 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1454876427
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1454876428}
+  m_Layer: 0
+  m_Name: Parent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1454876428
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454876427}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

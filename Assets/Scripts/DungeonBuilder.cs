@@ -46,9 +46,9 @@ public class DungeonBuilder : MonoBehaviour
 
     [Header("Build level")]
     public bool execute;
-    // Tuple for RGB data of each pixel
 
     private GameObject parent;
+    // Tuple for RGB data of each pixel
     (float, float, float) pixelData;
     // 2D list to contain entire image data
     List<List<(float, float, float)>> dungeonData = new List<List<(float, float, float)>>();
@@ -65,19 +65,20 @@ public class DungeonBuilder : MonoBehaviour
     }
 
     public void buildScene()
-    {
-        
+    {   
         if (parent != null)
         {
             DestroyImmediate(parent);
         }
         parent = new GameObject("Parent");
 
-        for (int i = 0; i < dungeonData.Count; i++)
+        foreach (var sceneRow in dungeonData)
         {
-            Debug.Log(string.Join(", ", dungeonData[i]));
+            foreach (var pixel in sceneRow)
+            {
+                Debug.Log(pixel.ToString());
+            }
         }
-
     }
 
     public void buildLookup ()
@@ -131,24 +132,9 @@ public class DungeonBuilder : MonoBehaviour
                 );
 
                 pixelRow.Add(pixelData);
-                // if (pixel_g != 0.0f)
-                // {
-                //     GameObject Tile = Instantiate(
-                //         TileDict[pixel_g], new Vector3(
-                //             i * blockSize, 0 , j * blockSize
-                //         ), Quaternion.identity
-                //     );
-                //     Tile.transform.parent = parent.transform;
-                //     // Set static navigation
-                //     var navFlag = StaticEditorFlags.NavigationStatic;
-                //     GameObjectUtility.SetStaticEditorFlags(Tile, navFlag);
-                //     // Add box collider for each tile
-                //     Tile.AddComponent<BoxCollider>();
-                // }
             }
             dungeonData.Add(pixelRow);
         }
-        // NavMeshBuilder.ClearAllNavMeshes();
-        // NavMeshBuilder.BuildNavMesh();
+
     }
 }
