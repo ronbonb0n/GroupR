@@ -72,11 +72,34 @@ public class DungeonBuilder : MonoBehaviour
         }
         parent = new GameObject("Parent");
 
+        int row = 0;
+        int col = 0;
         foreach (var sceneRow in dungeonData)
         {
             foreach (var pixel in sceneRow)
             {
-                Debug.Log(pixel.ToString());
+                if (pixel != (0f, 0f, 0f))
+                {
+                    GameObject Tile = Instantiate(
+                        dungeonTileDict[pixel], new Vector3(
+                            row * blockSize, 0, col * blockSize
+                        ), Quaternion.identity
+                    );
+                    Tile.transform.parent = parent.transform;
+                    // Set static navigation
+                    var navFlag = StaticEditorFlags.NavigationStatic;
+                    GameObjectUtility.SetStaticEditorFlags(Tile, navFlag);
+                }
+                col += 1;
+                if (col >= sceneRow.Count)
+                {
+                    col = 0;
+                }
+            }
+            row += 1;
+            if (row >= dungeonData.Count)
+            {
+                row = 0;
             }
         }
     }
