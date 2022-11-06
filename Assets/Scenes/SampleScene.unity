@@ -371,9 +371,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Rb: {fileID: 295852775}
-  Crouch_Speed: 500
-  Move_Speed: 800
-  Run_Speed: 1500
+  Crouch_Speed: 1000
+  Move_Speed: 1400
+  Run_Speed: 2000
   Is_Running: 0
   Is_Crouching: 0
   Collider: {fileID: 45243004}
