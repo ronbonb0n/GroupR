@@ -96,7 +96,7 @@ Output | Keyboard | Mouse | Gesture
 --- | --- | --- | ---
 Strafe-Left | A | N/A | N/A
 Strafe-Right | D | N/A | N/A
-Move-Foward | W | N/A | N/A
+Move-Forward | W | N/A | N/A
 Move-Back | S | N/A | N/A
 Cloak | E | N/A | N/A
 Zoom In | R | Scroll Up | MousePad - Two finger swipe up
