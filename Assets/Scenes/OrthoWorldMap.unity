@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18029143, g: 0.22572419, b: 0.30693057, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8067,7 +8067,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 551cfc651f51f3c979ecc7c45c7e9ffb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newLevel: TestScene
+  newLevel: 1
 --- !u!65 &252435098
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24990,7 +24990,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!195 &857444928
 NavMeshAgent:
@@ -28048,7 +28048,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &996426818
 GameObject:
@@ -32512,65 +32512,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1126046401}
   m_Mesh: {fileID: -1550514412580984892, guid: 5146de02c0d2bda92b02531cdee465d6, type: 3}
---- !u!1 &1126470510
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1126470512}
-  - component: {fileID: 1126470511}
-  m_Layer: 0
-  m_Name: MapBuilder
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1126470511
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1126470510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68ebfb02786e7f829b5b5e316055c392, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  blockSize: 3
-  execute: 0
-  WorldTexture: {fileID: 2800000, guid: f7e026ad1ad41d0a4a30eda9c892db95, type: 3}
-  GrassCube: {fileID: 919132149155446097, guid: 5146de02c0d2bda92b02531cdee465d6,
-    type: 3}
-  DeepGrassCube: {fileID: 919132149155446097, guid: 15c2f08f5c9e2cdae8bdf6520c9b101a,
-    type: 3}
-  DyingGrassCube: {fileID: 919132149155446097, guid: 48cff15ea59f2e1c8b783aae1ae0cff5,
-    type: 3}
-  DeadCube: {fileID: 919132149155446097, guid: 04c6f144db82c95c29c9a8f73f6edda5, type: 3}
-  Bridge: {fileID: 919132149155446097, guid: baf350855c0cd19b79d2c590df9b825c, type: 3}
-  TowerCube: {fileID: 8349186541177190648, guid: 1938f561a4256ac67819f52ec79f5284,
-    type: 3}
-  SciFiBridge: {fileID: 919132149155446097, guid: 49e31a4bd2bdde3e296613b0811d65b8,
-    type: 3}
---- !u!4 &1126470512
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1126470510}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.09705799, y: 0.15084344, z: 0.050854336}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1131741981
 GameObject:
   m_ObjectHideFlags: 0
@@ -36800,7 +36741,7 @@ Transform:
   - {fileID: 498126938}
   - {fileID: 207929039}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1257548203
 GameObject:
@@ -60149,7 +60090,7 @@ Transform:
   m_Children:
   - {fileID: 20017307}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: -43.716, z: 0}
 --- !u!114 &2104120132
 MonoBehaviour:

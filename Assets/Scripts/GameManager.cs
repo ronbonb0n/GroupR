@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     {
         Instance = this;
     }
-    public void SwitchLevel(LEVELS newlevel)
+    public static void SwitchLevel(LEVELS newlevel)
     {
         
         SceneManager.LoadScene((int)newlevel);
@@ -51,8 +51,8 @@ public enum GAME_STATE
 }
 public enum LEVELS
 {
-    MENU,
     WORLD_MAP,
     LEVEL1,
-    LEVEL2
+    LEVEL2,
+    MENU,
 }

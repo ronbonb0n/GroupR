@@ -153,17 +153,6 @@ public partial class @Player_Controls : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""e9c273ea-0346-43c9-93a5-f04503994426"",
-                    ""path"": ""<Keyboard>/leftShift"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Run"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""6bd37d31-8bfb-454c-9a5f-a2d76e355b65"",
                     ""path"": ""<Keyboard>/c"",
                     ""interactions"": """",
@@ -175,12 +164,23 @@ public partial class @Player_Controls : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""af0a465a-431e-4085-b7dd-4c9c0c3f291e"",
-                    ""path"": ""<Keyboard>/leftCtrl"",
+                    ""id"": ""ac3a1920-a9c4-44ea-bc3e-d3992d93c641"",
+                    ""path"": ""<Keyboard>/ctrl"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Crouch"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""bd2f0039-8dfc-44ca-9ddd-0c0caa8bb03d"",
+                    ""path"": ""<Keyboard>/shift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Run"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }

@@ -64,7 +64,8 @@ public class DroneController : MonoBehaviour
         var lines = transform.GetComponentsInChildren<LineRenderer>();
         foreach (var line in lines)
         {
-            line.SetColors(color, color);
+            line.startColor = color;
+            line.endColor = color;
         }
     }
 }
