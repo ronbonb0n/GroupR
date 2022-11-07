@@ -42,7 +42,7 @@ The generator will build the navmesh required for the topdown nav for you but th
 
 **The pixel values currently used are tabulated below**
 Tile Type | Hex Code(#) | Decimal
---- | --- | ---
+:-: | :-: | :-:
 Grass | FFFFFF | 1.0
 Deep Grass | E6E6E6 | 0.9
 Dying Grass | CCCCCC | 0.8
