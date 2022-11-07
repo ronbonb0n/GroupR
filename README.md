@@ -83,22 +83,23 @@ Initially the plan was to build a custom A\* pathfinder - but with the functiona
 
 **Plans to implement a tile highlighting system for improved accessibility**<br/>
 
-## Camera control in world map
+## Player controls in world map
 
-Camera is controlled via a combination of mouse and keyboard inputs.<br/>
+Player is controlled via a combination of mouse and keyboard inputs.<br/>
 
-Consideration has been taken to allow a user to control the camera with either a laptop touchpad or mouse to improve accessibilty.<br/>
+Consideration has been taken to allow a user to control the plaer with either a laptop touchpad or mouse to improve accessibilty.<br/>
 
 Controls have been updated with Unity's new input system to allow for easier remapping <br/>
 
 **Controls tabulated below**
 Output | Keyboard | Mouse | Gesture
 --- | --- | --- | ---
-Pan-Left | A | N/A | N/A
-Pan-Right | D | N/A | N/A
-Pan-Foward | W | N/A | N/A
-Pan-Back | S | N/A | N/A
-Rotate | Q or E (Direction dependent) | N/A | N/A
+Strafe-Left | A | N/A | N/A
+Strafe-Right | D | N/A | N/A
+Move-Foward | W | N/A | N/A
+Move-Back | S | N/A | N/A
+<!--Rotate | Q or E (Direction dependent) | N/A | N/A-->
+Cloak | E | N/A | N/A
 Zoom In | R | Scroll Up | MousePad - Two finger swipe up
 Zoom Out | F | Scroll Down | MousePad - Two finger swipe down
 
