@@ -59,7 +59,7 @@ Sci-Fi Bridge | 666666 | 0.4
 
 To use the tool:<br/>
 
-1. Open image in any image editting software - I prefer Krita it's free and fairly powerful
+1. Open the image in any image editing software - Krita is recommended because it is cost-free and reasonably capable.
 2. Adjust image with a solid square brush - Krita has a pixel art brush which is ideal
     - Use colours tabulated above to correspond with desired tiles
 3. Export the output overwriting past image - or export new output but make sure to encode it properly with JPEG max quality
@@ -73,13 +73,13 @@ To use the tool:<br/>
 5. It is recommenended that you delete the game object called **Parent** that holds all of the tiles within it's heirarchy
 6. Go back to your world builder GameObject and click the execute boolean button - Your updated world will be built<br/>
 
-## Player Control in world map
+## Player controls in world map
 
-Player control is powered by Unity's Navmesh system.<br/>
+The NavMesh system from Unity, powers the player controls in the world map.<br/>
 
 Click on a tile with the left mouse button and go.<br/>
 
-Initially the plan was to build a custom A\* pathfinder - but with the functionality and performance of Unity's NavMesh system I decided there wasn't much point in reinventing the wheel. Time could be better spent elsewhere.<br/>
+The original idea was to create a custom A* pathfinder, but given Unity's NavMesh system's functionality and performance, it was deemed there wasn't much purpose in doing so.<br/>
 
 **Plans to implement a tile highlighting system for improved accessibility**<br/>
 
@@ -109,7 +109,7 @@ Zoom Out | F | Scroll Down | MousePad - Two finger swipe down
 
 Level transitioning is driven by a simple trigger overlap with the player character.<br/>
 
-Once the player overlaps the trigger - is within one tile of the level trigger they can click on the map object which will call the level transition.<br/>
+Once the player overlaps the trigger - if within one tile of the level trigger, they can click on the map object which will call the level transition.<br/>
 
 **Some kind of element will be rendered to highlight that the player can call the transition to act as positive feedback for improved accessibility**<br/>
 
