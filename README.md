@@ -93,7 +93,7 @@ Controls have been updated with Unity's new input system to allow for easier rem
 
 **Controls tabulated below**
 Output | Keyboard | Mouse | Gesture
---- | --- | --- | ---
+:-: | :-: | :-: | :-:
 Strafe-Left | A | N/A | N/A
 Strafe-Right | D | N/A | N/A
 Move-Forward | W | N/A | N/A
