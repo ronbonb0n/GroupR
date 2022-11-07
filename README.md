@@ -1,6 +1,6 @@
 # About:
 
-This is the the game development project repository for the game **Ferŷnier** made by students of MSc Computer Games, Queen Mary University of London.\*
+This is the game development project repository for the game **Ferŷnier** made by students of MSc Computer Games, Queen Mary University of London.\*
 
 # Installation:
 
@@ -83,7 +83,7 @@ Initially the plan was to build a custom A\* pathfinder - but with the functiona
 
 **Plans to implement a tile highlighting system for improved accessibility**<br/>
 
-## Player controls in world map
+## Player controls in level
 
 Player is controlled via a combination of mouse and keyboard inputs.<br/>
 
