@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/OrthoWorldMap.unity
+    guid: 72099bc9fdc82e02c95b49ac450b1847
+  - enabled: 1
+    path: Assets/Scenes/TestLevel.unity
+    guid: a5d780fd0a8cb1f4daba526d8a4d65ee
+  - enabled: 1
+    path: Assets/Scenes/TestLevel2.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 0
+    path: Assets/Scenes/TestScene.unity
+    guid: 05f696f9d65a9d07da565af08b67ae93
   m_configObjects: {}
