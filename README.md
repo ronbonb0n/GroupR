@@ -61,7 +61,7 @@ Use the tool in the same way as the world map builder - but instead use the RGB 
 
 **The pixel values currently used are tabulated below**<br/>
 Tile Type | Hex Code(#) | R | G | B
---- | --- | ---
+--- | --- | --- | --- | ---
 Open Area | FFFFFF | 1.0 | 1.0 | 1.0
 Empty Space | 000000 | 0.0 | 0.0 | 0.0
 Outer Top Right Corner | 33664D | 0.2 | 0.4 | 0.3
