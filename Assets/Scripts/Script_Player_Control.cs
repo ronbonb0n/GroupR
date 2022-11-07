@@ -24,7 +24,7 @@ public class Script_Player_Control : MonoBehaviour
     //private SpriteRenderer character; USE IT AFTER SPRITES ARE ADDED
     //private Color col; USE IT FOR TRANSLUCENT COLOR
     private float activationTime;
-    private bool invisble;
+    public bool invisble;
 
     void Start()
     {
