@@ -59,7 +59,7 @@ Currently the tool doesn't build the navmesh automonously - for now simply selec
 
 Use the tool in the same way as the world map builder - but instead use the RGB values tabulated below.<br/>
 
-**The pixel values currently used are tabulated below**
+**The pixel values currently used are tabulated below**<br/>
 Tile Type | Hex Code(#) | R | G | B
 --- | --- | ---
 Open Area | FFFFFF | 1.0 | 1.0 | 1.0
@@ -78,7 +78,6 @@ Top Wall | 8099FF | 0.5 | 0.6 | 1.0
 Bottom Wall | 338033 | 0.2 | 0.5 | 0.2
 Up Down Corridor | 334D7F | 0.2 | 0.3 | 0.5
 Across Corridor | FF994D | 1.0 | 0.6 | 0.3
-
 Left Doorway | 404040 | 0.3 | 0.3 | 0.3
 Right Doorway | BFBFBF | 0.7 | 0.7 | 0.7
 Top Doorway | FF0059 | 1.0 | 0.0 | 0.3
