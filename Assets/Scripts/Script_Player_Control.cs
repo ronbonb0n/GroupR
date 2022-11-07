@@ -24,6 +24,24 @@ public class Script_Player_Control : MonoBehaviour
 
 
 
+    private InputAction ability;
+    private MeshRenderer character;
+    //private SpriteRenderer character; USE IT AFTER SPRITES ARE ADDED
+    //private Color col; USE IT FOR TRANSLUCENT COLOR
+    private float activationTime;
+    public bool invisible;
+    public Transform cameraTransform;
+
+    void Start()
+    {
+        Rb = GetComponent<Rigidbody>();
+        //character = GetComponent<SpriteRenderer>();
+        character = GetComponent<MeshRenderer>();
+        activationTime = 0;
+        invisible = false;
+        //col = character.material.color;
+
+    }
 
     private void Awake()
     {
@@ -51,17 +69,36 @@ public class Script_Player_Control : MonoBehaviour
         Move.Disable();
         Run.Disable();
         Crouch.Disable();
+        ability.Disable();
+    }
+
+    private void Abitily_Performed(InputAction.CallbackContext context)
+    {
+        if (invisible == false)
+        {
+            invisible = true;
+            activationTime = 0;
+            //col.a = 0.2f;
+            //character.material.color = col;
+            character.enabled = false;
+            Collider.radius = 0f;
+        }
     }
 
     private void Run_Performed(InputAction.CallbackContext context)
     {
         Is_Running = !Is_Running;
 
-        if (Is_Running)
+        if (Is_Running && invisible==false)
         { 
             Is_Crouching = false;
             Collider.radius = 100f; 
         }
+        else if(Is_Running && invisible)
+        {
+            Is_Crouching = false;
+        }
+
         else
             Collider.radius = 75f;
     }
@@ -75,16 +112,38 @@ public class Script_Player_Control : MonoBehaviour
             Is_Running = false;
             Collider.radius = 50f;
         }
+        else if (Is_Crouching && invisible == false)
+        {
+            Is_Running = false;
+        }
         else
             Collider.radius = 75f;
     }
 
     private void Update()
     {
-       Move_Direction = Move.ReadValue<Vector2>();
-       //Player_Vertical_Input = Input.GetAxis("Vertical");
-       //Player_Horizontal_Input = Input.GetAxis("Horzizontal");
+        Move_Direction = Move.ReadValue<Vector2>();
+        activationTime += Time.deltaTime;
+        if (invisible && activationTime >= 3)
+        {
+            invisible = false;
+            //col.a = 1f;
+            //character.material.color = col;
+            character.enabled = true;
 
+            if (Is_Running)
+            {
+                Collider.radius = 100f;
+            }
+            else if (Is_Crouching)
+            {
+                Collider.radius = 50f;
+            }
+            else
+            {
+                Collider.radius = 75f;
+            }
+        }
     }
 
     private void FixedUpdate()
@@ -101,12 +160,14 @@ public class Script_Player_Control : MonoBehaviour
         Vector3 Camera_Relative_Input = Forward_Relative_Vertical_Input + Right_Relative_Vertical_Input;
         this.transform.Translate(Camera_Relative_Input, Space.World);*/
 
+        Vector3 moveDirection = gameObject.transform.forward * Move_Direction.y + gameObject.transform.right * Move_Direction.x;
         if (Is_Crouching)
-            Rb.velocity = Crouch_Speed * Time.deltaTime * new Vector3(Move_Direction.y, 0, -Move_Direction.x);
+            Rb.AddForce(moveDirection * Crouch_Speed * Time.deltaTime, ForceMode.Force);
         else if (Is_Running)
-            Rb.velocity = Run_Speed * Time.deltaTime * new Vector3(Move_Direction.y, 0, -Move_Direction.x);
+            Rb.AddForce(moveDirection * Run_Speed * Time.deltaTime, ForceMode.Force);
         else if (Is_Running == false && Is_Crouching == false)
-            Rb.velocity = Move_Speed * Time.deltaTime * new Vector3(Move_Direction.y, 0, -Move_Direction.x);
-
+            Rb.AddForce(moveDirection * Move_Speed * Time.deltaTime, ForceMode.Force);
+        Quaternion rotationPlayer = new Quaternion(gameObject.transform.rotation.x, 0 , 0, gameObject.transform.rotation.w);
+        transform.rotation = Quaternion.Lerp(rotationPlayer, cameraTransform.transform.rotation, 10 * Time.deltaTime);
     }
 }
