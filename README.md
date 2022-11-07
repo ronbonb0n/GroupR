@@ -98,10 +98,10 @@ Strafe-Left | A | N/A | N/A
 Strafe-Right | D | N/A | N/A
 Move-Foward | W | N/A | N/A
 Move-Back | S | N/A | N/A
-<!--Rotate | Q or E (Direction dependent) | N/A | N/A-->
 Cloak | E | N/A | N/A
 Zoom In | R | Scroll Up | MousePad - Two finger swipe up
 Zoom Out | F | Scroll Down | MousePad - Two finger swipe down
+<!--Rotate | Q or E (Direction dependent) | N/A | N/A-->
 
 **Remapping yet to be implemented**
 
