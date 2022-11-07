@@ -87,7 +87,7 @@ Initially the plan was to build a custom A\* pathfinder - but with the functiona
 
 Player is controlled via a combination of mouse and keyboard inputs.<br/>
 
-Consideration has been taken to allow a user to control the plaer with either a laptop touchpad or mouse to improve accessibilty.<br/>
+Consideration has been taken to allow a user to control the player with either a laptop touchpad or mouse to improve accessibilty.<br/>
 
 Controls have been updated with Unity's new input system to allow for easier remapping <br/>
 
