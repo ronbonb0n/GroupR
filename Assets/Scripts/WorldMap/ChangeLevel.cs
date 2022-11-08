@@ -5,7 +5,7 @@ using UnityEngine;
 public class ChangeLevel : MonoBehaviour
 {
     private Light towerLight;
-    public string newLevel;
+    public LEVELS newLevel;
     private bool isPlayerOverlap;
 
     private void Start()
