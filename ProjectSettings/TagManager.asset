@@ -6,11 +6,12 @@ TagManager:
   tags:
   - Wall
   - Drone
+  - Scout
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Wall
+  - Player
   - Water
   - UI
   - Target
