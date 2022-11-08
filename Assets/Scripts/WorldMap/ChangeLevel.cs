@@ -5,7 +5,7 @@ using UnityEngine;
 public class ChangeLevel : MonoBehaviour
 {
     private Light towerLight;
-    public LEVELS newLevel;
+    public GAME_STATE newState;
     private bool isPlayerOverlap;
 
     private void Start()
@@ -43,11 +43,13 @@ public class ChangeLevel : MonoBehaviour
         }
     }
 
+    
+
     private void OnMouseDown()
     {
         if (isPlayerOverlap)
         {
-            GameManager.SwitchLevel(newLevel);
+            GameManager.UpdateGameState(newState);
         }
     }
 }
