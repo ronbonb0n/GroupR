@@ -10,24 +10,26 @@ public class LookAroundState : IDroneState
         }
         if (drone.fieldOfView.canSeePlayer)
         {
-            return drone.chaseState;
+            return drone.alertState;
         }
-        if (drone.lookAroundCountDown <= 0)
+        if (drone.lookAroundCountDownTimer <= 0)
         {
             return drone.patrolState;
         }
-        drone.lookAroundCountDown -= Time.deltaTime;
+        drone.lookAroundCountDownTimer -= Time.deltaTime;
         return drone.lookAroundState;
     }
 
     public void onEnter(DroneController drone)
     {
         drone.SetLinesColor(Color.green);
-        drone.lookAroundCountDown = Random.Range(1.0f, 2.0f);
+        drone.SetStateText("Look Around", Color.green);
+        drone.SetLaserColor(Color.green);
+        drone.lookAroundCountDownTimer = Random.Range(1.0f, 2.0f);
     }
 
     public void onExit(DroneController drone)
     {
-        drone.lookAroundCountDown = 0;
+        drone.lookAroundCountDownTimer = 0;
     }
 }

@@ -13,7 +13,7 @@ public class PatrolState : IDroneState
         }
         if (drone.fieldOfView.canSeePlayer)
         {
-            return drone.chaseState;
+            return drone.alertState;
         }
         if (ReachedDestination(drone))
         {
@@ -25,6 +25,8 @@ public class PatrolState : IDroneState
     public void onEnter(DroneController drone)
     {
         drone.SetLinesColor(Color.green);
+        drone.SetStateText("Patrol", Color.green);
+        drone.SetLaserColor(Color.green);
         drone.navMeshAgent.destination = GetRandomLocation(drone);
     }
 
@@ -35,8 +37,9 @@ public class PatrolState : IDroneState
 
     private Vector3 GetRandomLocation(DroneController drone)
     {
-        Vector3 randomLocation = Random.insideUnitSphere * drone.patrolRadius;
-        randomLocation += drone.initialPosition;
+        Vector3 oPos = drone.initialPosition;
+        float radius = drone.patrolRadius;
+        Vector3 randomLocation = new Vector3(Random.Range(oPos.x - radius, oPos.x + radius), 0, Random.Range(oPos.z - radius, oPos.z + radius));
         NavMeshHit hit;
         NavMesh.SamplePosition(randomLocation, out hit, drone.patrolRadius, 1);
         return hit.position;
