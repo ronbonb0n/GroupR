@@ -753,8 +753,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4925255749608551700}
-  m_LocalRotation: {x: -0, y: -0.99994725, z: -0.010272424, w: 0}
-  m_LocalPosition: {x: -24, y: 3.926, z: -11.290001}
+  m_LocalRotation: {x: -0, y: -0.99994725, z: -0.0102724405, w: 0}
+  m_LocalPosition: {x: 0, y: 2.446, z: 7.42}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -892,7 +892,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 972976636789057583}
-  frontObj: {fileID: 0}
 --- !u!114 &6450014188993124692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1186,7 +1185,7 @@ MonoBehaviour:
   m_XAxis:
     Value: 0
     m_SpeedMode: 0
-    m_MaxSpeed: 30
+    m_MaxSpeed: 100
     m_AccelTime: 0.1
     m_DecelTime: 0.1
     m_InputAxisName: Mouse X
