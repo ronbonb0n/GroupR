@@ -5,7 +5,6 @@ using UnityEngine;
 public class CameraRespectiveRotation : MonoBehaviour
 {
     public GameObject player;
-    public GameObject frontObj;
     void Start()
     {
         
