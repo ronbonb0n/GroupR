@@ -26,6 +26,7 @@ public class DroneController : MonoBehaviour
     
     public GameObject player;
     private Material laserMaterial;
+    public LevelCanvasControls canvasControl;
 
     private void Awake()
     {
@@ -89,7 +90,6 @@ public class DroneController : MonoBehaviour
 
     public void LevelOver()
     {
-        // Level over, return to menu
-        Debug.Log("Level Over");
+        canvasControl.onLevelLost();
     }
 }
