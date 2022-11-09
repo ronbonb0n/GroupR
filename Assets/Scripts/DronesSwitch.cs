@@ -3,6 +3,7 @@ using UnityEngine;
 public class DronesSwitch : MonoBehaviour
 {
     private GameObject[] drones;
+    public LevelCanvasControls CanvasControls;
     
     // Start is called before the first frame update
     void Start()
@@ -24,7 +25,6 @@ public class DronesSwitch : MonoBehaviour
 
     private void LevelClear()
     {
-        // Level clear, return to menu
-        Debug.Log("Level Clear");
+        CanvasControls.onLevelWon();
     }
 }

@@ -6,31 +6,34 @@ public class LevelCanvasControls : MonoBehaviour
 {
     public GameObject LevelWonText;
     public GameObject LevelLostText;
-    public bool ShowCursor = false; // TESTING VAR DELETE WHEN DONE
-    // Start is called before the first frame update
+    public bool levelOver;
     void Start()
     {     
-            LevelLostText.SetActive(false);
-            LevelWonText.SetActive(false);
+        LevelLostText.SetActive(false);
+        LevelWonText.SetActive(false);
+        levelOver = false;
     }
 
-    private void Update() // TESTING FUNCTION DELETE WHEN DONE
-    {
-        Cursor.visible = ShowCursor;
-        Cursor.lockState = ShowCursor?CursorLockMode.Confined:CursorLockMode.Locked;
-    }
     public void onLevelLost()
     {
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.Confined;
-        LevelLostText.SetActive(true);
+        if (!levelOver)
+        {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.Confined;
+            LevelLostText.SetActive(true);
+            levelOver = true;
+        }
     }
 
     public void onLevelWon()
     {
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.Confined;
-        LevelWonText.SetActive(true);
+        if (!levelOver)
+        {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.Confined;
+            LevelWonText.SetActive(true);
+            levelOver = false;
+        }
     }
 
     public void onReturnToWorldMap()

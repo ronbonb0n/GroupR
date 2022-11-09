@@ -52693,6 +52693,11 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 1379632162}
     m_Modifications:
+    - target: {fileID: 4154058552899766302, guid: 6b75327287a8b75418a14c6fef41bd3c,
+        type: 3}
+      propertyPath: canvasControl
+      value: 
+      objectReference: {fileID: 1334190534303793962}
     - target: {fileID: 4154058552899766368, guid: 6b75327287a8b75418a14c6fef41bd3c,
         type: 3}
       propertyPath: m_RootOrder
@@ -58664,6 +58669,11 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 1379632162}
     m_Modifications:
+    - target: {fileID: 4154058552899766302, guid: 6b75327287a8b75418a14c6fef41bd3c,
+        type: 3}
+      propertyPath: canvasControl
+      value: 
+      objectReference: {fileID: 1334190534303793962}
     - target: {fileID: 4154058552899766368, guid: 6b75327287a8b75418a14c6fef41bd3c,
         type: 3}
       propertyPath: m_RootOrder
@@ -67287,6 +67297,11 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 1379632162}
     m_Modifications:
+    - target: {fileID: 4154058552899766302, guid: 6b75327287a8b75418a14c6fef41bd3c,
+        type: 3}
+      propertyPath: canvasControl
+      value: 
+      objectReference: {fileID: 1334190534303793962}
     - target: {fileID: 4154058552899766368, guid: 6b75327287a8b75418a14c6fef41bd3c,
         type: 3}
       propertyPath: m_RootOrder
@@ -99898,6 +99913,11 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 1379632162}
     m_Modifications:
+    - target: {fileID: 4154058552899766302, guid: 6b75327287a8b75418a14c6fef41bd3c,
+        type: 3}
+      propertyPath: canvasControl
+      value: 
+      objectReference: {fileID: 1334190534303793962}
     - target: {fileID: 4154058552899766368, guid: 6b75327287a8b75418a14c6fef41bd3c,
         type: 3}
       propertyPath: m_RootOrder
@@ -102796,6 +102816,11 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 1379632162}
     m_Modifications:
+    - target: {fileID: 4154058552899766302, guid: 6b75327287a8b75418a14c6fef41bd3c,
+        type: 3}
+      propertyPath: canvasControl
+      value: 
+      objectReference: {fileID: 1334190534303793962}
     - target: {fileID: 4154058552899766368, guid: 6b75327287a8b75418a14c6fef41bd3c,
         type: 3}
       propertyPath: m_RootOrder
@@ -108558,6 +108583,11 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 1379632162}
     m_Modifications:
+    - target: {fileID: 4154058552899766302, guid: 6b75327287a8b75418a14c6fef41bd3c,
+        type: 3}
+      propertyPath: canvasControl
+      value: 
+      objectReference: {fileID: 1334190534303793962}
     - target: {fileID: 4154058552899766368, guid: 6b75327287a8b75418a14c6fef41bd3c,
         type: 3}
       propertyPath: m_RootOrder
@@ -112218,6 +112248,11 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 1379632162}
     m_Modifications:
+    - target: {fileID: 4154058552899766302, guid: 6b75327287a8b75418a14c6fef41bd3c,
+        type: 3}
+      propertyPath: canvasControl
+      value: 
+      objectReference: {fileID: 1334190534303793962}
     - target: {fileID: 4154058552899766368, guid: 6b75327287a8b75418a14c6fef41bd3c,
         type: 3}
       propertyPath: m_RootOrder
@@ -114248,6 +114283,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 162f4806ef59dd34e8100d454c100202, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CanvasControls: {fileID: 1334190534303793962}
 --- !u!1 &1696690532
 GameObject:
   m_ObjectHideFlags: 0
@@ -124594,7 +124630,7 @@ PrefabInstance:
     - target: {fileID: 1190723004376744983, guid: a96eb1f0e109d41409b88a55d4f2cb81,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.99033433
+      value: 0.9903343
       objectReference: {fileID: 0}
     - target: {fileID: 1190723004376744983, guid: a96eb1f0e109d41409b88a55d4f2cb81,
         type: 3}
@@ -124604,7 +124640,7 @@ PrefabInstance:
     - target: {fileID: 1190723004376744983, guid: a96eb1f0e109d41409b88a55d4f2cb81,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.000000059604638
       objectReference: {fileID: 0}
     - target: {fileID: 1190723004376744983, guid: a96eb1f0e109d41409b88a55d4f2cb81,
         type: 3}
@@ -131196,6 +131232,11 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 1379632162}
     m_Modifications:
+    - target: {fileID: 4154058552899766302, guid: 6b75327287a8b75418a14c6fef41bd3c,
+        type: 3}
+      propertyPath: canvasControl
+      value: 
+      objectReference: {fileID: 1334190534303793962}
     - target: {fileID: 4154058552899766368, guid: 6b75327287a8b75418a14c6fef41bd3c,
         type: 3}
       propertyPath: m_RootOrder
@@ -141487,3 +141528,15 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: e44da416f40c8c5439888119e47d7feb, type: 3}
+--- !u!114 &1334190534303793962 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1334190534147440421, guid: e44da416f40c8c5439888119e47d7feb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1334190534303793961}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5641c63ff137a6448896d80f4262767, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
