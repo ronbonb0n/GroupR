@@ -12,10 +12,9 @@ public class ChaseState : IDroneState
         {
             if (IsOverPlayer(drone))
             {
-                // Level over, return to menu
-                Debug.Log("Level Over");
+                drone.LevelOver();
             }
-            drone.transform.position = Vector3.MoveTowards(drone.transform.position, drone.player.transform.position, 15 * Time.deltaTime);
+            drone.transform.position = Vector3.MoveTowards(drone.transform.position, drone.player.transform.position, 9 * Time.deltaTime);
             drone.transform.forward = new Vector3(drone.player.transform.position.x - drone.transform.position.x, 0, drone.player.transform.position.z - drone.transform.position.z);
             return drone.chaseState;
         }

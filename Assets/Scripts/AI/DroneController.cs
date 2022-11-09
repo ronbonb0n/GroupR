@@ -86,4 +86,10 @@ public class DroneController : MonoBehaviour
         color.a = 0.4f;
         laserMaterial.color = color;
     }
+
+    public void LevelOver()
+    {
+        // Level over, return to menu
+        Debug.Log("Level Over");
+    }
 }
