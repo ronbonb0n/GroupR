@@ -9,11 +9,13 @@ public class FieldOfView : MonoBehaviour
     public LayerMask targetMask;
     public LayerMask obstructionMask;
 
+    private GameObject player;
     public bool canSeePlayer;
 
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.FindWithTag("Player");
         StartCoroutine(FOVRoutine());
     }
 
@@ -30,16 +32,14 @@ public class FieldOfView : MonoBehaviour
 
     private void FieldOfViewCheck()
     {
-        Collider[] rangeChecks = Physics.OverlapSphere(transform.position, radius, targetMask);
-
-        if (rangeChecks.Length != 0)
+        Transform target = player.transform;
+        Vector3 directionToTarget = target.position - transform.position;
+        if (Vector3.Angle(transform.forward, directionToTarget) < angle / 2)
         {
-            Transform target = rangeChecks[0].transform;
-            Vector3 directionToTarget = (target.position - transform.position).normalized;
-            if (Vector3.Angle(transform.forward, directionToTarget) < angle / 2)
+            RaycastHit hit;
+            if (Physics.Raycast(transform.position, directionToTarget, out hit, radius))
             {
-                float distanceToTarget = Vector3.Distance(transform.position, target.position);
-                if (!Physics.Raycast(transform.position, directionToTarget, distanceToTarget, obstructionMask))
+                if (hit.collider.gameObject.tag == "Player")
                 {
                     canSeePlayer = true;
                 }
