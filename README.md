@@ -119,6 +119,28 @@ Use the tool in the same way as the world map builder - but instead use the RGB 
 **_Note_: There are some misaligning pillars - this is an issue with my meshes not the tool. The meshes were made quick and roughly to not waste time on making something look pretty, when it would be changed and upgraded later on anyway**<br/>
 **_Limitations_: Once you start to recognise the colours this is an easy tool to use, but to someone who has never used it before the bitmaps that drive teh tool might be confusing. Consideration into this will be taken, at the very least templates can be built from snippets of the bitmaps to create entire rooms or sections by just copying and pasting pixels - but this might lead to level repetiton. The tool would ideally paired with the WFC algorithm depending on time. With this being said though, with it I can build a level in under 10 minutes. This tool and mindset was inspired by my experience using houdini following work by the likes of Simon Verstraete, see here: https://www.sidefx.com/tutorials/wfc-dungeon-generator/**<br/>
 
+## Camera control in world map
+
+Camera is controlled via a combination of mouse and keyboard inputs.<br/>
+
+Consideration has been taken to allow a user to control the camera with either a laptop touchpad or mouse to improve accessibilty.<br/>
+
+Controls have been updated with Unity's new input system to allow for easier remapping <br/>
+
+**Controls tabulated below**
+
+| Output     | Keyboard                     | Mouse       | Gesture                          |
+| ---------- | ---------------------------- | ----------- | -------------------------------- |
+| Pan-Left   | A                            | N/A         | N/A                              |
+| Pan-Right  | D                            | N/A         | N/A                              |
+| Pan-Foward | W                            | N/A         | N/A                              |
+| Pan-Back   | S                            | N/A         | N/A                              |
+| Rotate     | Q or E (Direction dependent) | N/A         | N/A                              |
+| Zoom In    | R                            | Scroll Up   | MousePad - Two finger swipe up   |
+| Zoom Out   | F                            | Scroll Down | MousePad - Two finger swipe down |
+
+**Remapping yet to be implemented**
+
 ## Player controls in world map
 
 The NavMesh system from Unity, powers the player controls in the world map.<br/>
