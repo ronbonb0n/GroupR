@@ -60636,8 +60636,8 @@ MonoBehaviour:
   rotationAmount: 2.5
   cameraTransform: {fileID: 20017307}
   zoomAmount: {x: 0, y: -5, z: 5}
-  maxZoom: 159
-  minZoom: 39
+  maxZoom: -159
+  minZoom: -39
 --- !u!114 &2104120133
 MonoBehaviour:
   m_ObjectHideFlags: 0
