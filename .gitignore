@@ -22,6 +22,7 @@
 
 # Visual Studio cache directory
 .vs/
+.vscode/
 
 # Gradle cache directory
 .gradle/
@@ -59,3 +60,7 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+UserSettings/Layouts/default-2022.dwlt
+Assets/Materials/PlayTest/Mat_White.mat
+# Rider
+.idea

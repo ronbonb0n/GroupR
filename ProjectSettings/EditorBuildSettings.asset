@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/OrthoWorldMap.unity
+    guid: 72099bc9fdc82e02c95b49ac450b1847
+  - enabled: 1
+    path: Assets/Scenes/Dungeon-01Mk2.unity
+    guid: c50f88374bde161bbb5264288d8b67bd
+  - enabled: 1
+    path: Assets/Scenes/Dungeon-02MK2.unity
+    guid: 59babcbad0f1c3e78bfd03e0bf91d713
   m_configObjects: {}

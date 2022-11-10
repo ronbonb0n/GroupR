@@ -5,15 +5,17 @@ TagManager:
   serializedVersion: 2
   tags:
   - Wall
+  - Drone
+  - Scout
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Wall
+  - Player
   - Water
   - UI
-  - 
-  - 
+  - Target
+  - Obstruction
   - 
   - 
   - 
