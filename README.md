@@ -17,6 +17,12 @@ This is the game development project repository for the game **Ferŷnier** made 
 ## References:
 
 -   [Reference for AI mapping technique](https://www.youtube.com/watch?v=iY1jnFvHgbE&t=513s)
+-   [State Machine](https://www.youtube.com/watch?v=nnrOhb5UdRc)
+-   [AI Sight](https://www.youtube.com/watch?v=j1-OyLo77ss)
+-   [Field of View Effect](https://www.youtube.com/watch?v=CSeUMTaNFYk)
+-   [Chase](https://www.youtube.com/watch?v=wp8m6xyIPtE)
+-   [Player Movement](https://www.youtube.com/watch?v=HmXU4dZbaMw)
+-   [Cloak Ability](https://www.youtube.com/watch?v=u8gssV_Ec-Y)
 
 _\* Currently the project is being developed for prototyping_
 
