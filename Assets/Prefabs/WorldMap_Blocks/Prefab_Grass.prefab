@@ -126,7 +126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnObjects:
   - {fileID: 919132149155446097, guid: 4bc9046b3d5548041b62aaf6f7d80183, type: 3}
-  - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
+  - {fileID: 919132149155446097, guid: 4bc9046b3d5548041b62aaf6f7d80183, type: 3}
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 2374261311453077742}

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 
+// reference: Field of View Effect in Unity (Line of Sight, View Cone) https://www.youtube.com/watch?v=CSeUMTaNFYk
 public class LaserSight : MonoBehaviour
 {
     public float fov = 90f;
@@ -9,34 +10,47 @@ public class LaserSight : MonoBehaviour
     private float angleIncrease;
     private float viewDistance;
     
-    private Vector3[] vertices;
+    private Vector3[] standardVertices;
     private Vector2[] uv;
     private int[] indices;
     
     private Mesh mesh;
 
-    private float laserPitch;
+    public float laserPitch;
+    public float laserPitchRad;
 
     // Start is called before the first frame update
     void Start()
     {
         FieldOfView fieldOfView = GetComponentInParent<FieldOfView>();
         viewDistance = fieldOfView.radius;
-        laserPitch = (float) Math.Asin(transform.position.y / fieldOfView.radius);
+        Debug.Log("Drone - Sight Radius:  " + viewDistance);
+        laserPitch = transform.position.y / fieldOfView.radius;
+        laserPitchRad = (float)(Math.Asin(laserPitch) * 180 / Math.PI);
+        var lines = transform.parent.GetComponentsInChildren<LineRenderer>();
+        foreach (var line in lines)
+        {
+            line.transform.Rotate(laserPitchRad, 0, 0);
+        }
 
         mesh = new Mesh();
         GetComponent<MeshFilter>().mesh = mesh;
         angleIncrease = fov / sliceCount;
         
-        vertices = new Vector3[sliceCount + 2];
-        uv = new Vector2[vertices.Length];
+        standardVertices = new Vector3[sliceCount + 2];
+        uv = new Vector2[standardVertices.Length];
         indices = new int[sliceCount * 3];
         
-        UpdateLaserSight();
+        float angle = 0;
+
+        standardVertices[0] = Vector3.zero;
         int vertexIndex = 1;
         int triangleIndex = 0;
         for (int i = 0; i <= sliceCount; i++)
         {
+            Vector3 vertex = RotateVector(angle);
+            standardVertices[vertexIndex] = vertex;
+            angle += angleIncrease;
             if (i >= 1)
             {
                 indices[triangleIndex] = 0;
@@ -46,21 +60,33 @@ public class LaserSight : MonoBehaviour
             }
             vertexIndex++;
         }
+        
+        mesh.vertices = standardVertices;
         mesh.uv = uv;
         mesh.triangles = indices;
 
-        StartCoroutine(LaserSightRoutine());
+        // StartCoroutine(LaserSightRoutine());
     }
 
     private Vector3 RotateVector(float angle)
     {
         float angleRad = angle * (Mathf.PI / 180f);
-        return new Vector3(Mathf.Cos(angleRad) - Mathf.Sin(angleRad), (float) -Math.Sin(laserPitch), Mathf.Sin(angleRad) + Mathf.Cos(angleRad));
+        
+        Vector3 baseVector = new Vector3(Mathf.Sqrt(2) / 2, 0, Mathf.Sqrt(2) / 2);
+        Vector3 yaw = new Vector3(Mathf.Cos(angleRad) * baseVector.x - Mathf.Sin(angleRad) * baseVector.z,
+            0,
+            Mathf.Sin(angleRad) * baseVector.x + Mathf.Cos(angleRad) * baseVector.z);
+        Vector3 ret = Quaternion.AngleAxis(laserPitchRad, Vector3.right) * yaw * viewDistance;
+        
+        // Debug.Log(ret.magnitude);
+        // Debug.DrawLine(transform.position, transform.position + ret, Color.gray, 0.1f);
+        
+        return ret;
     }
     
     private IEnumerator LaserSightRoutine()
     {
-        WaitForSeconds wait = new WaitForSeconds(1f);
+        WaitForSeconds wait = new WaitForSeconds(0.01f);
 
         while (true)
         {
@@ -71,25 +97,17 @@ public class LaserSight : MonoBehaviour
     
     void UpdateLaserSight()
     {
-        float angle = 0;
-
+        Vector3[] vertices = new Vector3[sliceCount + 2];
         vertices[0] = Vector3.zero;
-        int vertexIndex = 1;
-        for (int i = 0; i <= sliceCount; i++)
+        for (int i = 1; i <= sliceCount; i++)
         {
-            Vector3 vertex = Vector3.Normalize(RotateVector(angle)) * viewDistance;
-            
+            vertices[i] = standardVertices[i];
             // RaycastHit hit;
-            // Vector3 destination = Quaternion.AngleAxis(transform.eulerAngles.y, Vector3.up) * vertex;
-            // if (Physics.Raycast(transform.position, destination, out hit, viewDistance))
+            // if (Physics.Raycast(transform.position, vertices[i], out hit, viewDistance))
             // {
             //     Debug.DrawLine(transform.position, hit.point, Color.white, 0.01f);
-            //     vertex = RotateVector(angle) * hit.distance;
+            //     vertices[i] = hit.point - transform.position;
             // }
-            
-            vertices[vertexIndex] = vertex;
-            angle += angleIncrease;
-            vertexIndex++;
         }
 
         mesh.vertices = vertices;

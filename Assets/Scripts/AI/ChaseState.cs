@@ -1,5 +1,6 @@
 using UnityEngine;
 
+// reference: Unity Basics - Move towards and follow target https://www.youtube.com/watch?v=wp8m6xyIPtE
 public class ChaseState : IDroneState
 {
     public IDroneState DoState(DroneController drone)
@@ -18,11 +19,7 @@ public class ChaseState : IDroneState
             drone.transform.forward = new Vector3(drone.player.transform.position.x - drone.transform.position.x, 0, drone.player.transform.position.z - drone.transform.position.z);
             return drone.chaseState;
         }
-        else
-        {
-            // return drone.patrolState;
-            return drone.chaseState;
-        }
+        return drone.investigateState;
     }
 
     public void onEnter(DroneController drone)
