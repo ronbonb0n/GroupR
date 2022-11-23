@@ -114451,6 +114451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CanvasControls: {fileID: 1334190534303793962}
+  Salvage: {fileID: 6182261996568468350, guid: 833646acd5e6af04880e88911cd03051, type: 3}
 --- !u!1 &1696690532
 GameObject:
   m_ObjectHideFlags: 0
@@ -124857,22 +124858,22 @@ PrefabInstance:
     - target: {fileID: 2648629322467015647, guid: a96eb1f0e109d41409b88a55d4f2cb81,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.99666697
+      value: 0.9966669
       objectReference: {fileID: 0}
     - target: {fileID: 2648629322467015647, guid: a96eb1f0e109d41409b88a55d4f2cb81,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.0815786
+      value: 0.08157859
       objectReference: {fileID: 0}
     - target: {fileID: 2648629322467015647, guid: a96eb1f0e109d41409b88a55d4f2cb81,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.00000008940696
       objectReference: {fileID: 0}
     - target: {fileID: 2648629322467015647, guid: a96eb1f0e109d41409b88a55d4f2cb81,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000037252903
+      value: -0.0000000037252899
       objectReference: {fileID: 0}
     - target: {fileID: 4556884883296059621, guid: a96eb1f0e109d41409b88a55d4f2cb81,
         type: 3}
