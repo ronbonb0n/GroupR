@@ -98,6 +98,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fov: 90
   sliceCount: 10
+  laserPitch: 0
+  laserPitchRad: 0
 --- !u!1 &4154058552899766369
 GameObject:
   m_ObjectHideFlags: 0
@@ -109,7 +111,6 @@ GameObject:
   - component: {fileID: 4154058552899766368}
   - component: {fileID: 4154058552899766303}
   - component: {fileID: 4154058552899766302}
-  - component: {fileID: 4154058552899766301}
   m_Layer: 0
   m_Name: Drone
   m_TagString: Drone
@@ -143,7 +144,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 10
+  m_Speed: 7
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -178,27 +179,7 @@ MonoBehaviour:
   alertCountDown: 1
   alertCountDownTimer: 0
   player: {fileID: 0}
---- !u!114 &4154058552899766301
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4154058552899766369}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7509bd17f7bb23e428ea39d447bd1e7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  radius: 10
-  angle: 120
-  targetMask:
-    serializedVersion: 2
-    m_Bits: 64
-  obstructionMask:
-    serializedVersion: 2
-    m_Bits: 128
-  canSeePlayer: 0
+  canvasControl: {fileID: 0}
 --- !u!1 &4154058553229857246
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,14 +204,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4154058553229857246}
-  m_LocalRotation: {x: 0.096571706, y: 0.38058707, z: -0.04000131, w: 0.9188185}
+  m_LocalRotation: {x: 0, y: 0.38268343, z: 0, w: 0.92387956}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4154058553940896229}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 12, y: 45, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
 --- !u!120 &4154058553229857244
 LineRenderer:
   serializedVersion: 2
@@ -358,14 +339,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4154058553276667642}
-  m_LocalRotation: {x: 0.096571706, y: -0.38058707, z: 0.04000131, w: 0.9188185}
+  m_LocalRotation: {x: 0, y: -0.38268343, z: 0, w: 0.92387956}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4154058553940896229}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 12, y: -45, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -45, z: 0}
 --- !u!120 &4154058553276667640
 LineRenderer:
   serializedVersion: 2
@@ -481,6 +462,7 @@ GameObject:
   - component: {fileID: 4154058553940896230}
   - component: {fileID: 4154058553940896231}
   - component: {fileID: 4154058553940896232}
+  - component: {fileID: 7332411959216457485}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -570,6 +552,22 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7332411959216457485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4154058553940896236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7509bd17f7bb23e428ea39d447bd1e7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 10
+  angle: 90
+  canSeePlayer: 0
+  lastSeenPlayerAt: {x: 0, y: 0, z: 0}
 --- !u!1 &4367484767241313446
 GameObject:
   m_ObjectHideFlags: 0

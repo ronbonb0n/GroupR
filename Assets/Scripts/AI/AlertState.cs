@@ -10,7 +10,7 @@ public class AlertState : IDroneState
             {
                 return drone.chaseState;
             }
-            return drone.patrolState;
+            return drone.investigateState;
         }
         drone.alertCountDownTimer -= Time.deltaTime;
         return drone.alertState;
