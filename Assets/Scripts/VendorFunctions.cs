@@ -45,9 +45,16 @@ public class VendorFunctions : MonoBehaviour
     // Display Inventory : get from InventoryManager
     public void dispInventory()
     {
-        for (int i = 0; i < InventoryManager.instance.Inventory.Length; i++)
+        for (int i = 0; i < InventoryManager.Inventory.Length; i++)
         {
-            inventoryText[i].text = InventoryManager.instance.Inventory[i].ToString();
+            inventoryText[i].text = InventoryManager.Inventory[i].ToString();
+        }
+    }
+    public void dispSalvage()
+    {
+        for (int i = 0; i < InventoryManager.Salvage.Length; i++)
+        {
+            pricesText[i].text = InventoryManager.Salvage[i].ToString();
         }
     }
 // Calculation Functions
@@ -84,10 +91,14 @@ public class VendorFunctions : MonoBehaviour
         bool checkBuy = true;
         for(int i = 0; i < itemCosts.Length; i++)
         {
-            if (InventoryManager.instance.Salvage[i] < itemCosts[i]) { checkBuy = false; }
+            if (InventoryManager.Salvage[i] < itemCosts[i]) { checkBuy = false; }
         }
         if (!checkBuy)
         {
+            for (int i = 0; i < 3; i++)
+            {
+                Debug.Log(i + " " + InventoryManager.Salvage[i]);
+            }
             Debug.Log("You don't have enough salvage to craft that");
             talkText.text = "You don't have enough salvage to craft that";
             // "You don't have enough salvage to craft that" message
@@ -95,8 +106,8 @@ public class VendorFunctions : MonoBehaviour
         }
         for (int i = 0; i < itemCosts.Length; i++)
         {
-            InventoryManager.instance.Inventory[i] += shoppingList[i];
-            InventoryManager.instance.Salvage[i] -= itemCosts[i];
+            InventoryManager.Inventory[i] += shoppingList[i];
+            InventoryManager.Salvage[i] -= itemCosts[i];
         }
         //Reset shopping
         for (int i = 0; i < itemCosts.Length; i++)
@@ -108,12 +119,19 @@ public class VendorFunctions : MonoBehaviour
         dispCosts();
         dispInventory();
         dispShoppingList();
+        dispSalvage();
     }
 
     //Talk
     public void talk()
     {
         talkText.text = "Hi, how may I help you?";
+    }
+
+    //Quit
+    public void QuitToWorldMap()
+    {
+        GameManager.UpdateGameState(GAME_STATE.WORLD_MAP);
     }
 
 
@@ -134,7 +152,7 @@ public class VendorFunctions : MonoBehaviour
         }
         for(int i=0; i < InventoryManager.instance.itemList.Length; i++) {
             Transform parentTransform = canvas.Find(InventoryManager.instance.itemList[i]);
-            pricesText[i] = parentTransform.Find("Price").GetComponent<TextMeshProUGUI>();
+            pricesText[i] = parentTransform.Find("Salvage").GetComponent<TextMeshProUGUI>();
             shoppingListText[i] = parentTransform.Find("ShoppingList").GetComponent<TextMeshProUGUI>();
             costText[i] = parentTransform.Find("Cost").GetComponent<TextMeshProUGUI>();
             inventoryText[i] = parentTransform.Find("Inventory").GetComponent<TextMeshProUGUI>();
@@ -145,7 +163,7 @@ public class VendorFunctions : MonoBehaviour
     {
         dispCosts();
         dispInventory();
-        dispPrices();
+        dispSalvage();
         dispShoppingList();
         talk();
     }

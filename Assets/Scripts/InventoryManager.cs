@@ -6,34 +6,30 @@ public class InventoryManager : MonoBehaviour
 {
     public static InventoryManager instance;
     public string[] itemList = { "CLOAK", "DECOY", "EMP"};
-    public int[] Inventory = new int[3]; // remember to change if more items are added
-    public int[] Salvage = new int[3];
+    public static int[] Inventory = new int[3]; // remember to change if more items are added
+    public static int[] Salvage = new int[3];
     private void Awake()
     {
         if (instance == null)
         {
             instance = this;
-            for (int i = 0; i < itemList.Length; i++)
-            {
-                instance.Inventory[i] = 0;
-                instance.Salvage[i] = 0;
-            }
         }
         else { Destroy(this.gameObject); }
         
     }
+    
     public int getItemCount(string item)
     {
         int index = System.Array.IndexOf(itemList, item);
         if (index < 0) { return -1; }
-        return (int)instance.Inventory[index];
+        return (int)Inventory[index];
     }
 
     public void setItemCount(string item,int count)
     {
         int index = System.Array.IndexOf(itemList, item);
         if (index >= 0) { 
-            instance.Inventory[index] = count;
+            Inventory[index] = count;
         }
         else
         {
@@ -46,9 +42,9 @@ public class InventoryManager : MonoBehaviour
         int index = System.Array.IndexOf(itemList, item);
         if (index >= 0)
         {
-            if (instance.Inventory[index] - 1 > 0)
+            if (Inventory[index] - 1 > 0)
             {
-                instance.Inventory[index] -= 1;
+                Inventory[index] -= 1;
                 return true;
             }
             else { return false; }
@@ -63,7 +59,7 @@ public class InventoryManager : MonoBehaviour
     {
         int index = System.Array.IndexOf(itemList, item);
         if (index < 0) { return -1; }
-        return (int)instance.Salvage[index];
+        return (int)Salvage[index];
     }
 
     public void setItemSalvageCount(string item, int count)
@@ -71,7 +67,7 @@ public class InventoryManager : MonoBehaviour
         int index = System.Array.IndexOf(itemList, item);
         if (index >= 0)
         {
-            instance.Salvage[index] = count;
+            Salvage[index] = count;
         }
         else
         {
@@ -83,7 +79,7 @@ public class InventoryManager : MonoBehaviour
         int index = System.Array.IndexOf(itemList, item);
         if (index >= 0)
         {
-            instance.Salvage[index] += 1;
+            Salvage[index] += 1;
         }
         else
         {
