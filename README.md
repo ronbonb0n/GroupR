@@ -151,7 +151,11 @@ Controls have been updated with Unity's new input system to allow for easier rem
 | Strafe-Right |              D               |     N/A     |               N/A                |
 | Move-Forward |              W               |     N/A     |               N/A                |
 |  Move-Back   |              S               |     N/A     |               N/A                |
+|   Crouch     |           L-CTRL/C           |     N/A     |               N/A                |
+|     Run      |           L-SHIFT            |     N/A     |               N/A                |
 |    Cloak     |              E               |     N/A     |               N/A                |
+|     EMP      |             N/A              |     LMB     |               N/A                |
+|    Decoy     |             N/A              |     RMB     |               N/A                |
 |   Zoom In    |              R               |  Scroll Up  |  MousePad - Two finger swipe up  |
 |   Zoom Out   |              F               | Scroll Down | MousePad - Two finger swipe down |
  <!--Rotate  | Q or E (Direction dependent) |     N/A     |              N/A-->              
