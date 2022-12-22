@@ -15828,6 +15828,7 @@ GameObject:
   - component: {fileID: 234815560}
   - component: {fileID: 234815559}
   - component: {fileID: 234815558}
+  - component: {fileID: 234815561}
   m_Layer: 0
   m_Name: Cube.022
   m_TagString: Untagged
@@ -15913,6 +15914,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 234815556}
   m_Mesh: {fileID: 1353746659569323740, guid: d6d2c342191e57c45b019c49b3f3656e, type: 3}
+--- !u!95 &234815561
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234815556}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f65d2bee46155bb4f86434d9670e4cc0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &236151689
 GameObject:
   m_ObjectHideFlags: 0
@@ -19941,7 +19962,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3196c1d267532ed4b217bb28897b9c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetFrameRate: 50
+  targetFrameRate: 60
 --- !u!4 &293548822
 Transform:
   m_ObjectHideFlags: 0
