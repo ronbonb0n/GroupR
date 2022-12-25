@@ -87,23 +87,26 @@ public class Script_Player_Control : MonoBehaviour
 
     private void EMP_Performed(InputAction.CallbackContext context)
     {
-        if (EMP_Count >= 1)
+        if (InventoryManager.instance.getItemCount("EMP") >= 1)
         {
+            //Decrease EMP here?
+            
             GameObject EMP = Instantiate(EMP_Prefab, transform.position, transform.rotation);
             Rigidbody RB = EMP.GetComponent<Rigidbody>();
             RB.AddForce(transform.forward * Throw_Force, ForceMode.VelocityChange);
-            EMP_Count--;
+            InventoryManager.instance.itemDecrement("EMP");
         }
     }
 
     private void Decoy_Performed(InputAction.CallbackContext context)
     {
-        if (Decoy_Count >= 1)
+        if (InventoryManager.instance.getItemCount("DECOY") >= 1)
         {
+            //Decrease Decoy here?
             GameObject Decoy = Instantiate(Decoy_Prefab, transform.position, transform.rotation);
             Rigidbody RB = Decoy.GetComponent<Rigidbody>();
             RB.AddForce(transform.forward * Throw_Force, ForceMode.VelocityChange);
-            Decoy_Count--;
+            InventoryManager.instance.itemDecrement("DECOY");
         }
     }
 
@@ -111,6 +114,7 @@ public class Script_Player_Control : MonoBehaviour
     {
         if (Invisble == false)
         {
+            //Decrease EMP here?
             Invisble = true;
             Activation_Time = 0;
             //col.a = 0.2f;
