@@ -23,6 +23,7 @@ This is the game development project repository for the game **Ferŷnier** made 
 -   [Chase](https://www.youtube.com/watch?v=wp8m6xyIPtE)
 -   [Player Movement](https://www.youtube.com/watch?v=HmXU4dZbaMw)
 -   [Cloak Ability](https://www.youtube.com/watch?v=u8gssV_Ec-Y)
+-   [EMP & Decoy](https://www.youtube.com/watch?v=BYL6JtUdEY0)
 
 _\* Currently the project is being developed for prototyping_
 
