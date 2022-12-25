@@ -11,6 +11,7 @@ public class Script_Player_Control : MonoBehaviour
     public float Crouch_Speed = 1000f;
     public float Move_Speed = 1400f;
     public float Run_Speed = 2000f;
+    public float Rotation_Speed;
     public Player_Controls Player_Input;
     private InputAction Move;
     private InputAction Run;
@@ -182,12 +183,14 @@ public class Script_Player_Control : MonoBehaviour
 
     private void FixedUpdate()
     {
+        Vector3 MovementDirection = transform.forward * Move_Direction.y + transform.right * Move_Direction.x;
+        //if (MovementDirection!= Vector3.zero) gameObject.transform.forward = Vector3.Lerp(gameObject.transform.position, MovementDirection.normalized,Rotation_Speed* Time.deltaTime);
         if (Is_Crouching)
-            Rb.velocity = Crouch_Speed * Time.deltaTime * new Vector3(Move_Direction.y, 0, -Move_Direction.x);
+            Rb.AddForce(Crouch_Speed * Time.deltaTime * MovementDirection,ForceMode.Force);
         else if (Is_Running)
-            Rb.velocity = Run_Speed * Time.deltaTime * new Vector3(Move_Direction.y, 0, -Move_Direction.x);
+            Rb.AddForce(Run_Speed * Time.deltaTime * MovementDirection,ForceMode.Force);
         else if (Is_Running == false && Is_Crouching == false)
-            Rb.velocity = Move_Speed * Time.deltaTime * new Vector3(Move_Direction.y, 0, -Move_Direction.x);
+            Rb.AddForce(Move_Speed * Time.deltaTime * MovementDirection,ForceMode.Force);
 
     }
 }

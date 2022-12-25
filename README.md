@@ -1,6 +1,6 @@
 # About:
 
-This is the the game development project repository for the game **Ferŷnier** made by students of MSc Computer Games, Queen Mary University of London.\*
+This is the game development project repository for the game **Ferŷnier** made by students of *MSc Computer Games, Queen Mary University of London.*
 
 # Installation:
 
@@ -17,10 +17,16 @@ This is the the game development project repository for the game **Ferŷnier** m
 ## References:
 
 -   [Reference for AI mapping technique](https://www.youtube.com/watch?v=iY1jnFvHgbE&t=513s)
+-   [State Machine](https://www.youtube.com/watch?v=nnrOhb5UdRc)
+-   [AI Sight](https://www.youtube.com/watch?v=j1-OyLo77ss)
+-   [Field of View Effect](https://www.youtube.com/watch?v=CSeUMTaNFYk)
+-   [Chase](https://www.youtube.com/watch?v=wp8m6xyIPtE)
+-   [Player Movement](https://www.youtube.com/watch?v=HmXU4dZbaMw)
+-   [Cloak Ability](https://www.youtube.com/watch?v=u8gssV_Ec-Y)
 
 _\* Currently the project is being developed for prototyping_
 
-# GroupR
+# Notes
 
 ## World map design proceduralism
 
@@ -41,16 +47,17 @@ The generator script runs within the engine editor for ease of use.<br/>
 The generator will build the navmesh required for the topdown nav for you but this can be overwritten manually via Unity's Navigation tab.<br/>
 
 **The pixel values currently used are tabulated below**
-Tile Type | Hex Code(#) | Decimal
---- | --- | ---
-Grass | FFFFFF | 1.0
-Deep Grass | E6E6E6 | 0.9
-Dying Grass | CCCCCC | 0.8
-Dead Space | B2B2B2 | 0.7
-Bridge | 999999 | 0.6
-Tower/Level | 808080 | 0.5
-Water | 000000 | 0.0
-Sci-Fi Bridge | 666666 | 0.4
+
+|   Tile Type   | Hex Code(#) | Decimal |
+| :-----------: | :---------: | :-----: |
+|     Grass     |   FFFFFF    |   1.0   |
+|  Deep Grass   |   E6E6E6    |   0.9   |
+|  Dying Grass  |   CCCCCC    |   0.8   |
+|  Dead Space   |   B2B2B2    |   0.7   |
+|    Bridge     |   999999    |   0.6   |
+|  Tower/Level  |   808080    |   0.5   |
+|     Water     |   000000    |   0.0   |
+| Sci-Fi Bridge |   666666    |   0.4   |
 
 **_Note_:Currently the Coast block is not being used and may be dropped**<br/>
 **_Note_:Water block technically represents a lack of a block for render efficiency as we can represent the water with just a single plain**<br/>
@@ -59,48 +66,95 @@ Sci-Fi Bridge | 666666 | 0.4
 
 To use the tool:<br/>
 
-1. Open image in any image editting software - I prefer Krita it's free and fairly powerful
+1. Open the image in any image editing software - Krita is recommended because it is cost-free and reasonably capable.
 2. Adjust image with a solid square brush - Krita has a pixel art brush which is ideal
-    - Use colours tabulated above to correspond with desired tiles
+   - Use colours tabulated above to correspond with desired tiles
 3. Export the output overwriting past image - or export new output but make sure to encode it properly with JPEG max quality
-    - If you export a new image when in Unity:
-        - Enable read/write in image properties
-        - Set format to RGBA32
-        - Set non power of 2 to None
+   - If you export a new image when in Unity:
+     - Enable read/write in image properties
+     - Set format to RGBA32
+     - Set non power of 2 to None
 4. Within the world map scene there is already an object called world builder that contains the builder script
-    - Make sure the correct prefabs are assigned
-    - Make sure the correct world generator texture is assigned
+   - Make sure the correct prefabs are assigned
+   - Make sure the correct world generator texture is assigned
 5. It is recommenended that you delete the game object called **Parent** that holds all of the tiles within it's heirarchy
 6. Go back to your world builder GameObject and click the execute boolean button - Your updated world will be built<br/>
 
-## Player Control in world map
+## Dungeon generator tool
 
-Player control is powered by Unity's Navmesh system.<br/>
+This tool functions very similarly to the above tool - but instead of single channel luminosity values, the tool utilises RGB values.<br/>
+
+The generator currently supports 20 different tile types and this is expandable - however colour coding will quickly become ungainly beyond this.<br/>
+
+The generator images is found in the root/Assets/ directory - one image per dungeon (there are currently two built dungeons within the prototype).<br/>
+
+Again the tool requires JPEG images.<br/>
+
+Currently the tool doesn't build the navmesh automonously - for now simply select the parent, designate it as static navigation and bake manually. This requires minimal effort, but I will look into this after the prototype as a future improvement.<br/>
+
+Use the tool in the same way as the world map builder - but instead use the RGB values tabulated below.<br/>
+
+**The pixel values currently used are tabulated below**<br/>
+
+| Tile Type                 | Hex Code(#) | R    | G    | B    |
+| ------------------------- | ----------- | ---- | ---- | ---- |
+| Open Area                 | FFFFFF      | 1.0  | 1.0  | 1.0  |
+| Empty Space               | 000000      | 0.0  | 0.0  | 0.0  |
+| Outer Top Right Corner    | 33664D      | 0.2  | 0.4  | 0.3  |
+| Outer Top Left Corner     | 01FFFF      | 0.0  | 1.0  | 1.0  |
+| Outer Bottom Right Corner | 4DFF66      | 0.3  | 1.0  | 0.4  |
+| Outer Bottom Left Corner  | FFFF00      | 1.0  | 1.0  | 0.0  |
+| Inner Top Right Corner    | FFBFFF      | 1.0  | 0.7  | 1.0  |
+| Inner Top Left Corner     | CCFF80      | 0.8  | 1.0  | 0.5  |
+| Inner Bottom Right Corner | FF7F86      | 1.0  | 0.5  | 0.6  |
+| Inner Bottom Left Corner  | FFB200      | 1.0  | 0.7  | 0.0  |
+| Left Wall                 | 0000FF      | 0.0  | 0.0  | 1.0  |
+| Right Wall                | 01FF00      | 0.0  | 1.0  | 0.0  |
+| Top Wall                  | 8099FF      | 0.5  | 0.6  | 1.0  |
+| Bottom Wall               | 338033      | 0.2  | 0.5  | 0.2  |
+| Up Down Corridor          | 334D7F      | 0.2  | 0.3  | 0.5  |
+| Across Corridor           | FF994D      | 1.0  | 0.6  | 0.3  |
+| Left Doorway              | 404040      | 0.3  | 0.3  | 0.3  |
+| Right Doorway             | BFBFBF      | 0.7  | 0.7  | 0.7  |
+| Top Doorway               | FF0059      | 1.0  | 0.0  | 0.3  |
+| Bottom Doorway            | FF4D00      | 1.0  | 0.3  | 0.0  |
+
+**_Note_: When something is designated as (for example) "left" this designates the position of the feature on the tile, as such a left doorway is a tile with a doorway on the left handside**<br/>
+**_Note_: A swatch with all of the above colours is included as a JPEG**<br/>
+**_Note_: The greens used for bottom right corner and left wall are very similar and tend to blend- this will be changed in the next update**<br/>
+**_Note_: There are some misaligning pillars - this is an issue with my meshes not the tool. The meshes were made quick and roughly to not waste time on making something look pretty, when it would be changed and upgraded later on anyway**<br/>
+**_Limitations_: Once you start to recognise the colours this is an easy tool to use, but to someone who has never used it before the bitmaps that drive teh tool might be confusing. Consideration into this will be taken, at the very least templates can be built from snippets of the bitmaps to create entire rooms or sections by just copying and pasting pixels - but this might lead to level repetiton. The tool would ideally paired with the WFC algorithm depending on time. With this being said though, with it I can build a level in under 10 minutes. This tool and mindset was inspired by my experience using houdini following work by the likes of Simon Verstraete, see here: https://www.sidefx.com/tutorials/wfc-dungeon-generator/**<br/>
+
+## Player controls in world map
+
+The NavMesh system from Unity, powers the player controls in the world map.<br/>
 
 Click on a tile with the left mouse button and go.<br/>
 
-Initially the plan was to build a custom A\* pathfinder - but with the functionality and performance of Unity's NavMesh system I decided there wasn't much point in reinventing the wheel. Time could be better spent elsewhere.<br/>
+The original idea was to create a custom A* pathfinder, but given Unity's NavMesh system's functionality and performance, it was deemed there wasn't much purpose in doing so.<br/>
 
 **Plans to implement a tile highlighting system for improved accessibility**<br/>
 
-## Camera control in world map
+## Player controls in level
 
-Camera is controlled via a combination of mouse and keyboard inputs.<br/>
+Player is controlled via a combination of mouse and keyboard inputs.<br/>
 
-Consideration has been taken to allow a user to control the camera with either a laptop touchpad or mouse to improve accessibilty.<br/>
+Consideration has been taken to allow a user to control the player with either a laptop touchpad or mouse to improve accessibilty.<br/>
 
 Controls have been updated with Unity's new input system to allow for easier remapping <br/>
 
 **Controls tabulated below**
-Output | Keyboard | Mouse | Gesture
---- | --- | --- | ---
-Pan-Left | A | N/A | N/A
-Pan-Right | D | N/A | N/A
-Pan-Foward | W | N/A | N/A
-Pan-Back | S | N/A | N/A
-Rotate | Q or E (Direction dependent) | N/A | N/A
-Zoom In | R | Scroll Up | MousePad - Two finger swipe up
-Zoom Out | F | Scroll Down | MousePad - Two finger swipe down
+
+|    Output    |           Keyboard           |    Mouse    |             Gesture              |
+| :----------: | :--------------------------: | :---------: | :------------------------------: |
+| Strafe-Left  |              A               |     N/A     |               N/A                |
+| Strafe-Right |              D               |     N/A     |               N/A                |
+| Move-Forward |              W               |     N/A     |               N/A                |
+|  Move-Back   |              S               |     N/A     |               N/A                |
+|    Cloak     |              E               |     N/A     |               N/A                |
+|   Zoom In    |              R               |  Scroll Up  |  MousePad - Two finger swipe up  |
+|   Zoom Out   |              F               | Scroll Down | MousePad - Two finger swipe down |
+ <!--Rotate  | Q or E (Direction dependent) |     N/A     |              N/A-->              
 
 **Remapping yet to be implemented**
 
@@ -108,7 +162,7 @@ Zoom Out | F | Scroll Down | MousePad - Two finger swipe down
 
 Level transitioning is driven by a simple trigger overlap with the player character.<br/>
 
-Once the player overlaps the trigger - is within one tile of the level trigger they can click on the map object which will call the level transition.<br/>
+Once the player overlaps the trigger - if within one tile of the level trigger, they can click on the map object which will call the level transition.<br/>
 
 **Some kind of element will be rendered to highlight that the player can call the transition to act as positive feedback for improved accessibility**<br/>
 
@@ -122,14 +176,31 @@ Simple script to cap the number of frames - cap is public.<br/>
 
 ### Sight
 
-Drone sight has a radius and angle, implemented by sphere overlap & ray cast
+Drone sight has a radius and angle, implemented by ray cast.
 
 ### States
 
 Using a state machine to switch between behaviors of AI drones:
 
--   Idle (initial state)
--   Patrol - Pick random patrol locations and auto-path to them, using a navmesh at the drones' height
--   Look Around - Wait for a few seconds before heading to next patrol location
--   Chase - Chase the player if the player is in sight
--   Deactivated - Falls to the ground
+![Stealth AI - State Machine](https://user-images.githubusercontent.com/45759373/203607165-a875609b-d47d-4df7-af23-b12344cdaa7c.png)
+
+1. *Idle* (initial state)
+2. *Patrol* - Pick a random patrol location and auto-path to it
+3. *Look Around* - Stay put and look around
+4. *Alert* - Transition state from *Look Around* to *Chase*
+5. *Investigate* - Go to where the player is last seen at
+6. *Chase* - Chase the player
+7. *Deactivated* - Shut down & Fall to the ground
+
+### Map Set Up
+
+- Player
+  - Tag - Player
+- Map plane
+  - Navigation Static
+- Walls
+  - Navigation Static
+- Drone
+  - Tag - Drone
+
+**And, bake the Nav Mesh*.

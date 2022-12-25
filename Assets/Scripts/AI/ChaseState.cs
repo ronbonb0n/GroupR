@@ -1,5 +1,6 @@
 using UnityEngine;
 
+// reference: Unity Basics - Move towards and follow target https://www.youtube.com/watch?v=wp8m6xyIPtE
 public class ChaseState : IDroneState
 {
     public IDroneState DoState(DroneController drone)
@@ -10,20 +11,22 @@ public class ChaseState : IDroneState
         }
         if (drone.fieldOfView.canSeePlayer)
         {
-            drone.transform.position = Vector3.MoveTowards(drone.transform.position, drone.player.transform.position, 15 * Time.deltaTime);
+            if (IsOverPlayer(drone))
+            {
+                drone.LevelOver();
+            }
+            drone.transform.position = Vector3.MoveTowards(drone.transform.position, drone.player.transform.position, 9 * Time.deltaTime);
             drone.transform.forward = new Vector3(drone.player.transform.position.x - drone.transform.position.x, 0, drone.player.transform.position.z - drone.transform.position.z);
             return drone.chaseState;
         }
-        else
-        {
-            // return drone.patrolState;
-            return drone.chaseState;
-        }
+        return drone.investigateState;
     }
 
     public void onEnter(DroneController drone)
     {
         drone.SetLinesColor(Color.yellow);
+        drone.SetStateText("Chase", Color.yellow);
+        drone.SetLaserColor(Color.yellow);
         drone.navMeshAgent.ResetPath();
         drone.fieldOfView.angle = 360;
     }
@@ -36,5 +39,10 @@ public class ChaseState : IDroneState
     private Vector3 GetPlayerPosition(DroneController drone)
     {
         return drone.player.transform.position;
+    }
+
+    private bool IsOverPlayer(DroneController drone)
+    {
+        return Vector3.Distance(drone.transform.position, drone.player.transform.position) <= 5;
     }
 }
