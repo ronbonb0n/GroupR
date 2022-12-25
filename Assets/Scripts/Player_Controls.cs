@@ -46,7 +46,7 @@ public partial class @Player_Controls : IInputActionCollection2, IDisposable
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""Abilities"",
+                    ""name"": ""Cloak"",
                     ""type"": ""Button"",
                     ""id"": ""7a307053-fc91-45b7-a79a-9044c4e2d6ce"",
                     ""expectedControlType"": ""Button"",
@@ -67,6 +67,24 @@ public partial class @Player_Controls : IInputActionCollection2, IDisposable
                     ""name"": ""Crouch"",
                     ""type"": ""Button"",
                     ""id"": ""b31333b1-e8ef-430b-88d6-1a1e7bd7c075"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""EMP"",
+                    ""type"": ""Button"",
+                    ""id"": ""25cb197d-c97e-4318-bcdc-1d2aa242fa01"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Decoy"",
+                    ""type"": ""Button"",
+                    ""id"": ""ab3f03f2-5f2f-4fc0-8100-78ed970d0501"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -92,7 +110,7 @@ public partial class @Player_Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Abilities"",
+                    ""action"": ""Cloak"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -153,8 +171,8 @@ public partial class @Player_Controls : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""6bd37d31-8bfb-454c-9a5f-a2d76e355b65"",
-                    ""path"": ""<Keyboard>/c"",
+                    ""id"": ""ac3a1920-a9c4-44ea-bc3e-d3992d93c641"",
+                    ""path"": ""<Keyboard>/ctrl"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -164,8 +182,8 @@ public partial class @Player_Controls : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""ac3a1920-a9c4-44ea-bc3e-d3992d93c641"",
-                    ""path"": ""<Keyboard>/ctrl"",
+                    ""id"": ""8f6908b1-638d-4975-b73b-fea91a934e5a"",
+                    ""path"": ""<Keyboard>/c"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -183,6 +201,28 @@ public partial class @Player_Controls : IInputActionCollection2, IDisposable
                     ""action"": ""Run"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2cd20dc6-927a-419e-844c-8563c290f251"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""EMP"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8b6560c6-65f9-4cf0-93f1-4945932aad32"",
+                    ""path"": ""<Mouse>/rightButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Decoy"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -193,9 +233,11 @@ public partial class @Player_Controls : IInputActionCollection2, IDisposable
         m_Player_Input = asset.FindActionMap("Player_Input", throwIfNotFound: true);
         m_Player_Input_Movement = m_Player_Input.FindAction("Movement", throwIfNotFound: true);
         m_Player_Input_Pointer_Position = m_Player_Input.FindAction("Pointer_Position", throwIfNotFound: true);
-        m_Player_Input_Abilities = m_Player_Input.FindAction("Abilities", throwIfNotFound: true);
+        m_Player_Input_Cloak = m_Player_Input.FindAction("Cloak", throwIfNotFound: true);
         m_Player_Input_Run = m_Player_Input.FindAction("Run", throwIfNotFound: true);
         m_Player_Input_Crouch = m_Player_Input.FindAction("Crouch", throwIfNotFound: true);
+        m_Player_Input_EMP = m_Player_Input.FindAction("EMP", throwIfNotFound: true);
+        m_Player_Input_Decoy = m_Player_Input.FindAction("Decoy", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -257,18 +299,22 @@ public partial class @Player_Controls : IInputActionCollection2, IDisposable
     private IPlayer_InputActions m_Player_InputActionsCallbackInterface;
     private readonly InputAction m_Player_Input_Movement;
     private readonly InputAction m_Player_Input_Pointer_Position;
-    private readonly InputAction m_Player_Input_Abilities;
+    private readonly InputAction m_Player_Input_Cloak;
     private readonly InputAction m_Player_Input_Run;
     private readonly InputAction m_Player_Input_Crouch;
+    private readonly InputAction m_Player_Input_EMP;
+    private readonly InputAction m_Player_Input_Decoy;
     public struct Player_InputActions
     {
         private @Player_Controls m_Wrapper;
         public Player_InputActions(@Player_Controls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Movement => m_Wrapper.m_Player_Input_Movement;
         public InputAction @Pointer_Position => m_Wrapper.m_Player_Input_Pointer_Position;
-        public InputAction @Abilities => m_Wrapper.m_Player_Input_Abilities;
+        public InputAction @Cloak => m_Wrapper.m_Player_Input_Cloak;
         public InputAction @Run => m_Wrapper.m_Player_Input_Run;
         public InputAction @Crouch => m_Wrapper.m_Player_Input_Crouch;
+        public InputAction @EMP => m_Wrapper.m_Player_Input_EMP;
+        public InputAction @Decoy => m_Wrapper.m_Player_Input_Decoy;
         public InputActionMap Get() { return m_Wrapper.m_Player_Input; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -284,15 +330,21 @@ public partial class @Player_Controls : IInputActionCollection2, IDisposable
                 @Pointer_Position.started -= m_Wrapper.m_Player_InputActionsCallbackInterface.OnPointer_Position;
                 @Pointer_Position.performed -= m_Wrapper.m_Player_InputActionsCallbackInterface.OnPointer_Position;
                 @Pointer_Position.canceled -= m_Wrapper.m_Player_InputActionsCallbackInterface.OnPointer_Position;
-                @Abilities.started -= m_Wrapper.m_Player_InputActionsCallbackInterface.OnAbilities;
-                @Abilities.performed -= m_Wrapper.m_Player_InputActionsCallbackInterface.OnAbilities;
-                @Abilities.canceled -= m_Wrapper.m_Player_InputActionsCallbackInterface.OnAbilities;
+                @Cloak.started -= m_Wrapper.m_Player_InputActionsCallbackInterface.OnCloak;
+                @Cloak.performed -= m_Wrapper.m_Player_InputActionsCallbackInterface.OnCloak;
+                @Cloak.canceled -= m_Wrapper.m_Player_InputActionsCallbackInterface.OnCloak;
                 @Run.started -= m_Wrapper.m_Player_InputActionsCallbackInterface.OnRun;
                 @Run.performed -= m_Wrapper.m_Player_InputActionsCallbackInterface.OnRun;
                 @Run.canceled -= m_Wrapper.m_Player_InputActionsCallbackInterface.OnRun;
                 @Crouch.started -= m_Wrapper.m_Player_InputActionsCallbackInterface.OnCrouch;
                 @Crouch.performed -= m_Wrapper.m_Player_InputActionsCallbackInterface.OnCrouch;
                 @Crouch.canceled -= m_Wrapper.m_Player_InputActionsCallbackInterface.OnCrouch;
+                @EMP.started -= m_Wrapper.m_Player_InputActionsCallbackInterface.OnEMP;
+                @EMP.performed -= m_Wrapper.m_Player_InputActionsCallbackInterface.OnEMP;
+                @EMP.canceled -= m_Wrapper.m_Player_InputActionsCallbackInterface.OnEMP;
+                @Decoy.started -= m_Wrapper.m_Player_InputActionsCallbackInterface.OnDecoy;
+                @Decoy.performed -= m_Wrapper.m_Player_InputActionsCallbackInterface.OnDecoy;
+                @Decoy.canceled -= m_Wrapper.m_Player_InputActionsCallbackInterface.OnDecoy;
             }
             m_Wrapper.m_Player_InputActionsCallbackInterface = instance;
             if (instance != null)
@@ -303,15 +355,21 @@ public partial class @Player_Controls : IInputActionCollection2, IDisposable
                 @Pointer_Position.started += instance.OnPointer_Position;
                 @Pointer_Position.performed += instance.OnPointer_Position;
                 @Pointer_Position.canceled += instance.OnPointer_Position;
-                @Abilities.started += instance.OnAbilities;
-                @Abilities.performed += instance.OnAbilities;
-                @Abilities.canceled += instance.OnAbilities;
+                @Cloak.started += instance.OnCloak;
+                @Cloak.performed += instance.OnCloak;
+                @Cloak.canceled += instance.OnCloak;
                 @Run.started += instance.OnRun;
                 @Run.performed += instance.OnRun;
                 @Run.canceled += instance.OnRun;
                 @Crouch.started += instance.OnCrouch;
                 @Crouch.performed += instance.OnCrouch;
                 @Crouch.canceled += instance.OnCrouch;
+                @EMP.started += instance.OnEMP;
+                @EMP.performed += instance.OnEMP;
+                @EMP.canceled += instance.OnEMP;
+                @Decoy.started += instance.OnDecoy;
+                @Decoy.performed += instance.OnDecoy;
+                @Decoy.canceled += instance.OnDecoy;
             }
         }
     }
@@ -320,8 +378,10 @@ public partial class @Player_Controls : IInputActionCollection2, IDisposable
     {
         void OnMovement(InputAction.CallbackContext context);
         void OnPointer_Position(InputAction.CallbackContext context);
-        void OnAbilities(InputAction.CallbackContext context);
+        void OnCloak(InputAction.CallbackContext context);
         void OnRun(InputAction.CallbackContext context);
         void OnCrouch(InputAction.CallbackContext context);
+        void OnEMP(InputAction.CallbackContext context);
+        void OnDecoy(InputAction.CallbackContext context);
     }
 }

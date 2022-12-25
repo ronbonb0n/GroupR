@@ -20,22 +20,28 @@ public class Script_Player_Control : MonoBehaviour
     public bool Is_Running = false;
     public bool Is_Crouching = false;
     public SphereCollider Collider;
-    private InputAction ability;
-    private MeshRenderer character;
+    private InputAction Cloak;
+    private MeshRenderer Character;
     //private SpriteRenderer character; USE IT AFTER SPRITES ARE ADDED
     //private Color col; USE IT FOR TRANSLUCENT COLOR
-    private float activationTime;
-    public bool invisble;
+    private float Activation_Time;
+    public bool Invisble;
     public Transform frontObj;
+    private InputAction EMP;
+    private InputAction Decoy;
+    public float Throw_Force = 40f;
+    public GameObject EMP_Prefab;
+    public GameObject Decoy_Prefab;
+    public float EMP_Count = 3.0f;
+    public float Decoy_Count = 3.0f;
 
     void Start()
     {
         Rb = GetComponent<Rigidbody>();
         //character = GetComponent<SpriteRenderer>();
-        character = GetComponent<MeshRenderer>();
-        activationTime = 0;
-        invisble = false;
-
+        Character = GetComponent<MeshRenderer>();
+        Activation_Time = 0;
+        Invisble = false;
         //col = character.material.color;
     }
 
@@ -45,6 +51,7 @@ public class Script_Player_Control : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false; 
     }
+
 
     private void OnEnable()
     {
@@ -56,9 +63,15 @@ public class Script_Player_Control : MonoBehaviour
         Crouch = Player_Input.Player_Input.Crouch;
         Crouch.Enable();
         Crouch.performed += Crouch_Performed;
-        ability = Player_Input.Player_Input.Abilities;
-        ability.Enable();
-        ability.performed += Abitily_Performed;
+        Cloak = Player_Input.Player_Input.Cloak;
+        Cloak.Enable();
+        Cloak.performed += Cloak_Performed;
+        EMP = Player_Input.Player_Input.EMP;
+        EMP.Enable();
+        EMP.performed += EMP_Performed;
+        Decoy = Player_Input.Player_Input.Decoy;
+        Decoy.Enable();
+        Decoy.performed += Decoy_Performed;
     }
 
 
@@ -67,18 +80,42 @@ public class Script_Player_Control : MonoBehaviour
         Move.Disable();
         Run.Disable();
         Crouch.Disable();
-        ability.Disable();
+        Cloak.Disable();
+        EMP.Disable();
+        Decoy.Disable();
     }
 
-    private void Abitily_Performed(InputAction.CallbackContext context)
+    private void EMP_Performed(InputAction.CallbackContext context)
     {
-        if (invisble == false)
+        if (EMP_Count >= 1)
         {
-            invisble = true;
-            activationTime = 0;
+            GameObject EMP = Instantiate(EMP_Prefab, transform.position, transform.rotation);
+            Rigidbody RB = EMP.GetComponent<Rigidbody>();
+            RB.AddForce(transform.forward * Throw_Force, ForceMode.VelocityChange);
+            EMP_Count--;
+        }
+    }
+
+    private void Decoy_Performed(InputAction.CallbackContext context)
+    {
+        if (Decoy_Count >= 1)
+        {
+            GameObject Decoy = Instantiate(Decoy_Prefab, transform.position, transform.rotation);
+            Rigidbody RB = Decoy.GetComponent<Rigidbody>();
+            RB.AddForce(transform.forward * Throw_Force, ForceMode.VelocityChange);
+            Decoy_Count--;
+        }
+    }
+
+    private void Cloak_Performed(InputAction.CallbackContext context)
+    {
+        if (Invisble == false)
+        {
+            Invisble = true;
+            Activation_Time = 0;
             //col.a = 0.2f;
             //character.material.color = col;
-            character.enabled = false;
+            Character.enabled = false;
             Collider.radius = 0f;
         }
     }
@@ -87,12 +124,12 @@ public class Script_Player_Control : MonoBehaviour
     {
         Is_Running = !Is_Running;
 
-        if (Is_Running && invisble==false)
+        if (Is_Running && Invisble==false)
         { 
             Is_Crouching = false;
             Collider.radius = 100f; 
         }
-        else if(Is_Running && invisble)
+        else if(Is_Running && Invisble)
         {
             Is_Crouching = false;
         }
@@ -110,7 +147,7 @@ public class Script_Player_Control : MonoBehaviour
             Is_Running = false;
             Collider.radius = 50f;
         }
-        else if (Is_Crouching && invisble == false)
+        else if (Is_Crouching && Invisble == false)
         {
             Is_Running = false;
         }
@@ -121,13 +158,13 @@ public class Script_Player_Control : MonoBehaviour
     private void Update()
     {
         Move_Direction = Move.ReadValue<Vector2>();
-        activationTime += Time.deltaTime;
-        if (invisble && activationTime >= 3)
+        Activation_Time += Time.deltaTime;
+        if (Invisble && Activation_Time >= 3)
         {
-            invisble = false;
+            Invisble = false;
             //col.a = 1f;
             //character.material.color = col;
-            character.enabled = true;
+            Character.enabled = true;
 
             if (Is_Running)
             {
