@@ -26,6 +26,7 @@ public class Script_Player_Control : MonoBehaviour
     //private Color col; USE IT FOR TRANSLUCENT COLOR
     private float Activation_Time;
     public bool Invisble;
+    public float Cloak_Count = 3.0f;
     public Transform frontObj;
     private InputAction EMP;
     private InputAction Decoy;
@@ -109,7 +110,7 @@ public class Script_Player_Control : MonoBehaviour
 
     private void Cloak_Performed(InputAction.CallbackContext context)
     {
-        if (Invisble == false)
+        if (Invisble == false && Cloak_Count >= 1)
         {
             Invisble = true;
             Activation_Time = 0;
@@ -117,6 +118,7 @@ public class Script_Player_Control : MonoBehaviour
             //character.material.color = col;
             Character.enabled = false;
             Collider.radius = 0f;
+            Cloak_Count--;
         }
     }
 
