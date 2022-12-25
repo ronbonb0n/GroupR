@@ -136,6 +136,18 @@ MonoBehaviour:
   Crouch_Speed: 800
   Move_Speed: 1500
   Run_Speed: 2200
+  Is_Running: 0
+  Is_Crouching: 0
+  Collider: {fileID: 972976637585198610}
+  Invisble: 0
+  frontObj: {fileID: 0}
+  Throw_Force: 40
+  EMP_Prefab: {fileID: 6134498353613772990, guid: 2bf63395548d2c04eab882917a66a8f9,
+    type: 3}
+  Decoy_Prefab: {fileID: 30742281627725518, guid: cb65a13f7b9efb7479c400361156281a,
+    type: 3}
+  EMP_Count: 3
+  Decoy_Count: 3
   Rotation_Speed: 0
   Is_Running: 0
   Is_Crouching: 0
