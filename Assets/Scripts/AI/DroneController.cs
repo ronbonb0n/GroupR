@@ -2,6 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.AI;
 
+// reference: The State Pattern (C# and Unity) - Finite State Machine https://www.youtube.com/watch?v=nnrOhb5UdRc
 public class DroneController : MonoBehaviour
 {
     public FieldOfView fieldOfView;
@@ -15,6 +16,7 @@ public class DroneController : MonoBehaviour
     public LookAroundState lookAroundState = new();
     public PatrolState patrolState = new();
     public AlertState alertState = new();
+    public InvestigateState investigateState = new();
     public DeactivatedState deactivatedState = new();
 
     public bool isActivated = true;
@@ -32,7 +34,7 @@ public class DroneController : MonoBehaviour
     {
         initialPosition = transform.position;
         navMeshAgent = GetComponent<NavMeshAgent>();
-        fieldOfView = GetComponent<FieldOfView>();
+        fieldOfView = GetComponentInChildren<FieldOfView>();
         player = GameObject.FindGameObjectWithTag("Player");
         laserMaterial = transform.Find("Body/Laser").gameObject.GetComponent<Renderer>().material;
     }
