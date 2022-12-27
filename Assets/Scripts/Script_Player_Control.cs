@@ -26,15 +26,14 @@ public class Script_Player_Control : MonoBehaviour
     //private Color col; USE IT FOR TRANSLUCENT COLOR
     private float Activation_Time;
     public bool Invisble;
-    public float Cloak_Count = 3.0f;
     public Transform frontObj;
     private InputAction EMP;
     private InputAction Decoy;
     public float Throw_Force = 40f;
     public GameObject EMP_Prefab;
     public GameObject Decoy_Prefab;
-    public float EMP_Count = 3.0f;
-    public float Decoy_Count = 3.0f;
+    public GameObject levelCanvasControlsObj;
+    public LevelCanvasControls levelCanvasControls;
 
     void Start()
     {
@@ -43,6 +42,8 @@ public class Script_Player_Control : MonoBehaviour
         Character = GetComponent<MeshRenderer>();
         Activation_Time = 0;
         Invisble = false;
+        levelCanvasControlsObj = GameObject.Find("CanvasControls");
+        levelCanvasControls = levelCanvasControlsObj.GetComponent<LevelCanvasControls>();
         //col = character.material.color;
     }
 
@@ -96,6 +97,7 @@ public class Script_Player_Control : MonoBehaviour
             Rigidbody RB = EMP.GetComponent<Rigidbody>();
             RB.AddForce(transform.forward * Throw_Force, ForceMode.VelocityChange);
             InventoryManager.instance.itemDecrement("EMP");
+            levelCanvasControls.onItemUse();
         }
     }
 
@@ -108,12 +110,13 @@ public class Script_Player_Control : MonoBehaviour
             Rigidbody RB = Decoy.GetComponent<Rigidbody>();
             RB.AddForce(transform.forward * Throw_Force, ForceMode.VelocityChange);
             InventoryManager.instance.itemDecrement("DECOY");
+            levelCanvasControls.onItemUse();
         }
     }
 
     private void Cloak_Performed(InputAction.CallbackContext context)
     {
-        if (Invisble == false && Cloak_Count >= 1)
+        if (Invisble == false && InventoryManager.instance.getItemCount("CLOAK") >= 1)
         {
             //Decrease EMP here?
             Invisble = true;
@@ -122,7 +125,8 @@ public class Script_Player_Control : MonoBehaviour
             //character.material.color = col;
             Character.enabled = false;
             Collider.radius = 0f;
-            Cloak_Count--;
+            InventoryManager.instance.itemDecrement("CLOAK");
+            levelCanvasControls.onItemUse();
         }
     }
 
