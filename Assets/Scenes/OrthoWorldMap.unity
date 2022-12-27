@@ -260,7 +260,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 4219433}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &4219433
 BoxCollider:
@@ -392,7 +391,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 6438062}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &6438062
 BoxCollider:
@@ -524,7 +522,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 6705105}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &6705105
 BoxCollider:
@@ -739,7 +736,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 11274962}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &11274962
 BoxCollider:
@@ -991,7 +987,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 18241323}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &18241323
 BoxCollider:
@@ -1123,7 +1118,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 18942087}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &18942087
 BoxCollider:
@@ -1391,7 +1385,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 22672737}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &22672737
 BoxCollider:
@@ -1523,7 +1516,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 23157368}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &23157368
 BoxCollider:
@@ -1769,7 +1761,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 27318496}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &27318496
 BoxCollider:
@@ -1902,7 +1893,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 28700403}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &28700403
 BoxCollider:
@@ -2034,7 +2024,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 28761573}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &28761573
 BoxCollider:
@@ -2364,7 +2353,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 30903200}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &30903200
 BoxCollider:
@@ -2497,7 +2485,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 31248916}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &31248916
 BoxCollider:
@@ -2631,7 +2618,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 34657139}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &34657139
 BoxCollider:
@@ -2769,7 +2755,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 40673428}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &40673428
 BoxCollider:
@@ -2901,7 +2886,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 42022214}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &42022214
 BoxCollider:
@@ -3116,7 +3100,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 43431184}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &43431184
 BoxCollider:
@@ -3249,7 +3232,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 43782801}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &43782801
 BoxCollider:
@@ -3381,7 +3363,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 51015383}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &51015383
 BoxCollider:
@@ -3513,7 +3494,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 51905499}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &51905499
 BoxCollider:
@@ -3729,7 +3709,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 56888980}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &56888980
 BoxCollider:
@@ -3945,7 +3924,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 61874040}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &61874040
 BoxCollider:
@@ -4077,7 +4055,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 65478201}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &65478201
 BoxCollider:
@@ -4292,7 +4269,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 66343457}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &66343457
 BoxCollider:
@@ -4508,7 +4484,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 71066937}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &71066937
 BoxCollider:
@@ -4641,7 +4616,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 72068202}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &72068202
 BoxCollider:
@@ -4773,7 +4747,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 76645680}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &76645680
 BoxCollider:
@@ -4906,7 +4879,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 77231351}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &77231351
 BoxCollider:
@@ -5038,7 +5010,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 78022991}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &78022991
 BoxCollider:
@@ -5253,7 +5224,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 78092792}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &78092792
 BoxCollider:
@@ -5385,7 +5355,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 79147673}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &79147673
 BoxCollider:
@@ -5725,7 +5694,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 93664061}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &93664061
 BoxCollider:
@@ -5859,7 +5827,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 96869684}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &96869684
 BoxCollider:
@@ -6157,7 +6124,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 107981154}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &107981154
 BoxCollider:
@@ -6289,7 +6255,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 109265103}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &109265103
 BoxCollider:
@@ -6421,7 +6386,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 113986765}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &113986765
 BoxCollider:
@@ -6554,7 +6518,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 120515297}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &120515297
 BoxCollider:
@@ -6686,7 +6649,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 121018458}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &121018458
 BoxCollider:
@@ -6984,7 +6946,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 127606925}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &127606925
 BoxCollider:
@@ -7314,7 +7275,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 131429960}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &131429960
 BoxCollider:
@@ -7448,7 +7408,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 133180131}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &133180131
 BoxCollider:
@@ -7663,7 +7622,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 134993810}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &134993810
 BoxCollider:
@@ -7795,7 +7753,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 138443551}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &138443551
 BoxCollider:
@@ -8093,7 +8050,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 138876967}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &138876967
 BoxCollider:
@@ -8225,7 +8181,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 146848067}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &146848067
 BoxCollider:
@@ -8358,7 +8313,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 148374240}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &148374240
 BoxCollider:
@@ -8884,7 +8838,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 165170023}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &165170023
 BoxCollider:
@@ -9018,7 +8971,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 165968737}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &165968737
 BoxCollider:
@@ -9462,7 +9414,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 171222045}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &171222045
 BoxCollider:
@@ -9711,7 +9662,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 180388910}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &180388910
 BoxCollider:
@@ -9843,7 +9793,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: d2a75914c1d346e4686c5a596bd70105, type: 3}
   execute: 0
   spawnArea: {fileID: 180895300}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &180895300
 BoxCollider:
@@ -10090,7 +10039,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 185868218}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &185868218
 BoxCollider:
@@ -10224,7 +10172,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 194631397}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &194631397
 BoxCollider:
@@ -10636,7 +10583,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 203002792}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &203002792
 BoxCollider:
@@ -10768,7 +10714,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 203153532}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &203153532
 BoxCollider:
@@ -10983,7 +10928,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 206899300}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &206899300
 BoxCollider:
@@ -11115,7 +11059,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 209080447}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &209080447
 BoxCollider:
@@ -11330,7 +11273,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 212649688}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &212649688
 BoxCollider:
@@ -11576,7 +11518,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 214063331}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &214063331
 BoxCollider:
@@ -11936,7 +11877,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 227934432}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &227934432
 BoxCollider:
@@ -12070,7 +12010,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 230940918}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &230940918
 BoxCollider:
@@ -12202,7 +12141,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 231626841}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &231626841
 BoxCollider:
@@ -12334,7 +12272,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 231929004}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &231929004
 BoxCollider:
@@ -12550,7 +12487,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 238159287}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &238159287
 BoxCollider:
@@ -12683,7 +12619,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 238436100}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &238436100
 BoxCollider:
@@ -12816,7 +12751,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 244720954}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &244720954
 BoxCollider:
@@ -13115,7 +13049,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 250567745}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &250567745
 BoxCollider:
@@ -13361,7 +13294,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 253723327}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &253723327
 BoxCollider:
@@ -13494,7 +13426,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 257250753}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &257250753
 BoxCollider:
@@ -13626,7 +13557,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 257359091}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &257359091
 BoxCollider:
@@ -13758,7 +13688,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 258815438}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &258815438
 BoxCollider:
@@ -13891,7 +13820,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 258893044}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &258893044
 BoxCollider:
@@ -14106,7 +14034,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 266097162}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &266097162
 BoxCollider:
@@ -14436,7 +14363,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 276243022}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &276243022
 BoxCollider:
@@ -14570,7 +14496,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 279619376}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &279619376
 BoxCollider:
@@ -14702,7 +14627,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 281515985}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &281515985
 BoxCollider:
@@ -14917,7 +14841,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 282656748}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &282656748
 BoxCollider:
@@ -15050,7 +14973,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 283910070}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &283910070
 BoxCollider:
@@ -15265,7 +15187,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 289061170}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &289061170
 BoxCollider:
@@ -15397,7 +15318,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 293832139}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &293832139
 BoxCollider:
@@ -15644,7 +15564,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 295758407}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &295758407
 BoxCollider:
@@ -15776,7 +15695,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 297039005}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &297039005
 BoxCollider:
@@ -15910,7 +15828,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 297699202}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &297699202
 BoxCollider:
@@ -16042,7 +15959,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 298257991}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &298257991
 BoxCollider:
@@ -16175,7 +16091,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 298346502}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &298346502
 BoxCollider:
@@ -16307,7 +16222,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 298710849}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &298710849
 BoxCollider:
@@ -16440,7 +16354,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 303142442}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &303142442
 BoxCollider:
@@ -16573,7 +16486,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 303255557}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &303255557
 BoxCollider:
@@ -16789,7 +16701,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 305257512}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &305257512
 BoxCollider:
@@ -17201,7 +17112,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 310468702}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &310468702
 BoxCollider:
@@ -17625,7 +17535,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 331770044}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &331770044
 BoxCollider:
@@ -17840,7 +17749,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 333630396}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &333630396
 BoxCollider:
@@ -17972,7 +17880,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 333660170}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &333660170
 BoxCollider:
@@ -18230,7 +18137,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 336918569}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &336918569
 BoxCollider:
@@ -18521,7 +18427,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 345551840}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &345551840
 BoxCollider:
@@ -18654,7 +18559,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 348812872}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &348812872
 BoxCollider:
@@ -18869,7 +18773,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 352377270}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &352377270
 BoxCollider:
@@ -19001,7 +18904,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 357040213}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &357040213
 BoxCollider:
@@ -19247,7 +19149,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 358360004}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &358360004
 BoxCollider:
@@ -19576,7 +19477,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 366217601}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &366217601
 BoxCollider:
@@ -20102,7 +20002,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 380723028}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &380723028
 BoxCollider:
@@ -20400,7 +20299,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 391411617}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &391411617
 BoxCollider:
@@ -20532,7 +20430,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 392144548}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &392144548
 BoxCollider:
@@ -20664,7 +20561,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 394729228}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &394729228
 BoxCollider:
@@ -20796,7 +20692,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 396262639}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &396262639
 BoxCollider:
@@ -20928,7 +20823,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 397235279}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &397235279
 BoxCollider:
@@ -21175,7 +21069,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 399168565}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &399168565
 BoxCollider:
@@ -21307,7 +21200,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 399260565}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &399260565
 BoxCollider:
@@ -21472,7 +21364,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 403715120}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &403715120
 BoxCollider:
@@ -21604,7 +21495,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 405196727}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &405196727
 BoxCollider:
@@ -21737,7 +21627,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 405905471}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &405905471
 BoxCollider:
@@ -21984,7 +21873,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 412003314}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &412003314
 BoxCollider:
@@ -22313,7 +22201,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 421108267}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &421108267
 BoxCollider:
@@ -22446,7 +22333,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 422907841}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &422907841
 BoxCollider:
@@ -22578,7 +22464,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 424147675}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &424147675
 BoxCollider:
@@ -22711,7 +22596,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 431306045}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &431306045
 BoxCollider:
@@ -22844,7 +22728,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 433328203}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &433328203
 BoxCollider:
@@ -22977,7 +22860,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 435584320}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &435584320
 BoxCollider:
@@ -23109,7 +22991,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 439738067}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &439738067
 BoxCollider:
@@ -23242,7 +23123,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 444484029}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &444484029
 BoxCollider:
@@ -23458,7 +23338,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: d2a75914c1d346e4686c5a596bd70105, type: 3}
   execute: 0
   spawnArea: {fileID: 445271469}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &445271469
 BoxCollider:
@@ -23591,7 +23470,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 446759141}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &446759141
 BoxCollider:
@@ -23837,7 +23715,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: d2a75914c1d346e4686c5a596bd70105, type: 3}
   execute: 0
   spawnArea: {fileID: 448337378}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &448337378
 BoxCollider:
@@ -23970,7 +23847,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 451041240}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &451041240
 BoxCollider:
@@ -24103,7 +23979,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 463922559}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &463922559
 BoxCollider:
@@ -24350,7 +24225,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 466681323}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &466681323
 BoxCollider:
@@ -24566,7 +24440,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 475170039}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &475170039
 BoxCollider:
@@ -24698,7 +24571,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 475461688}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &475461688
 BoxCollider:
@@ -24830,7 +24702,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 478572393}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &478572393
 BoxCollider:
@@ -24962,7 +24833,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 480353458}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &480353458
 BoxCollider:
@@ -25094,7 +24964,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 480773354}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &480773354
 BoxCollider:
@@ -25392,7 +25261,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 484342805}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &484342805
 BoxCollider:
@@ -25526,7 +25394,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 484891549}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &484891549
 BoxCollider:
@@ -25658,7 +25525,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 485310939}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &485310939
 BoxCollider:
@@ -25791,7 +25657,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 491486112}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &491486112
 BoxCollider:
@@ -25924,7 +25789,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 497027374}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &497027374
 BoxCollider:
@@ -26052,7 +25916,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 551cfc651f51f3c979ecc7c45c7e9ffb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newState: 0
+  newState: 8
 --- !u!65 &497696460
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26265,7 +26129,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 499238297}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &499238297
 BoxCollider:
@@ -26397,7 +26260,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 502045438}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &502045438
 BoxCollider:
@@ -26853,7 +26715,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 508764710}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &508764710
 BoxCollider:
@@ -26986,7 +26847,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 513662794}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &513662794
 BoxCollider:
@@ -27118,7 +26978,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 514798903}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &514798903
 BoxCollider:
@@ -27334,7 +27193,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 518143004}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &518143004
 BoxCollider:
@@ -27694,7 +27552,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 535188122}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &535188122
 BoxCollider:
@@ -27826,7 +27683,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 540120972}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &540120972
 BoxCollider:
@@ -27958,7 +27814,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 543203336}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &543203336
 BoxCollider:
@@ -28090,7 +27945,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 543741987}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &543741987
 BoxCollider:
@@ -28222,7 +28076,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: d2a75914c1d346e4686c5a596bd70105, type: 3}
   execute: 0
   spawnArea: {fileID: 544116287}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &544116287
 BoxCollider:
@@ -28565,7 +28418,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 545105331}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &545105331
 BoxCollider:
@@ -28698,7 +28550,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 549476187}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &549476187
 BoxCollider:
@@ -28955,7 +28806,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 553603390}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &553603390
 BoxCollider:
@@ -29088,7 +28938,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 555994130}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &555994130
 BoxCollider:
@@ -29221,7 +29070,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 556707609}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &556707609
 BoxCollider:
@@ -29354,7 +29202,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 557836257}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &557836257
 BoxCollider:
@@ -29487,7 +29334,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 559500153}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &559500153
 BoxCollider:
@@ -29619,7 +29465,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 562206467}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &562206467
 BoxCollider:
@@ -29751,7 +29596,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 563791793}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &563791793
 BoxCollider:
@@ -30385,7 +30229,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 575043487}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &575043487
 BoxCollider:
@@ -30683,7 +30526,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 584217803}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &584217803
 BoxCollider:
@@ -30815,7 +30657,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 588243585}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &588243585
 BoxCollider:
@@ -30947,7 +30788,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 592667262}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &592667262
 BoxCollider:
@@ -31079,7 +30919,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 597594726}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &597594726
 BoxCollider:
@@ -31211,7 +31050,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 597990776}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &597990776
 BoxCollider:
@@ -31343,7 +31181,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 598690168}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &598690168
 BoxCollider:
@@ -31558,7 +31395,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 601644753}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &601644753
 BoxCollider:
@@ -31724,7 +31560,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 608340381}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &608340381
 BoxCollider:
@@ -31856,7 +31691,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 617748421}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &617748421
 BoxCollider:
@@ -32393,7 +32227,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 626375213}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &626375213
 BoxCollider:
@@ -32525,7 +32358,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 626414529}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &626414529
 BoxCollider:
@@ -32657,7 +32489,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 627959708}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &627959708
 BoxCollider:
@@ -32872,7 +32703,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 633336125}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &633336125
 BoxCollider:
@@ -33005,7 +32835,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 637323194}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &637323194
 BoxCollider:
@@ -33251,7 +33080,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 638385637}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &638385637
 BoxCollider:
@@ -33549,7 +33377,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 647705382}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &647705382
 BoxCollider:
@@ -33682,7 +33509,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 650691237}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &650691237
 BoxCollider:
@@ -33814,7 +33640,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 654654288}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &654654288
 BoxCollider:
@@ -34097,7 +33922,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 660689910}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &660689910
 BoxCollider:
@@ -34343,7 +34167,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 666547342}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &666547342
 BoxCollider:
@@ -34724,7 +34547,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 677617470}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &677617470
 BoxCollider:
@@ -34856,7 +34678,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 680857198}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &680857198
 BoxCollider:
@@ -35071,7 +34892,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: d2a75914c1d346e4686c5a596bd70105, type: 3}
   execute: 0
   spawnArea: {fileID: 684512427}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &684512427
 BoxCollider:
@@ -35203,7 +35023,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 684691169}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &684691169
 BoxCollider:
@@ -35335,7 +35154,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 692353658}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &692353658
 BoxCollider:
@@ -35947,7 +35765,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 709176837}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &709176837
 BoxCollider:
@@ -36080,7 +35897,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 713338369}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &713338369
 BoxCollider:
@@ -36296,7 +36112,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 714769793}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &714769793
 BoxCollider:
@@ -36429,7 +36244,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 715051581}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &715051581
 BoxCollider:
@@ -36562,7 +36376,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 716003713}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &716003713
 BoxCollider:
@@ -36891,7 +36704,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 718746983}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &718746983
 BoxCollider:
@@ -37335,7 +37147,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 725443286}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &725443286
 BoxCollider:
@@ -37467,7 +37278,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 726201542}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &726201542
 BoxCollider:
@@ -37600,7 +37410,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 726986982}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &726986982
 BoxCollider:
@@ -37732,7 +37541,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 728269913}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &728269913
 BoxCollider:
@@ -37865,7 +37673,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 728384438}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &728384438
 BoxCollider:
@@ -37999,7 +37806,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 731264018}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &731264018
 BoxCollider:
@@ -38131,7 +37937,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 733500658}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &733500658
 BoxCollider:
@@ -38377,7 +38182,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 735888132}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &735888132
 BoxCollider:
@@ -38697,7 +38501,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 736766510}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &736766510
 BoxCollider:
@@ -38829,7 +38632,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 737127823}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &737127823
 BoxCollider:
@@ -38961,7 +38763,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 739583320}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &739583320
 BoxCollider:
@@ -39093,7 +38894,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 748310200}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &748310200
 BoxCollider:
@@ -39225,7 +39025,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 749461038}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &749461038
 BoxCollider:
@@ -39358,7 +39157,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 756805096}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &756805096
 BoxCollider:
@@ -39574,7 +39372,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 759863492}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &759863492
 BoxCollider:
@@ -39706,7 +39503,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 761753093}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &761753093
 BoxCollider:
@@ -40087,7 +39883,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 771187841}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &771187841
 BoxCollider:
@@ -40302,7 +40097,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 773382213}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &773382213
 BoxCollider:
@@ -40435,7 +40229,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 773857398}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &773857398
 BoxCollider:
@@ -40650,7 +40443,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 776250495}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &776250495
 BoxCollider:
@@ -40784,7 +40576,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 777014291}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &777014291
 BoxCollider:
@@ -40916,7 +40707,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 779254483}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &779254483
 BoxCollider:
@@ -41131,7 +40921,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 786049709}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &786049709
 BoxCollider:
@@ -41384,7 +41173,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 792208460}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &792208460
 BoxCollider:
@@ -41517,7 +41305,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 794154277}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &794154277
 BoxCollider:
@@ -41732,7 +41519,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 805331762}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &805331762
 BoxCollider:
@@ -41949,7 +41735,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 810649444}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &810649444
 BoxCollider:
@@ -42081,7 +41866,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 816533696}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &816533696
 BoxCollider:
@@ -42214,7 +41998,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 819745804}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &819745804
 BoxCollider:
@@ -42460,7 +42243,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 823760732}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &823760732
 BoxCollider:
@@ -42592,7 +42374,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 825319704}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &825319704
 BoxCollider:
@@ -42973,7 +42754,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 831005074}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &831005074
 BoxCollider:
@@ -43219,7 +42999,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 836045209}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &836045209
 BoxCollider:
@@ -43352,7 +43131,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 836738325}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &836738325
 BoxCollider:
@@ -44132,7 +43910,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 839842651}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &839842651
 BoxCollider:
@@ -44378,7 +44155,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 841751146}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &841751146
 BoxCollider:
@@ -44510,7 +44286,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 856279417}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &856279417
 BoxCollider:
@@ -44642,7 +44417,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 856515682}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &856515682
 BoxCollider:
@@ -44925,7 +44699,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 862134832}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &862134832
 BoxCollider:
@@ -45057,7 +44830,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 863520249}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &863520249
 BoxCollider:
@@ -45355,7 +45127,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 869283739}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &869283739
 BoxCollider:
@@ -45570,7 +45341,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 874777176}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &874777176
 BoxCollider:
@@ -45702,7 +45472,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 875029327}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &875029327
 BoxCollider:
@@ -45834,7 +45603,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 879220961}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &879220961
 BoxCollider:
@@ -46194,7 +45962,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 885055527}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &885055527
 BoxCollider:
@@ -46441,7 +46208,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 891785309}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &891785309
 BoxCollider:
@@ -46574,7 +46340,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 892484406}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &892484406
 BoxCollider:
@@ -46707,7 +46472,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 894343941}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &894343941
 BoxCollider:
@@ -46841,7 +46605,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 894374886}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &894374886
 BoxCollider:
@@ -46974,7 +46737,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 898415271}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &898415271
 BoxCollider:
@@ -47189,7 +46951,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 905683791}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &905683791
 BoxCollider:
@@ -47487,7 +47248,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 908256814}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &908256814
 BoxCollider:
@@ -47619,7 +47379,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 908262533}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &908262533
 BoxCollider:
@@ -47867,7 +47626,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 910109793}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &910109793
 BoxCollider:
@@ -47999,7 +47757,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 910112716}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &910112716
 BoxCollider:
@@ -48131,7 +47888,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 910203115}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &910203115
 BoxCollider:
@@ -48377,7 +48133,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 915705795}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &915705795
 BoxCollider:
@@ -48624,7 +48379,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 922812551}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &922812551
 BoxCollider:
@@ -48756,7 +48510,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 924402049}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &924402049
 BoxCollider:
@@ -48889,7 +48642,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 925824691}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &925824691
 BoxCollider:
@@ -49021,7 +48773,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 928574072}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &928574072
 BoxCollider:
@@ -49153,7 +48904,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 930265282}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &930265282
 BoxCollider:
@@ -49368,7 +49118,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 931448181}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &931448181
 BoxCollider:
@@ -49583,7 +49332,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 934978307}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &934978307
 BoxCollider:
@@ -49798,7 +49546,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 942113623}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &942113623
 BoxCollider:
@@ -49930,7 +49677,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 944735976}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &944735976
 BoxCollider:
@@ -50064,7 +49810,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 945821547}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &945821547
 BoxCollider:
@@ -50196,7 +49941,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 946467666}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &946467666
 BoxCollider:
@@ -50329,7 +50073,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 949932396}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &949932396
 BoxCollider:
@@ -50627,7 +50370,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: d2a75914c1d346e4686c5a596bd70105, type: 3}
   execute: 0
   spawnArea: {fileID: 956642612}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &956642612
 BoxCollider:
@@ -50759,7 +50501,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 956830538}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &956830538
 BoxCollider:
@@ -51005,7 +50746,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 958697278}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &958697278
 BoxCollider:
@@ -51138,7 +50878,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 959670899}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &959670899
 BoxCollider:
@@ -51353,7 +51092,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 962791951}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &962791951
 BoxCollider:
@@ -51568,7 +51306,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 968842325}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &968842325
 BoxCollider:
@@ -51700,7 +51437,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 976622368}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &976622368
 BoxCollider:
@@ -51991,7 +51727,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 980188335}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &980188335
 BoxCollider:
@@ -52237,7 +51972,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 992446680}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &992446680
 BoxCollider:
@@ -52468,7 +52202,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 996207431}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &996207431
 BoxCollider:
@@ -52715,7 +52448,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 997089030}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &997089030
 BoxCollider:
@@ -52847,7 +52579,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 997247408}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &997247408
 BoxCollider:
@@ -52980,7 +52711,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1000004059}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1000004059
 BoxCollider:
@@ -53112,7 +52842,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1000352099}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1000352099
 BoxCollider:
@@ -53244,7 +52973,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1002663372}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1002663372
 BoxCollider:
@@ -53376,7 +53104,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1002874334}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1002874334
 BoxCollider:
@@ -53508,7 +53235,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1007266530}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1007266530
 BoxCollider:
@@ -53640,7 +53366,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1007619718}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1007619718
 BoxCollider:
@@ -53772,7 +53497,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1009326996}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1009326996
 BoxCollider:
@@ -53988,7 +53712,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1013855877}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1013855877
 BoxCollider:
@@ -54411,7 +54134,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1017858647}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1017858647
 BoxCollider:
@@ -54543,7 +54265,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1020100714}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1020100714
 BoxCollider:
@@ -54675,7 +54396,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1020676421}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1020676421
 BoxCollider:
@@ -54808,7 +54528,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1022347338}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1022347338
 BoxCollider:
@@ -54940,7 +54659,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1022981518}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1022981518
 BoxCollider:
@@ -55156,7 +54874,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1027943681}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1027943681
 BoxCollider:
@@ -55372,7 +55089,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1034601802}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1034601802
 BoxCollider:
@@ -55505,7 +55221,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1034902324}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1034902324
 BoxCollider:
@@ -55637,7 +55352,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1035407074}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1035407074
 BoxCollider:
@@ -55967,7 +55681,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1048172652}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1048172652
 BoxCollider:
@@ -56213,7 +55926,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1053237013}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1053237013
 BoxCollider:
@@ -56346,7 +56058,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1058215739}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1058215739
 BoxCollider:
@@ -56480,7 +56191,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1070095696}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1070095696
 BoxCollider:
@@ -56726,7 +56436,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1072721452}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1072721452
 BoxCollider:
@@ -56858,7 +56567,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1076767209}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1076767209
 BoxCollider:
@@ -56991,7 +56699,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1088150531}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1088150531
 BoxCollider:
@@ -57123,7 +56830,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1093839897}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1093839897
 BoxCollider:
@@ -57256,7 +56962,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1094050452}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1094050452
 BoxCollider:
@@ -57388,7 +57093,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1094052746}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1094052746
 BoxCollider:
@@ -57603,7 +57307,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1095426326}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1095426326
 BoxCollider:
@@ -58016,7 +57719,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1104015814}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1104015814
 BoxCollider:
@@ -58148,7 +57850,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1104093557}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1104093557
 BoxCollider:
@@ -58280,7 +57981,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1104200320}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1104200320
 BoxCollider:
@@ -58412,7 +58112,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: d2a75914c1d346e4686c5a596bd70105, type: 3}
   execute: 0
   spawnArea: {fileID: 1107392925}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1107392925
 BoxCollider:
@@ -58545,7 +58244,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1108475047}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1108475047
 BoxCollider:
@@ -58678,7 +58376,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1109540508}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1109540508
 BoxCollider:
@@ -58810,7 +58507,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1110161281}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1110161281
 BoxCollider:
@@ -58943,7 +58639,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1113380876}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1113380876
 BoxCollider:
@@ -59075,7 +58770,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1114683759}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1114683759
 BoxCollider:
@@ -59207,7 +58901,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1114761080}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1114761080
 BoxCollider:
@@ -59339,7 +59032,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1121278277}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1121278277
 BoxCollider:
@@ -59562,7 +59254,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blockSize: 3
   execute: 0
-  parent: {fileID: 0}
   WorldTexture: {fileID: 2800000, guid: f7e026ad1ad41d0a4a30eda9c892db95, type: 3}
   GrassCube: {fileID: 2926842080909378320, guid: 526c99f5f9db9bb4ba69d9b927035562,
     type: 3}
@@ -59730,7 +59421,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1132547922}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1132547922
 BoxCollider:
@@ -59862,7 +59552,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1132578884}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1132578884
 BoxCollider:
@@ -59995,7 +59684,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1133872346}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1133872346
 BoxCollider:
@@ -60210,7 +59898,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1138409882}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1138409882
 BoxCollider:
@@ -60458,7 +60145,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1139340692}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1139340692
 BoxCollider:
@@ -60704,7 +60390,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1145925634}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1145925634
 BoxCollider:
@@ -60838,7 +60523,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1150328981}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1150328981
 BoxCollider:
@@ -61167,7 +60851,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1157346073}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1157346073
 BoxCollider:
@@ -61413,7 +61096,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1160556160}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1160556160
 BoxCollider:
@@ -61711,7 +61393,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1162609685}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1162609685
 BoxCollider:
@@ -61843,7 +61524,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1164347619}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1164347619
 BoxCollider:
@@ -61975,7 +61655,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1164388650}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1164388650
 BoxCollider:
@@ -62107,7 +61786,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1170372988}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1170372988
 BoxCollider:
@@ -62239,7 +61917,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1171893124}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1171893124
 BoxCollider:
@@ -62372,7 +62049,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1176850906}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1176850906
 BoxCollider:
@@ -62505,7 +62181,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1177492460}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1177492460
 BoxCollider:
@@ -62637,7 +62312,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1178366346}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1178366346
 BoxCollider:
@@ -62771,7 +62445,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1180951604}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1180951604
 BoxCollider:
@@ -62904,7 +62577,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1181475027}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1181475027
 BoxCollider:
@@ -63150,7 +62822,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: d2a75914c1d346e4686c5a596bd70105, type: 3}
   execute: 0
   spawnArea: {fileID: 1185944547}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1185944547
 BoxCollider:
@@ -63282,7 +62953,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1193750899}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1193750899
 BoxCollider:
@@ -63778,7 +63448,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1204394364}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1204394364
 BoxCollider:
@@ -63911,7 +63580,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1210418422}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1210418422
 BoxCollider:
@@ -64044,7 +63712,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1211381093}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1211381093
 BoxCollider:
@@ -64176,7 +63843,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1214285327}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1214285327
 BoxCollider:
@@ -64308,7 +63974,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1215005648}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1215005648
 BoxCollider:
@@ -64441,7 +64106,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1216757005}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1216757005
 BoxCollider:
@@ -64574,7 +64238,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1218755875}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1218755875
 BoxCollider:
@@ -64707,7 +64370,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1220409522}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1220409522
 BoxCollider:
@@ -64839,7 +64501,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1233450824}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1233450824
 BoxCollider:
@@ -65086,7 +64747,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1235096852}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1235096852
 BoxCollider:
@@ -65219,7 +64879,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1240612019}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1240612019
 BoxCollider:
@@ -65352,7 +65011,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1241037846}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1241037846
 BoxCollider:
@@ -65484,7 +65142,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1241254355}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1241254355
 BoxCollider:
@@ -65896,7 +65553,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1259519090}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1259519090
 BoxCollider:
@@ -66028,7 +65684,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1259581109}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1259581109
 BoxCollider:
@@ -66388,7 +66043,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1265625306}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1265625306
 BoxCollider:
@@ -66520,7 +66174,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1266748893}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1266748893
 BoxCollider:
@@ -66653,7 +66306,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1266770947}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1266770947
 BoxCollider:
@@ -66900,7 +66552,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1267763335}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1267763335
 BoxCollider:
@@ -67033,7 +66684,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1268442973}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1268442973
 BoxCollider:
@@ -67248,7 +66898,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1269695741}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1269695741
 BoxCollider:
@@ -67495,7 +67144,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1280037638}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1280037638
 BoxCollider:
@@ -67628,7 +67276,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1286664727}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1286664727
 BoxCollider:
@@ -67761,7 +67408,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1287883201}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1287883201
 BoxCollider:
@@ -67893,7 +67539,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1289512386}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1289512386
 BoxCollider:
@@ -68108,7 +67753,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1294121341}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1294121341
 BoxCollider:
@@ -68240,7 +67884,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1294625865}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1294625865
 BoxCollider:
@@ -68373,7 +68016,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1295762660}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1295762660
 BoxCollider:
@@ -68505,7 +68147,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1302382860}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1302382860
 BoxCollider:
@@ -68639,7 +68280,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1306350024}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1306350024
 BoxCollider:
@@ -68771,7 +68411,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1309611365}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1309611365
 BoxCollider:
@@ -68904,7 +68543,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1313028104}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1313028104
 BoxCollider:
@@ -69234,7 +68872,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1318677755}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1318677755
 BoxCollider:
@@ -69366,7 +69003,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1321291654}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1321291654
 BoxCollider:
@@ -69664,7 +69300,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1334426636}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1334426636
 BoxCollider:
@@ -69796,7 +69431,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1335210509}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1335210509
 BoxCollider:
@@ -70126,7 +69760,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1337619311}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1337619311
 BoxCollider:
@@ -70258,7 +69891,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1346635236}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1346635236
 BoxCollider:
@@ -70390,7 +70022,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1346993536}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1346993536
 BoxCollider:
@@ -70522,7 +70153,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1352137207}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1352137207
 BoxCollider:
@@ -70770,7 +70400,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1355246849}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1355246849
 BoxCollider:
@@ -70902,7 +70531,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1358596035}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1358596035
 BoxCollider:
@@ -70980,6 +70608,77 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1358596032}
   m_Mesh: {fileID: -2746142260806068395, guid: 11e1e805168654044afbd9c4dfe8321f, type: 3}
+--- !u!1001 &1358896821
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5246442885782171542, guid: b32445335d8b7ef44abee32664d1472e,
+        type: 3}
+      propertyPath: m_Name
+      value: InventoryManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246442885782171544, guid: b32445335d8b7ef44abee32664d1472e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246442885782171544, guid: b32445335d8b7ef44abee32664d1472e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 527.3726
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246442885782171544, guid: b32445335d8b7ef44abee32664d1472e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 276.6235
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246442885782171544, guid: b32445335d8b7ef44abee32664d1472e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.405266
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246442885782171544, guid: b32445335d8b7ef44abee32664d1472e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246442885782171544, guid: b32445335d8b7ef44abee32664d1472e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246442885782171544, guid: b32445335d8b7ef44abee32664d1472e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246442885782171544, guid: b32445335d8b7ef44abee32664d1472e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246442885782171544, guid: b32445335d8b7ef44abee32664d1472e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246442885782171544, guid: b32445335d8b7ef44abee32664d1472e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246442885782171544, guid: b32445335d8b7ef44abee32664d1472e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: b32445335d8b7ef44abee32664d1472e, type: 3}
 --- !u!1 &1360474024
 GameObject:
   m_ObjectHideFlags: 0
@@ -71035,7 +70734,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1360474027}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1360474027
 BoxCollider:
@@ -71167,7 +70865,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1360575281}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1360575281
 BoxCollider:
@@ -71382,7 +71079,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1366607027}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1366607027
 BoxCollider:
@@ -71713,7 +71409,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1378265792}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1378265792
 BoxCollider:
@@ -71845,7 +71540,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1378812649}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1378812649
 BoxCollider:
@@ -72060,7 +71754,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1385116362}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1385116362
 BoxCollider:
@@ -72192,7 +71885,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: d2a75914c1d346e4686c5a596bd70105, type: 3}
   execute: 0
   spawnArea: {fileID: 1385128748}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1385128748
 BoxCollider:
@@ -72325,7 +72017,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1387090079}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1387090079
 BoxCollider:
@@ -72458,7 +72149,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1388806569}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1388806569
 BoxCollider:
@@ -72673,7 +72363,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1395165030}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1395165030
 BoxCollider:
@@ -72919,7 +72608,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1395971349}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1395971349
 BoxCollider:
@@ -73051,7 +72739,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1396254633}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1396254633
 BoxCollider:
@@ -73183,7 +72870,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1405385280}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1405385280
 BoxCollider:
@@ -73315,7 +73001,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1406082490}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1406082490
 BoxCollider:
@@ -73448,7 +73133,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1407185437}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1407185437
 BoxCollider:
@@ -73580,7 +73264,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1410587090}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1410587090
 BoxCollider:
@@ -73797,7 +73480,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1411981957}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1411981957
 BoxCollider:
@@ -74095,7 +73777,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1419384478}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1419384478
 BoxCollider:
@@ -74227,7 +73908,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1419970808}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1419970808
 BoxCollider:
@@ -74360,7 +74040,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1426720332}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1426720332
 BoxCollider:
@@ -74492,7 +74171,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1426826437}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1426826437
 BoxCollider:
@@ -74624,7 +74302,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1430195065}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1430195065
 BoxCollider:
@@ -74839,7 +74516,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1435947907}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1435947907
 BoxCollider:
@@ -74972,7 +74648,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1438482353}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1438482353
 BoxCollider:
@@ -75104,7 +74779,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1445554055}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1445554055
 BoxCollider:
@@ -75236,7 +74910,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1450808782}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1450808782
 BoxCollider:
@@ -75578,7 +75251,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1460062914}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1460062914
 BoxCollider:
@@ -75711,7 +75383,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1464739854}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1464739854
 BoxCollider:
@@ -75843,7 +75514,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1466715836}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1466715836
 BoxCollider:
@@ -76059,7 +75729,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1470560839}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1470560839
 BoxCollider:
@@ -76305,7 +75974,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1476010486}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1476010486
 BoxCollider:
@@ -76602,7 +76270,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1486566311}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1486566311
 BoxCollider:
@@ -76734,7 +76401,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1490059435}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1490059435
 BoxCollider:
@@ -76867,7 +76533,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1493396079}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1493396079
 BoxCollider:
@@ -77001,7 +76666,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1495047082}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1495047082
 BoxCollider:
@@ -77133,7 +76797,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1497506343}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1497506343
 BoxCollider:
@@ -77266,7 +76929,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1498460631}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1498460631
 BoxCollider:
@@ -77398,7 +77060,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1503504795}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1503504795
 BoxCollider:
@@ -77530,7 +77191,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1520442786}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1520442786
 BoxCollider:
@@ -77662,7 +77322,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1522135066}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1522135066
 BoxCollider:
@@ -77794,7 +77453,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1522182373}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1522182373
 BoxCollider:
@@ -77926,7 +77584,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1522587349}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1522587349
 BoxCollider:
@@ -78058,7 +77715,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1526647355}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1526647355
 BoxCollider:
@@ -78273,7 +77929,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1529280563}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1529280563
 BoxCollider:
@@ -78405,7 +78060,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1532440861}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1532440861
 BoxCollider:
@@ -78621,7 +78275,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1536657248}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1536657248
 BoxCollider:
@@ -78754,7 +78407,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1541493127}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1541493127
 BoxCollider:
@@ -78886,7 +78538,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1543573801}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1543573801
 BoxCollider:
@@ -79018,7 +78669,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1544700524}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1544700524
 BoxCollider:
@@ -79150,7 +78800,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1545815830}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1545815830
 BoxCollider:
@@ -79282,7 +78931,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1549722815}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1549722815
 BoxCollider:
@@ -79582,7 +79230,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1553921394}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1553921394
 BoxCollider:
@@ -79714,7 +79361,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1555229512}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1555229512
 BoxCollider:
@@ -79848,7 +79494,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1556086119}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1556086119
 BoxCollider:
@@ -80064,7 +79709,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1565141095}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1565141095
 BoxCollider:
@@ -80196,7 +79840,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1566204038}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1566204038
 BoxCollider:
@@ -80328,7 +79971,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1566363388}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1566363388
 BoxCollider:
@@ -80462,7 +80104,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1567679759}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1567679759
 BoxCollider:
@@ -80595,7 +80236,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1569032954}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1569032954
 BoxCollider:
@@ -80729,7 +80369,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1570513564}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1570513564
 BoxCollider:
@@ -80861,7 +80500,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1570755323}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1570755323
 BoxCollider:
@@ -81107,7 +80745,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1574019393}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1574019393
 BoxCollider:
@@ -81240,7 +80877,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1575646803}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1575646803
 BoxCollider:
@@ -81373,7 +81009,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1577357503}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1577357503
 BoxCollider:
@@ -81703,7 +81338,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1584066665}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1584066665
 BoxCollider:
@@ -81835,7 +81469,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1584886351}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1584886351
 BoxCollider:
@@ -82133,7 +81766,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1593426732}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1593426732
 BoxCollider:
@@ -82349,7 +81981,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1601251269}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1601251269
 BoxCollider:
@@ -82565,7 +82196,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1602746463}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1602746463
 BoxCollider:
@@ -82697,7 +82327,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1604964265}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1604964265
 BoxCollider:
@@ -82830,7 +82459,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1607372957}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1607372957
 BoxCollider:
@@ -82962,7 +82590,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1608487073}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1608487073
 BoxCollider:
@@ -83094,7 +82721,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1609323933}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1609323933
 BoxCollider:
@@ -83226,7 +82852,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1613105455}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1613105455
 BoxCollider:
@@ -83442,7 +83067,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1619850759}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1619850759
 BoxCollider:
@@ -83575,7 +83199,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1620200408}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1620200408
 BoxCollider:
@@ -83707,7 +83330,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1629532359}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1629532359
 BoxCollider:
@@ -83953,7 +83575,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1636320891}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1636320891
 BoxCollider:
@@ -84085,7 +83706,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1637070452}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1637070452
 BoxCollider:
@@ -84219,7 +83839,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1638097761}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1638097761
 BoxCollider:
@@ -84351,7 +83970,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1643713198}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1643713198
 BoxCollider:
@@ -84676,7 +84294,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1648149990}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1648149990
 BoxCollider:
@@ -85005,7 +84622,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1660541501}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1660541501
 BoxCollider:
@@ -85365,7 +84981,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: d2a75914c1d346e4686c5a596bd70105, type: 3}
   execute: 0
   spawnArea: {fileID: 1663598352}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1663598352
 BoxCollider:
@@ -85580,7 +85195,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1666607956}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1666607956
 BoxCollider:
@@ -85713,7 +85327,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: d2a75914c1d346e4686c5a596bd70105, type: 3}
   execute: 0
   spawnArea: {fileID: 1674061525}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1674061525
 BoxCollider:
@@ -85845,7 +85458,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: d2a75914c1d346e4686c5a596bd70105, type: 3}
   execute: 0
   spawnArea: {fileID: 1675563402}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1675563402
 BoxCollider:
@@ -86060,7 +85672,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1685595624}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1685595624
 BoxCollider:
@@ -86192,7 +85803,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1686763160}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1686763160
 BoxCollider:
@@ -86324,7 +85934,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1687852564}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1687852564
 BoxCollider:
@@ -86456,7 +86065,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1690918863}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1690918863
 BoxCollider:
@@ -86671,7 +86279,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1691861068}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1691861068
 BoxCollider:
@@ -86804,7 +86411,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1692817010}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1692817010
 BoxCollider:
@@ -87021,7 +86627,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1694869105}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1694869105
 BoxCollider:
@@ -87268,7 +86873,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1695794371}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1695794371
 BoxCollider:
@@ -87401,7 +87005,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1696724673}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1696724673
 BoxCollider:
@@ -87533,7 +87136,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1697600645}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1697600645
 BoxCollider:
@@ -87946,7 +87548,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1712036708}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1712036708
 BoxCollider:
@@ -88078,7 +87679,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1715848159}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1715848159
 BoxCollider:
@@ -88210,7 +87810,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1723601266}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1723601266
 BoxCollider:
@@ -88457,7 +88056,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1724263432}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1724263432
 BoxCollider:
@@ -88589,7 +88187,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1727175047}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1727175047
 BoxCollider:
@@ -88721,7 +88318,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1727872288}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1727872288
 BoxCollider:
@@ -88853,7 +88449,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1734012506}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1734012506
 BoxCollider:
@@ -88985,7 +88580,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1734465522}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1734465522
 BoxCollider:
@@ -89232,7 +88826,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1737503855}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1737503855
 BoxCollider:
@@ -89365,7 +88958,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1739190988}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1739190988
 BoxCollider:
@@ -89498,7 +89090,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1739410702}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1739410702
 BoxCollider:
@@ -89630,7 +89221,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1742728123}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1742728123
 BoxCollider:
@@ -90056,7 +89646,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1749650907}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1749650907
 BoxCollider:
@@ -90188,7 +89777,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1751386424}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1751386424
 BoxCollider:
@@ -90438,7 +90026,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1754080436}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1754080436
 BoxCollider:
@@ -90572,7 +90159,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1754296960}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1754296960
 BoxCollider:
@@ -90705,7 +90291,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1754502345}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1754502345
 BoxCollider:
@@ -90838,7 +90423,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1754685779}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1754685779
 BoxCollider:
@@ -90970,7 +90554,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1755496417}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1755496417
 BoxCollider:
@@ -91102,7 +90685,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1760325905}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1760325905
 BoxCollider:
@@ -91543,7 +91125,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1764216175}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1764216175
 BoxCollider:
@@ -91675,7 +91256,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1766520960}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1766520960
 BoxCollider:
@@ -91921,7 +91501,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1775583780}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1775583780
 BoxCollider:
@@ -92055,7 +91634,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1775805900}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1775805900
 BoxCollider:
@@ -92188,7 +91766,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1776583868}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1776583868
 BoxCollider:
@@ -92320,7 +91897,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1777216526}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1777216526
 BoxCollider:
@@ -92452,7 +92028,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1777798747}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1777798747
 BoxCollider:
@@ -92585,7 +92160,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1778156033}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1778156033
 BoxCollider:
@@ -92717,7 +92291,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1778248408}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1778248408
 BoxCollider:
@@ -92933,7 +92506,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1780040153}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1780040153
 BoxCollider:
@@ -93505,7 +93077,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1792824193}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1792824193
 BoxCollider:
@@ -93720,7 +93291,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1802600923}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1802600923
 BoxCollider:
@@ -93853,7 +93423,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1803431102}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1803431102
 BoxCollider:
@@ -94182,7 +93751,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1812249510}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1812249510
 BoxCollider:
@@ -94314,7 +93882,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1814003965}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1814003965
 BoxCollider:
@@ -94446,7 +94013,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1815379776}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1815379776
 BoxCollider:
@@ -94579,7 +94145,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1817054430}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1817054430
 BoxCollider:
@@ -94712,7 +94277,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1820450626}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1820450626
 BoxCollider:
@@ -94844,7 +94408,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1822199670}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1822199670
 BoxCollider:
@@ -94976,7 +94539,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1825588750}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1825588750
 BoxCollider:
@@ -95191,7 +94753,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1826419479}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1826419479
 BoxCollider:
@@ -95323,7 +94884,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1832246914}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1832246914
 BoxCollider:
@@ -95458,7 +95018,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1832508764}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1832508764
 BoxCollider:
@@ -95590,7 +95149,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1835504177}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1835504177
 BoxCollider:
@@ -95723,7 +95281,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1837208755}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1837208755
 BoxCollider:
@@ -95856,7 +95413,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1837875148}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1837875148
 BoxCollider:
@@ -95988,7 +95544,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1844199918}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1844199918
 BoxCollider:
@@ -96120,7 +95675,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1847926807}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1847926807
 BoxCollider:
@@ -96253,7 +95807,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1849445061}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1849445061
 BoxCollider:
@@ -96385,7 +95938,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1850464991}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1850464991
 BoxCollider:
@@ -96600,7 +96152,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1850565911}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1850565911
 BoxCollider:
@@ -96960,7 +96511,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1852253660}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1852253660
 BoxCollider:
@@ -97092,7 +96642,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1852490960}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1852490960
 BoxCollider:
@@ -97307,7 +96856,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1855848562}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1855848562
 BoxCollider:
@@ -97441,7 +96989,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1859389508}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1859389508
 BoxCollider:
@@ -97575,7 +97122,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1861355145}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1861355145
 BoxCollider:
@@ -97821,7 +97367,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1871235194}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1871235194
 BoxCollider:
@@ -98068,7 +97613,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1879129333}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1879129333
 BoxCollider:
@@ -98283,7 +97827,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1884677866}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1884677866
 BoxCollider:
@@ -98415,7 +97958,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1885609255}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1885609255
 BoxCollider:
@@ -98549,7 +98091,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1885701524}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1885701524
 BoxCollider:
@@ -98681,7 +98222,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1886643845}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1886643845
 BoxCollider:
@@ -98816,7 +98356,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: d2a75914c1d346e4686c5a596bd70105, type: 3}
   execute: 0
   spawnArea: {fileID: 1888697922}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1888697922
 BoxCollider:
@@ -98948,7 +98487,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1890047123}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1890047123
 BoxCollider:
@@ -99081,7 +98619,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1892405742}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1892405742
 BoxCollider:
@@ -99215,7 +98752,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1892480141}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1892480141
 BoxCollider:
@@ -99348,7 +98884,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1894808933}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1894808933
 BoxCollider:
@@ -99481,7 +99016,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1895766447}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1895766447
 BoxCollider:
@@ -99613,7 +99147,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1897752230}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1897752230
 BoxCollider:
@@ -99745,7 +99278,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1899741372}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1899741372
 BoxCollider:
@@ -99877,7 +99409,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1903608390}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1903608390
 BoxCollider:
@@ -100248,7 +99779,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1908876180}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1908876180
 BoxCollider:
@@ -100465,7 +99995,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: d2a75914c1d346e4686c5a596bd70105, type: 3}
   execute: 0
   spawnArea: {fileID: 1910884380}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1910884380
 BoxCollider:
@@ -100686,7 +100215,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: d2a75914c1d346e4686c5a596bd70105, type: 3}
   execute: 0
   spawnArea: {fileID: 1916261716}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1916261716
 BoxCollider:
@@ -100902,7 +100430,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1920930593}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1920930593
 BoxCollider:
@@ -101284,7 +100811,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1927592015}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1927592015
 BoxCollider:
@@ -101729,7 +101255,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1942668979}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1942668979
 BoxCollider:
@@ -101862,7 +101387,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1945783020}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1945783020
 BoxCollider:
@@ -102077,7 +101601,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1947287213}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1947287213
 BoxCollider:
@@ -102209,7 +101732,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1958571825}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1958571825
 BoxCollider:
@@ -102502,7 +102024,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1968423068}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1968423068
 BoxCollider:
@@ -102634,7 +102155,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1974809175}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1974809175
 BoxCollider:
@@ -102767,7 +102287,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1976735320}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1976735320
 BoxCollider:
@@ -103143,7 +102662,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1985732232}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1985732232
 BoxCollider:
@@ -103276,7 +102794,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1987419554}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1987419554
 BoxCollider:
@@ -103491,7 +103008,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: d2a75914c1d346e4686c5a596bd70105, type: 3}
   execute: 0
   spawnArea: {fileID: 1993669555}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1993669555
 BoxCollider:
@@ -103623,7 +103139,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1994679396}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1994679396
 BoxCollider:
@@ -103839,7 +103354,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1995797563}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1995797563
 BoxCollider:
@@ -103971,7 +103485,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 1995872336}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1995872336
 BoxCollider:
@@ -104104,7 +103617,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 1996105846}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &1996105846
 BoxCollider:
@@ -104319,7 +103831,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 2006710027}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2006710027
 BoxCollider:
@@ -104451,7 +103962,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 2007665428}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2007665428
 BoxCollider:
@@ -104583,7 +104093,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 2009626072}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2009626072
 BoxCollider:
@@ -104716,7 +104225,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 2015099806}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2015099806
 BoxCollider:
@@ -104848,7 +104356,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 2015637087}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2015637087
 BoxCollider:
@@ -104980,7 +104487,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 2016744195}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2016744195
 BoxCollider:
@@ -105113,7 +104619,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 2017864198}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2017864198
 BoxCollider:
@@ -105245,7 +104750,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 2019510798}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2019510798
 BoxCollider:
@@ -105377,7 +104881,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 2020469679}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2020469679
 BoxCollider:
@@ -105676,7 +105179,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 2027749758}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2027749758
 BoxCollider:
@@ -106016,7 +105518,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 2032141140}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2032141140
 BoxCollider:
@@ -106149,7 +105650,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 2034758537}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2034758537
 BoxCollider:
@@ -106281,7 +105781,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 2038421201}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2038421201
 BoxCollider:
@@ -106414,7 +105913,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 2038956251}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2038956251
 BoxCollider:
@@ -106630,7 +106128,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 2046218052}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2046218052
 BoxCollider:
@@ -106878,7 +106375,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 2053866151}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2053866151
 BoxCollider:
@@ -107094,7 +106590,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 2057356693}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2057356693
 BoxCollider:
@@ -107227,7 +106722,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 2057362526}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2057362526
 BoxCollider:
@@ -107411,7 +106905,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 2066484433}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2066484433
 BoxCollider:
@@ -107544,7 +107037,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 2072574911}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2072574911
 BoxCollider:
@@ -107676,7 +107168,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: d2a75914c1d346e4686c5a596bd70105, type: 3}
   execute: 0
   spawnArea: {fileID: 2073834871}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2073834871
 BoxCollider:
@@ -107809,7 +107300,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 2073837868}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2073837868
 BoxCollider:
@@ -107941,7 +107431,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 2075071273}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2075071273
 BoxCollider:
@@ -108074,7 +107563,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 2076393947}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2076393947
 BoxCollider:
@@ -108290,7 +107778,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 2079000781}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2079000781
 BoxCollider:
@@ -108422,7 +107909,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 2081065493}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2081065493
 BoxCollider:
@@ -108554,7 +108040,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 2081780925}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2081780925
 BoxCollider:
@@ -108686,7 +108171,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 2083628231}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2083628231
 BoxCollider:
@@ -108818,7 +108302,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 2084483802}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2084483802
 BoxCollider:
@@ -108950,7 +108433,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: d2a75914c1d346e4686c5a596bd70105, type: 3}
   execute: 0
   spawnArea: {fileID: 2085601891}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2085601891
 BoxCollider:
@@ -109083,7 +108565,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 2095676660}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2095676660
 BoxCollider:
@@ -109215,7 +108696,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 2097114749}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2097114749
 BoxCollider:
@@ -109577,7 +109057,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 2102478007}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2102478007
 BoxCollider:
@@ -109710,7 +109189,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 2102746587}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2102746587
 BoxCollider:
@@ -109938,7 +109416,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 2107947057}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2107947057
 BoxCollider:
@@ -110195,7 +109672,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 2109428620}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2109428620
 BoxCollider:
@@ -110327,7 +109803,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 2114482364}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2114482364
 BoxCollider:
@@ -110459,7 +109934,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 2125008400}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2125008400
 BoxCollider:
@@ -110591,7 +110065,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 2131094537}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2131094537
 BoxCollider:
@@ -110723,7 +110196,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 2135663897}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2135663897
 BoxCollider:
@@ -110856,7 +110328,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 2136494619}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2136494619
 BoxCollider:
@@ -110988,7 +110459,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 2138067725}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2138067725
 BoxCollider:
@@ -111121,7 +110591,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 2141305286}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2141305286
 BoxCollider:
@@ -111254,7 +110723,6 @@ MonoBehaviour:
   - {fileID: 7876220179688026794, guid: 8513603d4f396ac46ade8277f6747ecd, type: 3}
   execute: 0
   spawnArea: {fileID: 2142141891}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2142141891
 BoxCollider:
@@ -111387,7 +110855,6 @@ MonoBehaviour:
   - {fileID: 2989440400366969299, guid: af7ca7559fe4d18448b4e924efcdf8c2, type: 3}
   execute: 0
   spawnArea: {fileID: 2143693090}
-  parent: {fileID: 0}
   spawnThreshold: 0.15
 --- !u!65 &2143693090
 BoxCollider:

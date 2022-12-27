@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3251814557070664932}
   - component: {fileID: 3251814557070664935}
   - component: {fileID: 3251814557070664938}
+  - component: {fileID: 7309959445987298302}
   m_Layer: 0
   m_Name: Master Switch
   m_TagString: Untagged
@@ -98,6 +99,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 6, z: 1}
   m_Center: {x: 0, y: 3, z: 0}
+--- !u!114 &7309959445987298302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3251814557070664929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 162f4806ef59dd34e8100d454c100202, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CanvasControls: {fileID: 0}
+  Salvage: {fileID: 6182261996568468350, guid: 833646acd5e6af04880e88911cd03051, type: 3}
 --- !u!1 &3251814557124573248
 GameObject:
   m_ObjectHideFlags: 0

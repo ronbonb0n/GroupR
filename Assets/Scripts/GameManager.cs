@@ -4,16 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
-    public static GameManager Instance;
     public static GAME_STATE State;
     public static LEVELS Level;
     public static event Action<GAME_STATE> onGameStateChanged;
-    public void Awake()
-    {
-        Instance = this;
-        
-    }
-
     public void Start()
     {
         if (Level == LEVELS.WORLD_MAP)
@@ -29,7 +22,6 @@ public class GameManager : MonoBehaviour
     
     public static void UpdateGameState(GAME_STATE newState)
     {
-        GameManager.State = newState;
         switch (newState) //Checks for new state change and calls appropriate function
         {
             case GAME_STATE.WORLD_MAP:
@@ -37,26 +29,36 @@ public class GameManager : MonoBehaviour
                 SwitchLevel(LEVELS.WORLD_MAP);
                 break;
             case GAME_STATE.LEVEL_1_START:
+                GameManager.State = newState;
                 GameManager.Level = LEVELS.LEVEL1; 
                 SwitchLevel(LEVELS.LEVEL1);
                 break;
             case GAME_STATE.LEVEL_1_END_LOST:
+                GameManager.State = newState;
                 SwitchLevel(LEVELS.LEVEL1);
                 break;
             case GAME_STATE.LEVEL_1_END_WON:
+                GameManager.State = newState;
                 GameManager.Level = LEVELS.WORLD_MAP; 
                 SwitchLevel(LEVELS.WORLD_MAP);
                 break;
             case GAME_STATE.LEVEL_2_START:
+                GameManager.State = newState;
                 GameManager.Level = LEVELS.LEVEL2; 
                 SwitchLevel(LEVELS.LEVEL2);
                 break;
             case GAME_STATE.LEVEL_2_END_LOST:
+                GameManager.State = newState;
                 SwitchLevel(LEVELS.LEVEL2);
                 break;
             case GAME_STATE.LEVEL_2_END_WON:
+                GameManager.State = newState;
                 GameManager.Level = LEVELS.WORLD_MAP; 
                 SwitchLevel(LEVELS.WORLD_MAP);
+                break;
+            case GAME_STATE.VENDOR:
+                GameManager.Level = LEVELS.VENDOR;
+                SwitchLevel(LEVELS.VENDOR);
                 break;
             default:
                 throw new System.Exception(newState.ToString()+" not found as a Game State");
@@ -89,12 +91,13 @@ public enum GAME_STATE
     LEVEL_2_START,
     LEVEL_2_END_LOST,
     LEVEL_2_END_WON,
-    LEVEL_3_START
+    LEVEL_3_START,
+    VENDOR
 }
 public enum LEVELS
 {
     WORLD_MAP,
     LEVEL1,
     LEVEL2,
-    MENU,
+    VENDOR,
 }
