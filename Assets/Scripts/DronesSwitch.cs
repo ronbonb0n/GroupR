@@ -28,5 +28,6 @@ public class DronesSwitch : MonoBehaviour
     private void LevelClear()
     {
         CanvasControls.onLevelWon();
+        GameManager.UpdateGameState(GameManager.State + 1);
     }
 }
