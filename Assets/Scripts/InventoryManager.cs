@@ -6,8 +6,11 @@ public class InventoryManager : MonoBehaviour
 {
     public static InventoryManager instance;
     public string[] itemList = { "CLOAK", "DECOY", "EMP"};
-    public static int[] Inventory = new int[3]; // remember to change if more items are added
+    // public static int[] Inventory = new int[3]; // remember to change if more items are added
+    public static int[] Inventory = { 10,10,10}; // remember to change if more items are added
+
     public static int[] Salvage = new int[3];
+    public bool debug;
     private void Awake()
     {
         if (instance == null)
@@ -42,7 +45,7 @@ public class InventoryManager : MonoBehaviour
         int index = System.Array.IndexOf(itemList, item);
         if (index >= 0)
         {
-            if (Inventory[index] - 1 > 0)
+            if (Inventory[index] - 1 >= 0)
             {
                 Inventory[index] -= 1;
                 return true;
