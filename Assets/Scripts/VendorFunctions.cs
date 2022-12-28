@@ -131,7 +131,7 @@ public class VendorFunctions : MonoBehaviour
     //Quit
     public void QuitToWorldMap()
     {
-        GameManager.UpdateGameState(GAME_STATE.WORLD_MAP);
+        GameManager.SwitchLevel(LEVELS.WORLD_MAP);
     }
 
 
