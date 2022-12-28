@@ -98,6 +98,7 @@ MonoBehaviour:
   Is_Running: 0
   Is_Crouching: 0
   Collider: {fileID: 972976637585198610}
+  Character: {fileID: 1008408634007116817}
   Invisble: 0
   frontObj: {fileID: 0}
   Throw_Force: 40
@@ -719,7 +720,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4925255749608551700}
-  m_LocalRotation: {x: -0, y: -0.99994725, z: -0.010272424, w: 0}
+  m_LocalRotation: {x: -1.1046969e-11, y: -0.99994725, z: -0.0102724405, w: 0.0000000010753419}
   m_LocalPosition: {x: 0, y: 2.446, z: 7.42}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
@@ -953,7 +954,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8349998238676829368}
-  m_LocalRotation: {x: -0.01027242, y: -5.37671e-10, z: -5.523473e-12, w: 0.99994725}
+  m_LocalRotation: {x: -0.010272437, y: 5.37671e-10, z: 5.5234827e-12, w: 0.99994725}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1271,6 +1272,12 @@ PrefabInstance:
 --- !u!4 &150159272492944939 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b895d8eb7b93efd4fae6458a731c257b,
+    type: 3}
+  m_PrefabInstance: {fileID: 405254067717220800}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &1008408634007116817 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -8619513506766555695, guid: b895d8eb7b93efd4fae6458a731c257b,
     type: 3}
   m_PrefabInstance: {fileID: 405254067717220800}
   m_PrefabAsset: {fileID: 0}
