@@ -21,7 +21,7 @@ public class Script_Player_Control : MonoBehaviour
     public bool Is_Crouching = false;
     public SphereCollider Collider;
     private InputAction Cloak;
-    private MeshRenderer Character;
+    public SkinnedMeshRenderer Character;
     //private SpriteRenderer character; USE IT AFTER SPRITES ARE ADDED
     //private Color col; USE IT FOR TRANSLUCENT COLOR
     private float Activation_Time;
@@ -39,7 +39,7 @@ public class Script_Player_Control : MonoBehaviour
     {
         Rb = GetComponent<Rigidbody>();
         //character = GetComponent<SpriteRenderer>();
-        Character = GetComponent<MeshRenderer>();
+        // Character = GetComponent<MeshRenderer>();
         Activation_Time = 0;
         Invisble = false;
         levelCanvasControlsObj = GameObject.Find("CanvasControls");
@@ -105,7 +105,6 @@ public class Script_Player_Control : MonoBehaviour
     {
         if (InventoryManager.instance.getItemCount("DECOY") >= 1)
         {
-            //Decrease Decoy here?
             GameObject Decoy = Instantiate(Decoy_Prefab, transform.position, transform.rotation);
             Rigidbody RB = Decoy.GetComponent<Rigidbody>();
             RB.AddForce(transform.forward * Throw_Force, ForceMode.VelocityChange);
@@ -118,7 +117,6 @@ public class Script_Player_Control : MonoBehaviour
     {
         if (Invisble == false && InventoryManager.instance.getItemCount("CLOAK") >= 1)
         {
-            //Decrease EMP here?
             Invisble = true;
             Activation_Time = 0;
             //col.a = 0.2f;

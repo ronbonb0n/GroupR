@@ -41,11 +41,11 @@ public class LevelCanvasControls : MonoBehaviour
 
     public void onReturnToWorldMap()
     {
-        GameManager.UpdateGameState(GameManager.State + 2); // all LEVEL_WON states are LEVEL_START states + 2
+        GameManager.SwitchLevel(LEVELS.WORLD_MAP);
     }
     public void onRetry()
     {
-        GameManager.UpdateGameState(GameManager.State + 1); // all LEVEL_LOST states are LEVEL_START states + 1 
+        GameManager.SwitchLevel(GameManager.Level); // all LEVEL_LOST states are LEVEL_START states + 1 
     }
     public void onItemUse()
     {
