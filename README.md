@@ -37,6 +37,6 @@ Using sounds from an open-source website that offers us sounds we may use for ou
 
 - Drones' rotors: We modified Eelke's sound (available at https://freesound.org/people/Eelke/sounds/198235/) and used it in the game.
 - Background ambience of a level: We edited the sound provided by Flamiffer (available at https://freesound.org/people/Flamiffer/sounds/530161) and used it in the game.
-- The sound of the Decoy: We modified Breviceps' sound (available at https://freesound.org/people/Breviceps/sounds/493162) and used it in the game. 
+- The sound of the Decoy: We tweaked Breviceps' sound (available at https://freesound.org/people/Breviceps/sounds/493162) and used it in the game. 
 
 
