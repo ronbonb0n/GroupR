@@ -31,12 +31,12 @@ This is the game development project repository for the game **Ferŷnier** made 
 
 # Sounds:
 
-Almost all of the sounds we have used in the game were created specifically for it, either using an online tool [jsfxr](https://sfxr.me/) or by recording them with a microphone and editing them afterward. We made an effort to make every sound for our game ourselves; however, due to a lack of resources, expertise, and equipment to create our own original audio files, some couldn't be produced from scratch.
+Almost all of the sounds we have used in the game were created specifically for it, either using an online tool [jsfxr](https://sfxr.me/) or by recording them with a microphone and editing them afterward. Huge efforts were made to produce each and every sound for the game; however, due to a lack of resources, expertise, and equipment to create our own original audio files, some couldn't be produced from scratch.
 
-Using an open-source website that offers us sounds we may use for our projects [Freesound](https://freesound.org/), some sounds were used to get inspiration. Based on those sounds, we produced our own new audio files, edited them, and added pitch and amplitude shifters, de-noisers, exponential fades, and other filters to make them suitable for our game:
+Using an open-source website that offers sounds that can be used in projects [Freesound](https://freesound.org/), some sounds were used to get inspiration. Based on those sounds, new audio files were produced, edited, and passed through pitch and amplitude shifters, de-noisers, exponential fades, and other filters to make them suitable for the game:
 
-- Drones' rotors: We modified Eelke's sound (available at https://freesound.org/people/Eelke/sounds/198235/) and used it in the game.
-- Background ambience of a level: We edited the sound provided by Flamiffer (available at https://freesound.org/people/Flamiffer/sounds/530161) and used it in the game.
-- The sound of the Decoy: We tweaked Breviceps' sound (available at https://freesound.org/people/Breviceps/sounds/493162) and used it in the game. 
+- Drones' rotors: Eelke's sound was modified (available at https://freesound.org/people/Eelke/sounds/198235/) and used it in the game.
+- Background ambience of a level: Edited the sound provided by Flamiffer (available at https://freesound.org/people/Flamiffer/sounds/530161) and used it in the game.
+- The sound of the Decoy: Tweaked Breviceps' sound (available at https://freesound.org/people/Breviceps/sounds/493162) and used it in the game. 
 
 
