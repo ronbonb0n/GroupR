@@ -34,6 +34,7 @@ public class Script_Player_Control : MonoBehaviour
     public GameObject Decoy_Prefab;
     public GameObject levelCanvasControlsObj;
     public LevelCanvasControls levelCanvasControls;
+    private Player_Animation animator;
 
     void Start()
     {
@@ -45,6 +46,7 @@ public class Script_Player_Control : MonoBehaviour
         levelCanvasControlsObj = GameObject.Find("CanvasControls");
         levelCanvasControls = levelCanvasControlsObj.GetComponent<LevelCanvasControls>();
         //col = character.material.color;
+        animator = GetComponent<Player_Animation>();
     }
 
     private void Awake()
@@ -136,6 +138,7 @@ public class Script_Player_Control : MonoBehaviour
         { 
             Is_Crouching = false;
             Collider.radius = 100f; 
+
         }
         else if(Is_Running && Invisble)
         {
@@ -144,6 +147,8 @@ public class Script_Player_Control : MonoBehaviour
 
         else
             Collider.radius = 75f;
+        //ANIMATE CALL 
+        animator.Running(Is_Running);
     }
 
     private void Crouch_Performed(InputAction.CallbackContext context)
@@ -161,6 +166,8 @@ public class Script_Player_Control : MonoBehaviour
         }
         else
             Collider.radius = 75f;
+        //ANIMATE CALL
+        animator.Crouching(Is_Crouching);
     }
 
     private void Update()
@@ -199,6 +206,13 @@ public class Script_Player_Control : MonoBehaviour
             Rb.AddForce(Run_Speed * Time.deltaTime * MovementDirection,ForceMode.Force);
         else if (Is_Running == false && Is_Crouching == false)
             Rb.AddForce(Move_Speed * Time.deltaTime * MovementDirection,ForceMode.Force);
+
+        //ANIMATE CALL
+        if (Move_Direction.x == 0 && Move_Direction.y == 0)
+        {
+            animator.Walking(false);
+        }
+        else { animator.Walking(true); }
 
     }
 }
