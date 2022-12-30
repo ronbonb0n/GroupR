@@ -20,13 +20,13 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
-  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
-  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientSkyColor: {r: 0.2509804, g: 0.3019608, b: 0.39607844, a: 1}
+  m_AmbientEquatorColor: {r: 0.5882353, g: 0.70980394, b: 0.7921569, a: 1}
+  m_AmbientGroundColor: {r: 0.20784314, g: 0.16862746, b: 0.13333334, a: 1}
   m_AmbientIntensity: 1.1
-  m_AmbientMode: 0
+  m_AmbientMode: 1
   m_SubtractiveShadowColor: {r: 0.095941596, g: 0.14354797, b: 0.26415092, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -37,8 +37,8 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 1384291885}
-  m_IndirectSpecularColor: {r: 0.17797822, g: 0.22283739, b: 0.3049544, a: 1}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -83841,6 +83841,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1125561659026632437, guid: a96eb1f0e109d41409b88a55d4f2cb81,
+        type: 3}
+      propertyPath: m_RenderPostProcessing
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1190723004376744983, guid: a96eb1f0e109d41409b88a55d4f2cb81,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -83961,6 +83966,12 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0.010272424
       objectReference: {fileID: 0}
+    - target: {fileID: 6450014188993124692, guid: a96eb1f0e109d41409b88a55d4f2cb81,
+        type: 3}
+      propertyPath: sharedProfile
+      value: 
+      objectReference: {fileID: 11400000, guid: b8c28bebccb792242a2a6f3392e8fdaf,
+        type: 2}
     m_RemovedComponents: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 5377684070933958780, guid: a96eb1f0e109d41409b88a55d4f2cb81,
