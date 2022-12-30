@@ -71,8 +71,8 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 65472
   tint:
-    m_OverrideState: 0
-    m_Value: {r: 0.033018887, g: 1, b: 0.6231154, a: 1}
+    m_OverrideState: 1
+    m_Value: {r: 0.25943398, g: 1, b: 0.71216863, a: 1}
   highQualityFiltering:
     m_OverrideState: 0
     m_Value: 0
@@ -143,7 +143,7 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: {r: 0.9233491, g: 1, b: 0.8160377, a: 1}
   hueShift:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
   saturation:
     m_OverrideState: 1
