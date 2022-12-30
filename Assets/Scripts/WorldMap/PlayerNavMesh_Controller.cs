@@ -4,6 +4,7 @@ using UnityEngine.AI;
 public class PlayerNavMesh_Controller : MonoBehaviour
 {
     NavMeshAgent navMeshAgent;
+    public Animator animator;
 
     private void Start() {
         navMeshAgent = GetComponent<NavMeshAgent>();
@@ -18,5 +19,6 @@ public class PlayerNavMesh_Controller : MonoBehaviour
                 navMeshAgent.SetDestination(hitInfo.point);
             }
         }
+        animator.SetBool("isRunning", navMeshAgent.hasPath);
     }
 }

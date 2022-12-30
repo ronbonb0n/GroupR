@@ -6695,17 +6695,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: b895d8eb7b93efd4fae6458a731c257b,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 1.75
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b895d8eb7b93efd4fae6458a731c257b,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 1.75
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b895d8eb7b93efd4fae6458a731c257b,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.5
+      value: 1.75
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b895d8eb7b93efd4fae6458a731c257b,
         type: 3}
@@ -55403,6 +55403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d79a9c0945a7af70832cd367a07f948, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 402493642}
 --- !u!54 &857444930
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -126938,7 +126939,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1984151683
 RectTransform:
   m_ObjectHideFlags: 0
