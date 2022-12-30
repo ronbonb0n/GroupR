@@ -11,7 +11,7 @@ public class Script_Player_Control : MonoBehaviour
     public float Crouch_Speed = 1000f;
     public float Move_Speed = 1400f;
     public float Run_Speed = 2000f;
-    public float Rotation_Speed;
+    public float Rotation_Speed = 70f;
     public Player_Controls Player_Input;
     private InputAction Move;
     private InputAction Run;
@@ -35,6 +35,7 @@ public class Script_Player_Control : MonoBehaviour
     public GameObject levelCanvasControlsObj;
     public LevelCanvasControls levelCanvasControls;
     private Player_Animation animator;
+    private GameObject mainCam;
 
     void Start()
     {
@@ -47,6 +48,7 @@ public class Script_Player_Control : MonoBehaviour
         levelCanvasControls = levelCanvasControlsObj.GetComponent<LevelCanvasControls>();
         //col = character.material.color;
         animator = GetComponent<Player_Animation>();
+        mainCam = GameObject.Find("Main Camera");
     }
 
     private void Awake()
@@ -198,7 +200,14 @@ public class Script_Player_Control : MonoBehaviour
 
     private void FixedUpdate()
     {
+        Vector3 viewDir = Vector3.Cross(mainCam.transform.right, Vector3.up);
+        transform.forward = viewDir.normalized;
         Vector3 MovementDirection = transform.forward * Move_Direction.y + transform.right * Move_Direction.x;
+        if (MovementDirection != Vector3.zero)
+        {
+            transform.rotation = Quaternion.LookRotation(MovementDirection);
+        }
+
         //if (MovementDirection!= Vector3.zero) gameObject.transform.forward = Vector3.Lerp(gameObject.transform.position, MovementDirection.normalized,Rotation_Speed* Time.deltaTime);
         if (Is_Crouching)
             Rb.AddForce(Crouch_Speed * Time.deltaTime * MovementDirection,ForceMode.Force);

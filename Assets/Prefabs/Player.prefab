@@ -319,7 +319,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1568296449132659260}
-  m_LocalRotation: {x: 0.081578605, y: -0, z: -0, w: 0.9966669}
+  m_LocalRotation: {x: 0.081578605, y: -1e-45, z: -0, w: 0.9966669}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -651,7 +651,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3432236449855625011}
-  m_LocalRotation: {x: 0.13870122, y: 1e-45, z: -0, w: 0.99033433}
+  m_LocalRotation: {x: 0.1387012, y: -0, z: -0, w: 0.99033433}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -718,7 +718,6 @@ GameObject:
   - component: {fileID: 7529410850607817285}
   - component: {fileID: 1125561659026632437}
   - component: {fileID: 960919519474349459}
-  - component: {fileID: 9066471718101831596}
   - component: {fileID: 6450014188993124692}
   m_Layer: 0
   m_Name: Main Camera
@@ -734,8 +733,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4925255749608551700}
-  m_LocalRotation: {x: -1.10469515e-11, y: -0.99994725, z: -0.010272424, w: 0.0000000010753419}
-  m_LocalPosition: {x: 0, y: 2.446, z: 7.419998}
+  m_LocalRotation: {x: -0, y: -0.99994725, z: -0.0102724405, w: 0}
+  m_LocalPosition: {x: 0, y: 2.446, z: 7.42}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -860,19 +859,6 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &9066471718101831596
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4925255749608551700}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3783e48063f5b994082a79b5bb6cc54f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 972976636789057583}
 --- !u!114 &6450014188993124692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -968,7 +954,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8349998238676829368}
-  m_LocalRotation: {x: -0.01027242, y: 5.37671e-10, z: 5.523473e-12, w: 0.99994725}
+  m_LocalRotation: {x: -0.010272436, y: -0, z: -0, w: 0.99994725}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1048,7 +1034,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8505626505841096382}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 2.446, z: 7.419998}
+  m_LocalPosition: {x: 0, y: 2.446, z: 7.42}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
