@@ -48536,12 +48536,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 750476085}
   m_Mesh: {fileID: 1353746659569323740, guid: 6fc2d822032a1674ea3f4e0a7480dc22, type: 3}
---- !u!4 &750534537 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 972976636789057568, guid: a96eb1f0e109d41409b88a55d4f2cb81,
-    type: 3}
-  m_PrefabInstance: {fileID: 1896153968}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &751417645
 GameObject:
   m_ObjectHideFlags: 0
@@ -67807,12 +67801,27 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 2
-    m_TransformParent: {fileID: 750534537}
+    m_TransformParent: {fileID: 209552265}
     m_Modifications:
     - target: {fileID: 3828019347679795280, guid: faf24b8e8165e804087ac447b026db2b,
         type: 3}
       propertyPath: m_RootOrder
       value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3828019347679795280, guid: faf24b8e8165e804087ac447b026db2b,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3828019347679795280, guid: faf24b8e8165e804087ac447b026db2b,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3828019347679795280, guid: faf24b8e8165e804087ac447b026db2b,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3828019347679795280, guid: faf24b8e8165e804087ac447b026db2b,
         type: 3}
@@ -67822,32 +67831,32 @@ PrefabInstance:
     - target: {fileID: 3828019347679795280, guid: faf24b8e8165e804087ac447b026db2b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 413.7
+      value: 822.064
       objectReference: {fileID: 0}
     - target: {fileID: 3828019347679795280, guid: faf24b8e8165e804087ac447b026db2b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 30.05469
       objectReference: {fileID: 0}
     - target: {fileID: 3828019347679795280, guid: faf24b8e8165e804087ac447b026db2b,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 0.69980574
       objectReference: {fileID: 0}
     - target: {fileID: 3828019347679795280, guid: faf24b8e8165e804087ac447b026db2b,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.7071068
+      value: 0.7143332
       objectReference: {fileID: 0}
     - target: {fileID: 3828019347679795280, guid: faf24b8e8165e804087ac447b026db2b,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.000000021073422
       objectReference: {fileID: 0}
     - target: {fileID: 3828019347679795280, guid: faf24b8e8165e804087ac447b026db2b,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: 0.000000021073422
       objectReference: {fileID: 0}
     - target: {fileID: 3828019347679795280, guid: faf24b8e8165e804087ac447b026db2b,
         type: 3}
@@ -124094,6 +124103,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 972976636789057569, guid: a96eb1f0e109d41409b88a55d4f2cb81,
         type: 3}
+      propertyPath: Rotation_Speed
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 972976636789057569, guid: a96eb1f0e109d41409b88a55d4f2cb81,
+        type: 3}
       propertyPath: cameraTransform
       value: 
       objectReference: {fileID: 209552265}
@@ -124230,7 +124244,7 @@ PrefabInstance:
     - target: {fileID: 1190723004376744983, guid: a96eb1f0e109d41409b88a55d4f2cb81,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.1387012
+      value: 0.13870119
       objectReference: {fileID: 0}
     - target: {fileID: 1190723004376744983, guid: a96eb1f0e109d41409b88a55d4f2cb81,
         type: 3}
@@ -124240,7 +124254,7 @@ PrefabInstance:
     - target: {fileID: 1190723004376744983, guid: a96eb1f0e109d41409b88a55d4f2cb81,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: -0.0000000074505797
       objectReference: {fileID: 0}
     - target: {fileID: 1669443031496214715, guid: a96eb1f0e109d41409b88a55d4f2cb81,
         type: 3}
@@ -124265,12 +124279,12 @@ PrefabInstance:
     - target: {fileID: 1669443031496214715, guid: a96eb1f0e109d41409b88a55d4f2cb81,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.010272457
+      value: -0.010272455
       objectReference: {fileID: 0}
     - target: {fileID: 1669443031496214715, guid: a96eb1f0e109d41409b88a55d4f2cb81,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.000000059604638
       objectReference: {fileID: 0}
     - target: {fileID: 1669443031496214715, guid: a96eb1f0e109d41409b88a55d4f2cb81,
         type: 3}
@@ -124410,12 +124424,12 @@ PrefabInstance:
     - target: {fileID: 5377684070933958780, guid: a96eb1f0e109d41409b88a55d4f2cb81,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000029802322
+      value: 0.00000011920929
       objectReference: {fileID: 0}
     - target: {fileID: 5377684070933958780, guid: a96eb1f0e109d41409b88a55d4f2cb81,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 9.313226e-10
       objectReference: {fileID: 0}
     - target: {fileID: 5377684070933958780, guid: a96eb1f0e109d41409b88a55d4f2cb81,
         type: 3}
@@ -124433,9 +124447,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: b8c28bebccb792242a2a6f3392e8fdaf,
         type: 2}
+    - target: {fileID: 9066471718101831596, guid: a96eb1f0e109d41409b88a55d4f2cb81,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 972976636789057568, guid: a96eb1f0e109d41409b88a55d4f2cb81,
+    - targetCorrespondingSourceObject: {fileID: 5377684070933958780, guid: a96eb1f0e109d41409b88a55d4f2cb81,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 264847520}
