@@ -46,7 +46,7 @@ public class Senses : MonoBehaviour
                 GameObject hitObject = hit.collider.gameObject;
                 if (hitObject.CompareTag("Player"))
                 {
-                    if (!hitObject.GetComponent<PlayerMovement>().isCloaking)
+                    if (!hitObject.GetComponent<Script_Player_Control>().Invisble)
                     {
                         canSeePlayer = true;
                         lastSpottedPlayerAt = target.position;
@@ -77,12 +77,12 @@ public class Senses : MonoBehaviour
         Transform target = player.transform;
 
         float detectionDistance;
-        PlayerMovement playerComp = player.GetComponent<PlayerMovement>();
-        if (playerComp.isCrouching)
+        Script_Player_Control playerComp = player.GetComponent<Script_Player_Control>();
+        if (playerComp.Is_Crouching)
         {
             detectionDistance = 3;
         }
-        else if (playerComp.isSprinting)
+        else if (playerComp.Is_Running)
         {
             detectionDistance = 14;
         }
@@ -101,7 +101,7 @@ public class Senses : MonoBehaviour
                 GameObject hitObject = hit.collider.gameObject;
                 if (hitObject.CompareTag("Player"))
                 {
-                    if (!hitObject.GetComponent<PlayerMovement>().isCloaking)
+                    if (!hitObject.GetComponent<Script_Player_Control>().Invisble)
                     {
                         canHearPlayer = true;
                         lastSpottedPlayerAt = target.position;

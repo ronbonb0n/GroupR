@@ -19,7 +19,6 @@ public class Script_Player_Control : MonoBehaviour
     private Vector2 Move_Direction;
     public bool Is_Running = false;
     public bool Is_Crouching = false;
-    public SphereCollider Collider;
     private InputAction Cloak;
     public SkinnedMeshRenderer Character;
     //private SpriteRenderer character; USE IT AFTER SPRITES ARE ADDED
@@ -126,7 +125,6 @@ public class Script_Player_Control : MonoBehaviour
             //col.a = 0.2f;
             //character.material.color = col;
             Character.enabled = false;
-            Collider.radius = 0f;
             InventoryManager.instance.itemDecrement("CLOAK");
             levelCanvasControls.onItemUse();
         }
@@ -139,16 +137,12 @@ public class Script_Player_Control : MonoBehaviour
         if (Is_Running && Invisble==false)
         { 
             Is_Crouching = false;
-            Collider.radius = 100f; 
-
         }
         else if(Is_Running && Invisble)
         {
             Is_Crouching = false;
         }
-
-        else
-            Collider.radius = 75f;
+        
         //ANIMATE CALL 
         animator.Running(Is_Running);
     }
@@ -160,14 +154,12 @@ public class Script_Player_Control : MonoBehaviour
         if (Is_Crouching)
         {
             Is_Running = false;
-            Collider.radius = 50f;
         }
         else if (Is_Crouching && Invisble == false)
         {
             Is_Running = false;
         }
-        else
-            Collider.radius = 75f;
+        
         //ANIMATE CALL
         animator.Crouching(Is_Crouching);
     }
@@ -182,19 +174,6 @@ public class Script_Player_Control : MonoBehaviour
             //col.a = 1f;
             //character.material.color = col;
             Character.enabled = true;
-
-            if (Is_Running)
-            {
-                Collider.radius = 100f;
-            }
-            else if (Is_Crouching)
-            {
-                Collider.radius = 50f;
-            }
-            else
-            {
-                Collider.radius = 75f;
-            }
         }
     }
 
