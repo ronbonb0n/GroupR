@@ -18,10 +18,9 @@ public class StunnedState : IDroneState
 
     public void onEnter(DroneController drone)
     {
-        Color darkOrange = new Color(230f / 255f, 126f / 255f, 0);
-        drone.SetLinesColor(darkOrange);
-        drone.SetStateText("Stunned", darkOrange);
-        drone.SetLaserColor(darkOrange);
+        drone.SetLinesColor(Color.blue);
+        drone.SetStateText("Stunned", Color.blue);
+        drone.SetLaserColor(Color.blue);
         drone.stunnedCountDownTimer = drone.stunnedCountDown;
     }
 

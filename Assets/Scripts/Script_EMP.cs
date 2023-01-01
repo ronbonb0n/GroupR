@@ -10,6 +10,7 @@ public class Script_EMP : MonoBehaviour
     private float countdown;
     public bool exploded = false;
     public SphereCollider Collider;
+    public float radius = 20;
     //public GameObject Explosion_Effect;  For explosion effect
 
 
@@ -33,6 +34,15 @@ public class Script_EMP : MonoBehaviour
     void Explode()
     {
         //Instantiate(Explosion_Effect, transform.position, transform.rotation);
+        Collider[] colliders = Physics.OverlapSphere(transform.position, radius);
+        foreach (Collider c in colliders)
+        {
+            GameObject hitObject = c.gameObject;
+            if (hitObject.CompareTag("Drone"))
+            {
+                hitObject.GetComponentInParent<DroneController>().isStunned = true;
+            }
+        }
         Destroy(gameObject);
     }
 }
