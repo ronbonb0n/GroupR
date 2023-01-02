@@ -15,6 +15,7 @@ public class LevelCanvasControls : MonoBehaviour
     private InputAction Pause;
     private Script_Player_Control playerController;
     private GameObject PauseScreen;
+    private GameObject ControlsScreen;
 
     private void Awake()
     {
@@ -29,6 +30,8 @@ public class LevelCanvasControls : MonoBehaviour
         playerController = GameObject.Find("Player").GetComponent<Script_Player_Control>();
         PauseScreen = GameObject.Find("PauseScreen");
         PauseScreen.SetActive(false);
+        ControlsScreen = GameObject.Find("ControlsScreen");
+        ControlsScreen.SetActive(false);
     }
     private void OnEnable()
     {
@@ -82,27 +85,35 @@ public class LevelCanvasControls : MonoBehaviour
         }
     }
     public void onPause(InputAction.CallbackContext context)
-    { 
-        isPaused = !isPaused;
-        if (isPaused)
+    {
+        if (!LevelLostText.activeInHierarchy && !LevelWonText.activeInHierarchy)
         {
+            isPaused = !isPaused;
+            if (isPaused)
+            {
 
-            Cursor.lockState = CursorLockMode.Confined;
-            Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.Confined;
+                Cursor.visible = true;
+            }
+            else
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+            }
+            PauseScreen.SetActive(isPaused);
+            playerController.PauseUnpauseActions(isPaused);
         }
-        else
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
-        }
-        PauseScreen.SetActive(isPaused);
-        playerController.PauseUnpauseActions(isPaused);
     }
     public void onContinue()
     {
         LevelWonText.SetActive(false);
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+    }
+    public void onControlsScreen()
+    {
+        PauseScreen.SetActive(!PauseScreen.activeSelf);
+        ControlsScreen.SetActive(!ControlsScreen.activeSelf);
     }
 
     
