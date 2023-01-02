@@ -27,9 +27,8 @@ public class AlertState : IDroneState
     public void onEnter(DroneController drone)
     {
         Color orange = new Color(1, 172f / 255f, 28f / 255f);
-        drone.SetLinesColor(orange);
         drone.SetStateText("Alerted", orange);
-        drone.SetLaserColor(orange);
+        drone.SetScannerColor(orange);
         drone.alertCountDownTimer = drone.alertCountDown;
     }
 
