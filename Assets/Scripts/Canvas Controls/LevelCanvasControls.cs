@@ -86,7 +86,7 @@ public class LevelCanvasControls : MonoBehaviour
     }
     public void onPause(InputAction.CallbackContext context)
     {
-        if (!levelOver)
+        if (!LevelLostText.activeInHierarchy && !LevelWonText.activeInHierarchy)
         {
             isPaused = !isPaused;
             if (isPaused)

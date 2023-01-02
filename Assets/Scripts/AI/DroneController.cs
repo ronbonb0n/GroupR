@@ -41,6 +41,7 @@ public class DroneController : MonoBehaviour
         senses = GetComponentInChildren<Senses>();
         player = GameObject.FindGameObjectWithTag("Player");
         laserMaterial = transform.Find("Body/Laser").gameObject.GetComponent<Renderer>().material;
+        canvasControl = GameObject.Find("CanvasControls").GetComponent<LevelCanvasControls>();
     }
 
     private void OnEnable()
