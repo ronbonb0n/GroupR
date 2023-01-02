@@ -8,6 +8,7 @@ public class PlayerNavMesh_Controller : MonoBehaviour
 
     private void Start() {
         navMeshAgent = GetComponent<NavMeshAgent>();
+        if (GameManager.playerInWorldMap != Vector3.zero) transform.position = GameManager.playerInWorldMap;
     }
 
     void Update() {
@@ -21,4 +22,5 @@ public class PlayerNavMesh_Controller : MonoBehaviour
         }
         animator.SetBool("isRunning", navMeshAgent.hasPath);
     }
+    
 }

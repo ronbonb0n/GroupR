@@ -4,11 +4,21 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
-    public static GAME_STATE State;
-    public static LEVELS Level;
-    public void Start()
+    public static GameManager instance;
+    public static GAME_STATE State = GAME_STATE.WORLD_MAP;
+    public static LEVELS Level = LEVELS.WORLD_MAP;
+    public static Vector3 playerInWorldMap;
+
+    private void Awake()
     {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else { Destroy(this.gameObject); }
+
     }
+
     public static void SwitchLevel(LEVELS newlevel)
     {
         SceneManager.LoadScene((int)newlevel);
@@ -18,22 +28,19 @@ public class GameManager : MonoBehaviour
     
     public static void UpdateGameState(GAME_STATE newState)
     {
-        switch (newState) //Checks for new state change and calls appropriate function
+        State = newState;
+    }
+    public static bool CheckNextLevel(LEVELS level)
+    {
+        if (level == LEVELS.VENDOR)
         {
-            case GAME_STATE.WORLD_MAP:
-                break;
-            case GAME_STATE.DUNGEON_1_COMPLETE:
-                break;
-            case GAME_STATE.DUNGEON_2_COMPLETE:
-                break;
-            case GAME_STATE.DUNGEON_3_COMPLETE:
-                break;
-            case GAME_STATE.DUNGEON_4_COMPLETE:
-                break;
-
-            default:
-                throw new System.Exception(newState.ToString()+" not found as a Game State");
-        } // Invokes the Event whenever the Gamestate is changed
+            return true;
+        }
+        if (((int)State >= (int)level - 1))
+        {
+            return true;
+        }
+        return false;
     }
 }
 

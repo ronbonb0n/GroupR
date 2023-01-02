@@ -167,6 +167,21 @@ public class Script_Player_Control : MonoBehaviour
         animator.Crouching(Is_Crouching);
         animator.Running(Is_Running);
     }
+    public void PauseUnpauseActions(bool isPaused)
+    {
+        if (isPaused)
+        {
+            EMP.Disable();
+            Decoy.Disable();
+            Cloak.Disable();
+        }
+        else
+        {
+            EMP.Enable();
+            Decoy.Enable();
+            Cloak.Enable();
+        }
+    }
 
     private void Update()
     {

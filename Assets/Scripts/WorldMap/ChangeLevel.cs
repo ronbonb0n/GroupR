@@ -7,6 +7,7 @@ public class ChangeLevel : MonoBehaviour
     private Light towerLight;
     public LEVELS Level;
     private bool isPlayerOverlap;
+    private Transform playerTransform;
 
     private void Start()
     {
@@ -29,6 +30,7 @@ public class ChangeLevel : MonoBehaviour
         {
             isPlayerOverlap = true;
             illuminate();
+            playerTransform = other.transform;
             // Debug.Log(string.Format("Player enter {0}", isPlayerOverlap));
         }
     }
@@ -49,7 +51,11 @@ public class ChangeLevel : MonoBehaviour
     {
         if (isPlayerOverlap)
         {
-            GameManager.SwitchLevel(Level);
+            if (GameManager.CheckNextLevel(Level))
+            {
+                GameManager.playerInWorldMap = playerTransform.position;
+                GameManager.SwitchLevel(Level);
+            }
         }
     }
 }
