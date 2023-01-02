@@ -127,7 +127,6 @@ public class Script_Player_Control : MonoBehaviour
             //col.a = 0.2f;
             //character.material.color = col;
             CharacterMaterial.SetInt("_isCloaking", 1);
-            Collider.radius = 0f;
             InventoryManager.instance.itemDecrement("CLOAK");
             levelCanvasControls.onItemUse();
         }
