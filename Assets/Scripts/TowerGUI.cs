@@ -24,6 +24,7 @@ public class TowerGUI : MonoBehaviour
     {
         transform.LookAt(cameraTransform);
     }
+
     void LevelTextColor()
     {
         if (levelNumber == LEVELS.VENDOR)

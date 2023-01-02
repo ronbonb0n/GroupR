@@ -5,8 +5,10 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-    public static GAME_STATE State;
-    public static LEVELS Level;
+    public static GAME_STATE State = GAME_STATE.WORLD_MAP;
+    public static LEVELS Level = LEVELS.WORLD_MAP;
+    public static Vector3 playerInWorldMap;
+
     private void Awake()
     {
         if (instance == null)
@@ -16,11 +18,7 @@ public class GameManager : MonoBehaviour
         else { Destroy(this.gameObject); }
 
     }
-    public void Start()
-    {
-        State = GAME_STATE.WORLD_MAP;
-        Level = LEVELS.WORLD_MAP;
-    }
+
     public static void SwitchLevel(LEVELS newlevel)
     {
         SceneManager.LoadScene((int)newlevel);
@@ -31,6 +29,18 @@ public class GameManager : MonoBehaviour
     public static void UpdateGameState(GAME_STATE newState)
     {
         State = newState;
+    }
+    public static bool CheckNextLevel(LEVELS level)
+    {
+        if (level == LEVELS.VENDOR)
+        {
+            return true;
+        }
+        if (((int)State >= (int)level - 1))
+        {
+            return true;
+        }
+        return false;
     }
 }
 
