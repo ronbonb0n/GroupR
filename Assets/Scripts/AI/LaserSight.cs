@@ -22,10 +22,10 @@ public class LaserSight : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        FieldOfView fieldOfView = GetComponentInParent<FieldOfView>();
-        viewDistance = fieldOfView.radius;
+        Senses senses = GetComponentInParent<Senses>();
+        viewDistance = senses.sightRadius;
         Debug.Log("Drone - Sight Radius:  " + viewDistance);
-        laserPitch = transform.position.y / fieldOfView.radius;
+        laserPitch = transform.position.y / senses.sightRadius;
         laserPitchRad = (float)(Math.Asin(laserPitch) * 180 / Math.PI);
         var lines = transform.parent.GetComponentsInChildren<LineRenderer>();
         foreach (var line in lines)
