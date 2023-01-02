@@ -18,7 +18,7 @@ public class DronesSwitch : MonoBehaviour
         {
             foreach (var drone in drones)
             {
-                drone.GetComponent<DroneController>().isActivated = false;
+                drone.GetComponentInParent<DroneController>().isActivated = false;
                 Debug.Log(Instantiate(Salvage, new Vector3(drone.transform.position.x, drone.transform.position.y + 4, drone.transform.position.z), drone.transform.rotation));
             }
             LevelClear();
