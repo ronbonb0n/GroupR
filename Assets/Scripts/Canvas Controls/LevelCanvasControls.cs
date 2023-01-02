@@ -82,21 +82,24 @@ public class LevelCanvasControls : MonoBehaviour
         }
     }
     public void onPause(InputAction.CallbackContext context)
-    { 
-        isPaused = !isPaused;
-        if (isPaused)
+    {
+        if (!levelOver)
         {
+            isPaused = !isPaused;
+            if (isPaused)
+            {
 
-            Cursor.lockState = CursorLockMode.Confined;
-            Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.Confined;
+                Cursor.visible = true;
+            }
+            else
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+            }
+            PauseScreen.SetActive(isPaused);
+            playerController.PauseUnpauseActions(isPaused);
         }
-        else
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
-        }
-        PauseScreen.SetActive(isPaused);
-        playerController.PauseUnpauseActions(isPaused);
     }
     public void onContinue()
     {
