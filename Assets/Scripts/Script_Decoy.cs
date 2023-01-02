@@ -47,7 +47,6 @@ public class Script_Decoy : MonoBehaviour
             }
         }
         await Task.Delay((int)(5 * 1000));
-        Collider[] colliders = Physics.OverlapSphere(transform.position, radius);
         foreach (Collider c in colliders)
         {
             GameObject hitObject = c.gameObject;
