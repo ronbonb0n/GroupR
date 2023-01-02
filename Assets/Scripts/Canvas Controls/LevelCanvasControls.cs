@@ -15,6 +15,7 @@ public class LevelCanvasControls : MonoBehaviour
     private InputAction Pause;
     private Script_Player_Control playerController;
     private GameObject PauseScreen;
+    private GameObject ControlsScreen;
 
     private void Awake()
     {
@@ -29,6 +30,8 @@ public class LevelCanvasControls : MonoBehaviour
         playerController = GameObject.Find("Player").GetComponent<Script_Player_Control>();
         PauseScreen = GameObject.Find("PauseScreen");
         PauseScreen.SetActive(false);
+        ControlsScreen = GameObject.Find("ControlsScreen");
+        ControlsScreen.SetActive(false);
     }
     private void OnEnable()
     {
@@ -106,6 +109,11 @@ public class LevelCanvasControls : MonoBehaviour
         LevelWonText.SetActive(false);
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+    }
+    public void onControlsScreen()
+    {
+        PauseScreen.SetActive(!PauseScreen.activeSelf);
+        ControlsScreen.SetActive(!ControlsScreen.activeSelf);
     }
 
     
