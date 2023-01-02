@@ -50,7 +50,9 @@ public class DroneController : MonoBehaviour
             "Forward_Looking_Scout_Drone/Skinned_Mesh").gameObject.GetComponent<
                 SkinnedMeshRenderer>().material;
 
-        Debug.Log(scannerMaterial.ToString());
+        // Debug.Log(scannerMaterial.ToString());
+        
+        canvasControl = GameObject.Find("CanvasControls").GetComponent<LevelCanvasControls>();
     }
 
     private void OnEnable()
