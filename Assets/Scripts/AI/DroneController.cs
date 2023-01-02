@@ -31,7 +31,8 @@ public class DroneController : MonoBehaviour
     public float stunnedCountDownTimer = 0;
     
     public GameObject player;
-    private Material laserMaterial;
+    private Material scannerMaterial;
+    private Material droneMaterial;
     public LevelCanvasControls canvasControl;
 
     private void Awake()
@@ -40,7 +41,17 @@ public class DroneController : MonoBehaviour
         navMeshAgent = GetComponent<NavMeshAgent>();
         senses = GetComponentInChildren<Senses>();
         player = GameObject.FindGameObjectWithTag("Player");
-        laserMaterial = transform.Find("Body/Laser").gameObject.GetComponent<Renderer>().material;
+
+        scannerMaterial = transform.Find(
+            "Body/Drone_Scanning_Cone").gameObject.GetComponent<
+                Renderer>().material;
+
+        droneMaterial = transform.Find(
+            "Forward_Looking_Scout_Drone/Skinned_Mesh").gameObject.GetComponent<
+                SkinnedMeshRenderer>().material;
+
+        // Debug.Log(scannerMaterial.ToString());
+        
         canvasControl = GameObject.Find("CanvasControls").GetComponent<LevelCanvasControls>();
     }
 
@@ -72,15 +83,6 @@ public class DroneController : MonoBehaviour
 
         currentStateName = currentState.ToString();
     }
-
-    public void SetLinesColor(Color color)
-    {
-        var lines = transform.GetComponentsInChildren<LineRenderer>();
-        foreach (var line in lines)
-        {
-            line.SetColors(color, color);
-        }
-    }
     
     public void SetStateText(string text, Color color)
     {
@@ -89,10 +91,11 @@ public class DroneController : MonoBehaviour
         stateText.color = color;
     }
     
-    public void SetLaserColor(Color color)
+    public void SetScannerColor(Color color)
     {
-        color.a = 0.4f;
-        laserMaterial.color = color;
+        color.a = 1.0f;
+        droneMaterial.SetColor("_EmissionColour", color);
+        scannerMaterial.SetColor("_PulseColour", color);
     }
 
     public void LevelOver()

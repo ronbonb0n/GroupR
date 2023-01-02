@@ -28,9 +28,8 @@ public class InvestigateState : IDroneState
     public void onEnter(DroneController drone)
     {
         Color salmon = new Color(250f / 255f, 128f / 255f, 114f / 255f);
-        drone.SetLinesColor(salmon);
         drone.SetStateText("Investigate", salmon);
-        drone.SetLaserColor(salmon);
+        drone.SetScannerColor(salmon);
         drone.navMeshAgent.destination = drone.senses.lastSpottedPlayerAt;
     }
 

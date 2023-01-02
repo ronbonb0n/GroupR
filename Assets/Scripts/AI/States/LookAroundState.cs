@@ -33,9 +33,8 @@ public class LookAroundState : IDroneState
 
     public void onEnter(DroneController drone)
     {
-        drone.SetLinesColor(Color.green);
         drone.SetStateText("Look Around", Color.green);
-        drone.SetLaserColor(Color.green);
+        drone.SetScannerColor(Color.green);
         drone.lookAroundCountDownTimer = Random.Range(2.5f, 3.5f);
         GetLookDirection(drone);
     }
