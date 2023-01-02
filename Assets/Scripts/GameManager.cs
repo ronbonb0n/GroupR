@@ -4,10 +4,22 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
+    public static GameManager instance;
     public static GAME_STATE State;
     public static LEVELS Level;
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else { Destroy(this.gameObject); }
+
+    }
     public void Start()
     {
+        State = GAME_STATE.WORLD_MAP;
+        Level = LEVELS.WORLD_MAP;
     }
     public static void SwitchLevel(LEVELS newlevel)
     {
@@ -18,22 +30,7 @@ public class GameManager : MonoBehaviour
     
     public static void UpdateGameState(GAME_STATE newState)
     {
-        switch (newState) //Checks for new state change and calls appropriate function
-        {
-            case GAME_STATE.WORLD_MAP:
-                break;
-            case GAME_STATE.DUNGEON_1_COMPLETE:
-                break;
-            case GAME_STATE.DUNGEON_2_COMPLETE:
-                break;
-            case GAME_STATE.DUNGEON_3_COMPLETE:
-                break;
-            case GAME_STATE.DUNGEON_4_COMPLETE:
-                break;
-
-            default:
-                throw new System.Exception(newState.ToString()+" not found as a Game State");
-        } // Invokes the Event whenever the Gamestate is changed
+        State = newState;
     }
 }
 
