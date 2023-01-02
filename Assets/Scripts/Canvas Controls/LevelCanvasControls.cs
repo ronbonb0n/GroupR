@@ -99,6 +99,7 @@ public class LevelCanvasControls : MonoBehaviour
             {
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
+                ControlsScreen.SetActive(isPaused);
             }
             PauseScreen.SetActive(isPaused);
             playerController.PauseUnpauseActions(isPaused);
