@@ -49,6 +49,8 @@ public class LevelCanvasControls : MonoBehaviour
             Cursor.lockState = CursorLockMode.Confined;
             LevelLostText.SetActive(true);
             levelOver = true;
+            playerController.PauseUnpauseActions(true);
+            Time.timeScale = 0;
         }
     }
 
@@ -59,7 +61,8 @@ public class LevelCanvasControls : MonoBehaviour
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.Confined;
             LevelWonText.SetActive(true);
-            levelOver = false;
+            levelOver = true;
+            playerController.PauseUnpauseActions(true);
         }
     }
 
@@ -95,7 +98,12 @@ public class LevelCanvasControls : MonoBehaviour
         PauseScreen.SetActive(isPaused);
         playerController.PauseUnpauseActions(isPaused);
     }
-
+    public void onContinue()
+    {
+        LevelWonText.SetActive(false);
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
 
     
     private void Update()
@@ -104,7 +112,12 @@ public class LevelCanvasControls : MonoBehaviour
         {
             Time.timeScale = 0;
         }
-        else { Time.timeScale = 1; }
+        else {
+            if (!levelOver)
+            {
+                Time.timeScale = 1;
+            }
+        }
     }
     private void OnDestroy()
     {
