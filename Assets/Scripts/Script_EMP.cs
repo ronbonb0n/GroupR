@@ -6,7 +6,7 @@ using UnityEngine.Rendering;
 public class Script_EMP : MonoBehaviour
 {
 
-    public float delay = 3f;
+    public float delay = 2f;
     private float countdown;
     public bool exploded = false;
     public SphereCollider Collider;
