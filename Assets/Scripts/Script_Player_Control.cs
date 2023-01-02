@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -86,10 +87,12 @@ public class Script_Player_Control : MonoBehaviour
         Decoy.Disable();
     }
 
-    private void EMP_Performed(InputAction.CallbackContext context)
+    private async void EMP_Performed(InputAction.CallbackContext context)
     {
         if (EMP_Count >= 1)
         {
+            animator.Throw();
+            await Task.Delay((int)(1 * 1000));
             GameObject EMP = Instantiate(EMP_Prefab, transform.position, transform.rotation);
             Rigidbody RB = EMP.GetComponent<Rigidbody>();
             RB.AddForce(transform.forward * Throw_Force, ForceMode.VelocityChange);
@@ -97,10 +100,12 @@ public class Script_Player_Control : MonoBehaviour
         }
     }
 
-    private void Decoy_Performed(InputAction.CallbackContext context)
+    private async void Decoy_Performed(InputAction.CallbackContext context)
     {
         if (Decoy_Count >= 1)
         {
+            animator.Throw();
+            await Task.Delay((int)(1 * 1000));
             GameObject Decoy = Instantiate(Decoy_Prefab, transform.position, transform.rotation);
             Rigidbody RB = Decoy.GetComponent<Rigidbody>();
             RB.AddForce(transform.forward * Throw_Force, ForceMode.VelocityChange);
