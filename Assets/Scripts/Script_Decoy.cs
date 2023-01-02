@@ -47,16 +47,6 @@ public class Script_Decoy : MonoBehaviour
             }
         }
         await Task.Delay((int)(5 * 1000));
-        foreach (Collider c in colliders)
-        {
-            GameObject hitObject = c.gameObject;
-            if (hitObject.CompareTag("Drone"))
-            {
-                Senses s = hitObject.GetComponent<Senses>();
-                s.isAttracted = true;
-                s.lastSpottedPlayerAt = transform.position;
-            }
-        }
         Destroy(gameObject);
     }
 }
