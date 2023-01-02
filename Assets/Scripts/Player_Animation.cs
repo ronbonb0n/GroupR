@@ -18,6 +18,10 @@ public class Player_Animation : MonoBehaviour
     {
         animator.SetBool("IsWalking", isWalking);
     }
+    public void Throw()
+    {
+        animator.SetTrigger("IsThrowing");
+    }
 
 
 }
