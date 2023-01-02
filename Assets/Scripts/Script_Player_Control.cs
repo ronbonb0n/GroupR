@@ -21,6 +21,7 @@ public class Script_Player_Control : MonoBehaviour
     public bool Is_Crouching = false;
     private InputAction Cloak;
     public SkinnedMeshRenderer Character;
+    public Material CharacterMaterial;
     //private SpriteRenderer character; USE IT AFTER SPRITES ARE ADDED
     //private Color col; USE IT FOR TRANSLUCENT COLOR
     private float Activation_Time;
@@ -48,6 +49,7 @@ public class Script_Player_Control : MonoBehaviour
         //col = character.material.color;
         animator = GetComponent<Player_Animation>();
         mainCam = GameObject.Find("Main Camera");
+        CharacterMaterial = Character.sharedMaterial;
     }
 
     private void Awake()
@@ -124,7 +126,8 @@ public class Script_Player_Control : MonoBehaviour
             Activation_Time = 0;
             //col.a = 0.2f;
             //character.material.color = col;
-            Character.enabled = false;
+            CharacterMaterial.SetInt("_isCloaking", 1);
+            Collider.radius = 0f;
             InventoryManager.instance.itemDecrement("CLOAK");
             levelCanvasControls.onItemUse();
         }
@@ -173,7 +176,9 @@ public class Script_Player_Control : MonoBehaviour
             Invisble = false;
             //col.a = 1f;
             //character.material.color = col;
-            Character.enabled = true;
+            //Character.enabled = true;
+            CharacterMaterial.SetInt("_isCloaking", 0);
+            
         }
     }
 
