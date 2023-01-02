@@ -63,7 +63,7 @@ For the purpose of level development the bitmaps were exported into Unity's asse
 
 A simple directory containing our blender files with the colour swatch required by the static meshes and drones and the texture map required by our character<br/>
 
-The concept for the level buildings seen within the orthographic world map was inspired by some of the products produced by [MeshTint](https://www.meshtint.com/). All 3D assets are of our own design and artistic creation.
+The concept for the level buildings seen within the orthographic world map was inspired by some of the products produced by [MeshTint](https://www.meshtint.com/). All 3D assets are of our own design and artistic creation, I simply used the images from their products as conceptual inspiration.
 
 # GUI heads up display files:
 Five simple png bitmaps for our in game GUI, produced to provide a sci-fi feel and provide just an aesthetic function
