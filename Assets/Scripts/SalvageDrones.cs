@@ -4,17 +4,13 @@ using UnityEngine;
 
 public class SalvageDrones : MonoBehaviour
 {
-    public string salvageType = "CLOAK";
+    public int salvageAmount = 1;
     private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            InventoryManager.instance.itemSalvageIncrement(salvageType); //change according to which salvage
+            InventoryManager.instance.SalvageIncrement(salvageAmount); //change according to which salvage
             Destroy(gameObject);
-        }
-        for (int i = 0; i < 3; i++)
-        {
-            Debug.Log(i + " " + InventoryManager.Salvage[i]);
         }
     }
 }

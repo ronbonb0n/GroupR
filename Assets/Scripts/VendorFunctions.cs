@@ -9,9 +9,13 @@ public class VendorFunctions : MonoBehaviour
     public int[] shoppingList;
     public int[] itemPrices;
     public int[] itemCosts;
+    public int totalCost;
+    public float timeSinceTalked;
     //Display Vars
     public Transform canvas;
     public TextMeshProUGUI talkText;
+    public TextMeshProUGUI salvageText;
+    public TextMeshProUGUI totalCostText;
     public TextMeshProUGUI[] pricesText;
     public TextMeshProUGUI[] shoppingListText;
     public TextMeshProUGUI[] costText;
@@ -52,10 +56,15 @@ public class VendorFunctions : MonoBehaviour
     }
     public void dispSalvage()
     {
-        for (int i = 0; i < InventoryManager.Salvage.Length; i++)
-        {
-            pricesText[i].text = InventoryManager.Salvage[i].ToString();
-        }
+        //for (int i = 0; i < InventoryManager.Salvage.Length; i++)
+        //{
+        //    pricesText[i].text = InventoryManager.Salvage[i].ToString();
+        //}
+        salvageText.text = InventoryManager.Salvage.ToString();
+    }
+    public void dispTotalCost()
+    {
+        totalCostText.text = totalCost.ToString();
     }
 // Calculation Functions
     // Increment Buy
@@ -67,6 +76,7 @@ public class VendorFunctions : MonoBehaviour
         calcCost(item);
         // Update display
         dispCosts();
+        dispTotalCost();
         dispShoppingList();
     }
     // Decrement Buy
@@ -76,56 +86,74 @@ public class VendorFunctions : MonoBehaviour
         if (shoppingList[index] > 0) shoppingList[index]--;
         // Update Cost
         calcCost(item);
+        
         // Update Display
         dispCosts();
+        dispTotalCost();
         dispShoppingList();
     }
     // Calculate Cost : price * quantity
     public void calcCost(string item) {
         int index = System.Array.IndexOf(InventoryManager.instance.itemList, item);
         itemCosts[index] = itemPrices[index] * shoppingList[index];
+        calcTotalCost();
     }
+    // Calculate TotalCost : sum of itemCosts
+    public void calcTotalCost()
+    {
+        totalCost = 0;
+        for (int i = 0; i < itemCosts.Length; i++)
+        {
+            totalCost += itemCosts[i];
+        }
+    }
+
     // Buy
     public void buy() {
         // Check buy
-        bool checkBuy = true;
-        for(int i = 0; i < itemCosts.Length; i++)
-        {
-            if (InventoryManager.Salvage[i] < itemCosts[i]) { checkBuy = false; }
-        }
+        //bool checkBuy = true;
+        //for(int i = 0; i < itemCosts.Length; i++)
+        //{
+        //    if (InventoryManager.Salvage[i] < itemCosts[i]) { checkBuy = false; }
+        //}
+        bool checkBuy = totalCost <= InventoryManager.Salvage;
+
         if (!checkBuy)
         {
-            for (int i = 0; i < 3; i++)
-            {
-                Debug.Log(i + " " + InventoryManager.Salvage[i]);
-            }
             Debug.Log("You don't have enough salvage to craft that");
-            talkText.text = "You don't have enough salvage to craft that";
+            talk("You don't have enough salvage to craft that");
             // "You don't have enough salvage to craft that" message
             return;
         }
         for (int i = 0; i < itemCosts.Length; i++)
         {
             InventoryManager.Inventory[i] += shoppingList[i];
-            InventoryManager.Salvage[i] -= itemCosts[i];
+            //InventoryManager.Salvage[i] -= itemCosts[i];
         }
+        InventoryManager.Salvage -= totalCost;
         //Reset shopping
         for (int i = 0; i < itemCosts.Length; i++)
         {
             shoppingList[i] = 0;
             itemCosts[i] = 0;
         }
+        totalCost = 0;
+
         //Display Reset
         dispCosts();
         dispInventory();
         dispShoppingList();
         dispSalvage();
+        dispTotalCost();
+        dispPrices();
     }
 
+
     //Talk
-    public void talk()
+    public void talk(string text)
     {
-        talkText.text = "Hi, how may I help you?";
+        talkText.text = text;
+        timeSinceTalked = Time.timeSinceLevelLoad;
     }
 
     //Quit
@@ -147,24 +175,36 @@ public class VendorFunctions : MonoBehaviour
         for (int i = 0; i < shoppingList.Length; i++)
         {
             shoppingList[i] = 0;
-            itemPrices[i] = 1;
+            itemPrices[i] = i+1;
             itemCosts[i] = 0;
         }
         for(int i=0; i < InventoryManager.instance.itemList.Length; i++) {
             Transform parentTransform = canvas.Find(InventoryManager.instance.itemList[i]);
-            pricesText[i] = parentTransform.Find("Salvage").GetComponent<TextMeshProUGUI>();
+            pricesText[i] = parentTransform.Find("Price").GetComponent<TextMeshProUGUI>();
             shoppingListText[i] = parentTransform.Find("ShoppingList").GetComponent<TextMeshProUGUI>();
             costText[i] = parentTransform.Find("Cost").GetComponent<TextMeshProUGUI>();
             inventoryText[i] = parentTransform.Find("Inventory").GetComponent<TextMeshProUGUI>();
         }
         talkText = canvas.Find("Base").Find("TalkText").GetComponent<TextMeshProUGUI>();
+        salvageText = canvas.Find("SalvageTxt").Find("Salvage").GetComponent<TextMeshProUGUI>();
+        totalCostText = canvas.Find("TotalCostTxt").Find("TotalCost").GetComponent<TextMeshProUGUI>();
     }
+
     public void Start()
     {
         dispCosts();
         dispInventory();
         dispSalvage();
+        dispPrices();
+        dispTotalCost();
         dispShoppingList();
-        talk();
+        talk("Hi!, How may I help you?");
+    }
+    private void Update()
+    {
+        if (Time.timeSinceLevelLoad-timeSinceTalked > 5)
+        {
+            talkText.text = "How may I help you?"; // replace this by story text strings
+        }
     }
 }

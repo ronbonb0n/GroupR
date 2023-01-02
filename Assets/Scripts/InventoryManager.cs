@@ -9,8 +9,9 @@ public class InventoryManager : MonoBehaviour
     // public static int[] Inventory = new int[3]; // remember to change if more items are added
     public static int[] Inventory = { 10,10,10}; // remember to change if more items are added
 
-    public static int[] Salvage = new int[3];
-    public bool debug;
+    //public static int[] SalvageList = new int[3];
+    public static int Salvage = 10;
+    //public bool debug;
     private void Awake()
     {
         if (instance == null)
@@ -58,37 +59,47 @@ public class InventoryManager : MonoBehaviour
             throw new System.Exception("No such Item in Inventory");
         }
     }
-    public int getItemSalvageCount(string item)
-    {
-        int index = System.Array.IndexOf(itemList, item);
-        if (index < 0) { return -1; }
-        return (int)Salvage[index];
-    }
+    //public int getItemSalvageCount(string item)
+    //{
+    //    int index = System.Array.IndexOf(itemList, item);
+    //    if (index < 0) { return -1; }
+    //    return (int)SalvageList[index];
+    //}
 
-    public void setItemSalvageCount(string item, int count)
+    //public void setItemSalvageCount(string item, int count)
+    //{
+    //    int index = System.Array.IndexOf(itemList, item);
+    //    if (index >= 0)
+    //    {
+    //        SalvageList[index] = count;
+    //    }
+    //    else
+    //    {
+    //        throw new System.Exception("No such Item in Inventory");
+    //    }
+    //}
+    //public void itemSalvageIncrement(string item)
+    //{
+    //    int index = System.Array.IndexOf(itemList, item);
+    //    if (index >= 0)
+    //    {
+    //        SalvageList[index] += 1;
+    //    }
+    //    else
+    //    {
+    //        throw new System.Exception("No such Item in Inventory");
+    //    }
+    //}
+    public int getSalvage()
     {
-        int index = System.Array.IndexOf(itemList, item);
-        if (index >= 0)
-        {
-            Salvage[index] = count;
-        }
-        else
-        {
-            throw new System.Exception("No such Item in Inventory");
-        }
+        return Salvage;
     }
-    public void itemSalvageIncrement(string item)
+    public void setSalvage(int count)
     {
-        int index = System.Array.IndexOf(itemList, item);
-        if (index >= 0)
-        {
-            Salvage[index] += 1;
-        }
-        else
-        {
-            throw new System.Exception("No such Item in Inventory");
-        }
+        Salvage = count;
     }
-
-
+    public void SalvageIncrement(int increment)
+    {
+        Salvage += increment;
+    }
 }
