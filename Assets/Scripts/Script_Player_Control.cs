@@ -10,7 +10,7 @@ public class Script_Player_Control : MonoBehaviour
     public Rigidbody Rb;
     public float Crouch_Speed = 1000f;
     public float Move_Speed = 1400f;
-    public float Run_Speed = 2000f;
+    public float Run_Speed = 2500f;
     public float Rotation_Speed = 70f;
     public Player_Controls Player_Input;
     private InputAction Move;
@@ -97,7 +97,7 @@ public class Script_Player_Control : MonoBehaviour
         if (InventoryManager.instance.getItemCount("EMP") >= 1)
         {
             //Decrease EMP here?
-            
+            animator.Throw();
             GameObject EMP = Instantiate(EMP_Prefab, transform.position, transform.rotation);
             Rigidbody RB = EMP.GetComponent<Rigidbody>();
             RB.AddForce(transform.forward * Throw_Force, ForceMode.VelocityChange);
@@ -147,6 +147,7 @@ public class Script_Player_Control : MonoBehaviour
         
         //ANIMATE CALL 
         animator.Running(Is_Running);
+        animator.Crouching(Is_Crouching);
     }
 
     private void Crouch_Performed(InputAction.CallbackContext context)
@@ -164,6 +165,7 @@ public class Script_Player_Control : MonoBehaviour
         
         //ANIMATE CALL
         animator.Crouching(Is_Crouching);
+        animator.Running(Is_Running);
     }
 
     private void Update()
