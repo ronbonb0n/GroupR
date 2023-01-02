@@ -5,7 +5,7 @@ using UnityEngine.AI;
 // reference: The State Pattern (C# and Unity) - Finite State Machine https://www.youtube.com/watch?v=nnrOhb5UdRc
 public class DroneController : MonoBehaviour
 {
-    public FieldOfView fieldOfView;
+    public Senses senses;
     public NavMeshAgent navMeshAgent;
     public GameObject body;
     [SerializeField] private string currentStateName;
@@ -18,13 +18,17 @@ public class DroneController : MonoBehaviour
     public AlertState alertState = new();
     public InvestigateState investigateState = new();
     public DeactivatedState deactivatedState = new();
+    public StunnedState stunnedState = new();
 
     public bool isActivated = true;
+    public bool isStunned = false;
     public Vector3 initialPosition;
     public float patrolRadius = 20;
     public float lookAroundCountDownTimer = 0;
     public float alertCountDown = 1f;
     public float alertCountDownTimer = 0;
+    public float stunnedCountDown = 5f;
+    public float stunnedCountDownTimer = 0;
     
     public GameObject player;
     private Material laserMaterial;
@@ -34,9 +38,10 @@ public class DroneController : MonoBehaviour
     {
         initialPosition = transform.position;
         navMeshAgent = GetComponent<NavMeshAgent>();
-        fieldOfView = GetComponentInChildren<FieldOfView>();
+        senses = GetComponentInChildren<Senses>();
         player = GameObject.FindGameObjectWithTag("Player");
         laserMaterial = transform.Find("Body/Laser").gameObject.GetComponent<Renderer>().material;
+        canvasControl = GameObject.Find("CanvasControls").GetComponent<LevelCanvasControls>();
     }
 
     private void OnEnable()

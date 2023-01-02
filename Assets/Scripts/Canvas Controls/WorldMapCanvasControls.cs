@@ -15,15 +15,7 @@ public class WorldMapCanvasControls : MonoBehaviour
     }
     public void OnToggle()
     {
-        if (ControlsBtn.activeSelf)
-        {
-            ControlsBtn.SetActive(false);
-            ClearScreen.SetActive(true);
-        }
-        else
-        {
-            ControlsBtn.SetActive(true);
-            ClearScreen.SetActive(false);
-        }
+        ControlsBtn.SetActive(!ControlsBtn.activeInHierarchy);
+        ClearScreen.SetActive(!ClearScreen.activeInHierarchy);
     }
 }

@@ -4,78 +4,43 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
-    public static GameManager Instance;
-    public static GAME_STATE State;
-    public static LEVELS Level;
-    public static event Action<GAME_STATE> onGameStateChanged;
-    public void Awake()
+    public static GameManager instance;
+    public static GAME_STATE State = GAME_STATE.WORLD_MAP;
+    public static LEVELS Level = LEVELS.WORLD_MAP;
+    public static Vector3 playerInWorldMap;
+
+    private void Awake()
     {
-        Instance = this;
-        
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else { Destroy(this.gameObject); }
+
     }
 
-    public void Start()
-    {
-        if (Level == LEVELS.WORLD_MAP)
-        {
-            HighlightNextLevel();
-        }
-    }
     public static void SwitchLevel(LEVELS newlevel)
     {
         SceneManager.LoadScene((int)newlevel);
+        Level = newlevel;
     }
 
     
     public static void UpdateGameState(GAME_STATE newState)
     {
-        GameManager.State = newState;
-        switch (newState) //Checks for new state change and calls appropriate function
-        {
-            case GAME_STATE.WORLD_MAP:
-                GameManager.Level = LEVELS.WORLD_MAP;
-                SwitchLevel(LEVELS.WORLD_MAP);
-                break;
-            case GAME_STATE.LEVEL_1_START:
-                GameManager.Level = LEVELS.LEVEL1; 
-                SwitchLevel(LEVELS.LEVEL1);
-                break;
-            case GAME_STATE.LEVEL_1_END_LOST:
-                SwitchLevel(LEVELS.LEVEL1);
-                break;
-            case GAME_STATE.LEVEL_1_END_WON:
-                GameManager.Level = LEVELS.WORLD_MAP; 
-                SwitchLevel(LEVELS.WORLD_MAP);
-                break;
-            case GAME_STATE.LEVEL_2_START:
-                GameManager.Level = LEVELS.LEVEL2; 
-                SwitchLevel(LEVELS.LEVEL2);
-                break;
-            case GAME_STATE.LEVEL_2_END_LOST:
-                SwitchLevel(LEVELS.LEVEL2);
-                break;
-            case GAME_STATE.LEVEL_2_END_WON:
-                GameManager.Level = LEVELS.WORLD_MAP; 
-                SwitchLevel(LEVELS.WORLD_MAP);
-                break;
-            default:
-                throw new System.Exception(newState.ToString()+" not found as a Game State");
-        }
-        onGameStateChanged?.Invoke(newState); // Invokes the Event whenever the Gamestate is changed
+        State = newState;
     }
-    protected void HighlightNextLevel()
+    public static bool CheckNextLevel(LEVELS level)
     {
-        var all = FindObjectsOfType<GameObject>(true);
-        GameObject[] towers = all.Where(obj => obj.name.StartsWith("Tower")).ToList().ToArray();
-        foreach(GameObject tower in towers)
+        if (level == LEVELS.VENDOR)
         {
-            if (tower.GetComponent<ChangeLevel>().newState == State + 1)
-            {
-                Light towerLight = tower.GetComponent<Light>();
-                towerLight.color = Color.cyan;
-                towerLight.intensity = 50;
-            }
+            return true;
         }
+        if (((int)State >= (int)level - 1))
+        {
+            return true;
+        }
+        return false;
     }
 }
 
@@ -83,18 +48,17 @@ public class GameManager : MonoBehaviour
 public enum GAME_STATE
 {
     WORLD_MAP,
-    LEVEL_1_START,
-    LEVEL_1_END_LOST,
-    LEVEL_1_END_WON,
-    LEVEL_2_START,
-    LEVEL_2_END_LOST,
-    LEVEL_2_END_WON,
-    LEVEL_3_START
+    DUNGEON_1_COMPLETE,
+    DUNGEON_2_COMPLETE,
+    DUNGEON_3_COMPLETE,
+    DUNGEON_4_COMPLETE
 }
 public enum LEVELS
 {
     WORLD_MAP,
-    LEVEL1,
-    LEVEL2,
-    MENU,
+    DUNGEON_1,
+    DUNGEON_2,
+    DUNGEON_3,
+    DUNGEON_4,
+    VENDOR
 }

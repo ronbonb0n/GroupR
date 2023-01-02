@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 4154058552899766302}
   m_Layer: 0
   m_Name: Drone
-  m_TagString: Drone
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -132,7 +132,7 @@ Transform:
   m_Children:
   - {fileID: 4154058553940896229}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!195 &4154058552899766303
 NavMeshAgent:
@@ -168,16 +168,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6466db2a0e8337418ce142eab799156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fieldOfView: {fileID: 0}
+  senses: {fileID: 0}
   navMeshAgent: {fileID: 0}
   body: {fileID: 0}
   currentStateName: 
   isActivated: 1
+  isStunned: 0
   initialPosition: {x: 0, y: 0, z: 0}
   patrolRadius: 20
   lookAroundCountDownTimer: 0
   alertCountDown: 1
   alertCountDownTimer: 0
+  stunnedCountDown: 5
+  stunnedCountDownTimer: 0
   player: {fileID: 0}
   canvasControl: {fileID: 0}
 --- !u!1 &4154058553229857246
@@ -465,7 +468,7 @@ GameObject:
   - component: {fileID: 7332411959216457485}
   m_Layer: 0
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: Drone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -564,10 +567,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7509bd17f7bb23e428ea39d447bd1e7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 10
-  angle: 90
+  sightRadius: 7
+  sightAngle: 90
   canSeePlayer: 0
-  lastSeenPlayerAt: {x: 0, y: 0, z: 0}
+  canHearPlayer: 0
+  lastSpottedPlayerAt: {x: 0, y: 0, z: 0}
+  isAttracted: 0
 --- !u!1 &4367484767241313446
 GameObject:
   m_ObjectHideFlags: 0
