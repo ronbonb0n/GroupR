@@ -19,6 +19,11 @@ public class InventoryManager : MonoBehaviour
             instance = this;
         }
         else { Destroy(this.gameObject); }
+
+        if (PlayerPrefs.HasKey("CLOAK")) Inventory[0] = PlayerPrefs.GetInt("CLOAK");
+        if (PlayerPrefs.HasKey("DECOY")) Inventory[1] = PlayerPrefs.GetInt("DECOY");
+        if (PlayerPrefs.HasKey("EMP")) Inventory[2] = PlayerPrefs.GetInt("EMP");
+        if (PlayerPrefs.HasKey("SALVAGE")) Salvage = PlayerPrefs.GetInt("SALVAGE");
         
     }
     
@@ -101,5 +106,12 @@ public class InventoryManager : MonoBehaviour
     public void SalvageIncrement(int increment)
     {
         Salvage += increment;
+    }
+    private void OnDestroy()
+    {
+        PlayerPrefs.SetInt("CLOAK", Inventory[0]);
+        PlayerPrefs.SetInt("DECOY", Inventory[1]);
+        PlayerPrefs.SetInt("EMP", Inventory[2]);
+        PlayerPrefs.SetInt("SALVAGE", Salvage);
     }
 }
