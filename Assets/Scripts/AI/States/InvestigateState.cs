@@ -31,6 +31,7 @@ public class InvestigateState : IDroneState
         drone.SetStateText("Investigate", salmon);
         drone.SetScannerColor(salmon);
         drone.navMeshAgent.destination = drone.senses.lastSpottedPlayerAt;
+        drone.droneInvestigateAudio.Play();
     }
 
     public void onExit(DroneController drone)

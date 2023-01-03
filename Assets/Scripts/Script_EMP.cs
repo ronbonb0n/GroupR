@@ -2,10 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
+using System;
+using System.Threading.Tasks;
 
 public class Script_EMP : MonoBehaviour
 {
-
+    [SerializeField]
+    private AudioClip[] clips;
+    private AudioSource audioSource;
     public float delay = 2f;
     private float countdown;
     public bool exploded = false;
@@ -20,6 +24,11 @@ public class Script_EMP : MonoBehaviour
         countdown = delay;
     }
 
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -30,10 +39,15 @@ public class Script_EMP : MonoBehaviour
             exploded = true;
         }
     }
-
-    void Explode()
+    private AudioClip GetClip()
+    {
+        return clips[(0)];
+    }
+    async void Explode()
     {
         //Instantiate(Explosion_Effect, transform.position, transform.rotation);
+        AudioClip clip = GetClip();
+        audioSource.PlayOneShot(clip);
         Collider[] colliders = Physics.OverlapSphere(transform.position, radius);
         foreach (Collider c in colliders)
         {
@@ -43,6 +57,7 @@ public class Script_EMP : MonoBehaviour
                 hitObject.GetComponentInParent<DroneController>().isStunned = true;
             }
         }
+        await Task.Delay((int)(2 * 1000));
         Destroy(gameObject);
     }
 }

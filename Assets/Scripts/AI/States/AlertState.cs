@@ -30,6 +30,7 @@ public class AlertState : IDroneState
         drone.SetStateText("Alerted", orange);
         drone.SetScannerColor(orange);
         drone.alertCountDownTimer = drone.alertCountDown;
+        drone.droneAlertAudio.Play();
     }
 
     public void onExit(DroneController drone)
