@@ -15,7 +15,8 @@ public class Script_EMP : MonoBehaviour
     public bool exploded = false;
     public SphereCollider Collider;
     public float radius = 20;
-    //public GameObject Explosion_Effect;  For explosion effect
+
+    public GameObject explosionEffect;
 
 
     // Start is called before the first frame update
@@ -45,7 +46,7 @@ public class Script_EMP : MonoBehaviour
     }
     async void Explode()
     {
-        //Instantiate(Explosion_Effect, transform.position, transform.rotation);
+        transform.Find("EMP_Grenade").gameObject.SetActive(false);
         AudioClip clip = GetClip();
         audioSource.PlayOneShot(clip);
         Collider[] colliders = Physics.OverlapSphere(transform.position, radius);
@@ -57,7 +58,15 @@ public class Script_EMP : MonoBehaviour
                 hitObject.GetComponentInParent<DroneController>().isStunned = true;
             }
         }
+        Vector3 spawn_location = new Vector3(transform.position.x, transform.position.y + 1f, transform.position.z);
+
+        explosionEffect = Instantiate(explosionEffect, spawn_location, Quaternion.Euler(0, 0, 0)) as GameObject;
+
         await Task.Delay((int)(2 * 1000));
-        Destroy(gameObject);
+        if (gameObject != null)
+        {
+            Destroy(gameObject);
+            Destroy(explosionEffect);
+        }
     }
 }

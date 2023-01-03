@@ -76,10 +76,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clips:
   - {fileID: 8300000, guid: be53f0840e9d6a442b5c4b42880cff7a, type: 3}
-  delay: 2
+  delay: 1
   attention: 0
   Collider: {fileID: 4950684752668526174}
   radius: 20
+  sonarEffect: {fileID: 919132149155446097, guid: 931b331d9d314004db7edf550378bc69,
+    type: 3}
+  pulseColour: {r: 1, g: 0.7202713, b: 0, a: 1}
+  ringMultiplier: 1
+  pulseSpeed: 1
 --- !u!136 &8723412464089542397
 CapsuleCollider:
   m_ObjectHideFlags: 0

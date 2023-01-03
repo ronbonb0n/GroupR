@@ -139,10 +139,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clips:
   - {fileID: 8300000, guid: 6e3265a04285b9549871d701fdcc19aa, type: 3}
-  delay: 2
+  delay: 0.5
   exploded: 0
   Collider: {fileID: 2376880132718590946}
   radius: 20
+  explosionEffect: {fileID: 6067467268646687321, guid: a149374aa9170474ead58379b85eb02f,
+    type: 3}
 --- !u!136 &1744898896722914815
 CapsuleCollider:
   m_ObjectHideFlags: 0
