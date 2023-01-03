@@ -5,6 +5,11 @@ using UnityEngine;
 public class SalvageDrones : MonoBehaviour
 {
     public int salvageAmount = 1;
+    private void Start()
+    {
+        gameObject.GetComponent<MeshRenderer>().sharedMaterial.SetColor("_EmissionColour", Color.red);
+    }
+
     private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.CompareTag("Player"))
