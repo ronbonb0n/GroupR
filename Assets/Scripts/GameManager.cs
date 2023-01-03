@@ -14,8 +14,13 @@ public class GameManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
+
         }
         else { Destroy(this.gameObject); }
+        if (PlayerPrefs.HasKey("State"))
+        {
+            State = (GAME_STATE)PlayerPrefs.GetInt("State");
+        }
 
     }
 
@@ -29,6 +34,7 @@ public class GameManager : MonoBehaviour
     public static void UpdateGameState(GAME_STATE newState)
     {
         State = newState;
+        PlayerPrefs.SetInt("State", (int)State);
     }
     public static bool CheckNextLevel(LEVELS level)
     {
@@ -41,6 +47,11 @@ public class GameManager : MonoBehaviour
             return true;
         }
         return false;
+    }
+    public void OnDestroy()
+    {
+        PlayerPrefs.SetInt("State", (int)State);
+        PlayerPrefs.Save();
     }
 }
 
