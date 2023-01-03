@@ -4,18 +4,21 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Grenade
+  - Drone
   - Wall
+  - Scout
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Wall
+  - Player
   - Water
   - UI
   - 
   - 
   - 
-  - 
+  - Grenade
   - 
   - 
   - 

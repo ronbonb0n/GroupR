@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scripts/GameManager.cs.meta
 guid: 7bde57870457e394d96918e72718f8e1
+========
+guid: 6c5e82e32361b814495540ff7fd772dc
+>>>>>>>> james-development:Assets/Scripts/DroneBehaviours.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

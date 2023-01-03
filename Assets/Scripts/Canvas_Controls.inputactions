@@ -1,0 +1,34 @@
+{
+    "name": "Canvas_Controls",
+    "maps": [
+        {
+            "name": "Pause",
+            "id": "f103db61-177d-4d05-a608-8055ec7dc48f",
+            "actions": [
+                {
+                    "name": "Pause",
+                    "type": "Button",
+                    "id": "ebb0622a-7073-4fe5-a270-5da0eb26939e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "14cd40c1-3778-47f0-860f-50eda2bc0393",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

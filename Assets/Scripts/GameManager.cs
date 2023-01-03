@@ -1,58 +1,64 @@
-using System.Collections;
-using System.Collections.Generic;
 using System;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
-    public static GameManager Instance;
-    public GAME_STATE State;
-    public static event Action<GAME_STATE> onGameStateChanged;
-    public void Awake()
+    public static GameManager instance;
+    public static GAME_STATE State = GAME_STATE.WORLD_MAP;
+    public static LEVELS Level = LEVELS.WORLD_MAP;
+    public static Vector3 playerInWorldMap;
+
+    private void Awake()
     {
-        Instance = this;
-    }
-    public void SwitchLevel(LEVELS newlevel)
-    {
-        
-        SceneManager.LoadScene((int)newlevel);
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else { Destroy(this.gameObject); }
+
     }
 
-    public void UpdateGameState(GAME_STATE newState)
+    public static void SwitchLevel(LEVELS newlevel)
+    {
+        SceneManager.LoadScene((int)newlevel);
+        Level = newlevel;
+    }
+
+    
+    public static void UpdateGameState(GAME_STATE newState)
     {
         State = newState;
-        switch (newState) //Checks for new state change and calls appropriate function
+    }
+    public static bool CheckNextLevel(LEVELS level)
+    {
+        if (level == LEVELS.VENDOR)
         {
-            case GAME_STATE.WORLD_MAP:
-                break;
-            case GAME_STATE.LEVEL_1_START:
-                break;
-            case GAME_STATE.LEVEL_1_END:
-                break;
-            case GAME_STATE.LEVEL_2_START:
-                break;
-            case GAME_STATE.LEVEL_2_END:
-                break;
-            default:
-                throw new System.Exception(newState.ToString()+" not found as a Game State");
+            return true;
         }
-        onGameStateChanged?.Invoke(newState); // Invokes the Event whenever the Gamestate is changed
-    
+        if (((int)State >= (int)level - 1))
+        {
+            return true;
+        }
+        return false;
     }
 }
 
+    
 public enum GAME_STATE
 {
     WORLD_MAP,
-    LEVEL_1_START,
-    LEVEL_2_START,
-    LEVEL_1_END,
-    LEVEL_2_END
+    DUNGEON_1_COMPLETE,
+    DUNGEON_2_COMPLETE,
+    DUNGEON_3_COMPLETE,
+    DUNGEON_4_COMPLETE
 }
 public enum LEVELS
 {
-    MENU,
     WORLD_MAP,
-    LEVEL1,
-    LEVEL2
+    DUNGEON_1,
+    DUNGEON_2,
+    DUNGEON_3,
+    DUNGEON_4,
+    VENDOR
 }
