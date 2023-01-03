@@ -73,7 +73,7 @@ BlendTree:
       type: 3}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
+    m_TimeScale: 1.5
     m_CycleOffset: 0
     m_DirectBlendParameter: movementSpeed
     m_Mirror: 0
@@ -82,7 +82,7 @@ BlendTree:
       type: 3}
     m_Threshold: 1
     m_Position: {x: 0, y: 1}
-    m_TimeScale: 1
+    m_TimeScale: 1.5
     m_CycleOffset: 0
     m_DirectBlendParameter: movementSpeed
     m_Mirror: 0
@@ -90,8 +90,8 @@ BlendTree:
     m_Motion: {fileID: -8035140710561617693, guid: 325af680408ba402282f9f2c2db4420b,
       type: 3}
     m_Threshold: 2
-    m_Position: {x: 1, y: 0}
-    m_TimeScale: 1
+    m_Position: {x: 1, y: -0.001}
+    m_TimeScale: 1.5
     m_CycleOffset: 0
     m_DirectBlendParameter: movementSpeed
     m_Mirror: 0
@@ -100,7 +100,7 @@ BlendTree:
       type: 3}
     m_Threshold: 3
     m_Position: {x: 1, y: 1}
-    m_TimeScale: 1
+    m_TimeScale: 1.5
     m_CycleOffset: 0
     m_DirectBlendParameter: movementSpeed
     m_Mirror: 0
@@ -108,8 +108,8 @@ BlendTree:
     m_Motion: {fileID: 3577981121285242722, guid: 325af680408ba402282f9f2c2db4420b,
       type: 3}
     m_Threshold: 4
-    m_Position: {x: -1, y: 0}
-    m_TimeScale: 1
+    m_Position: {x: -1, y: -0.001}
+    m_TimeScale: 1.5
     m_CycleOffset: 0
     m_DirectBlendParameter: movementSpeed
     m_Mirror: 0
@@ -118,7 +118,7 @@ BlendTree:
       type: 3}
     m_Threshold: 5
     m_Position: {x: -1, y: 1}
-    m_TimeScale: 1
+    m_TimeScale: 1.5
     m_CycleOffset: 0
     m_DirectBlendParameter: movementSpeed
     m_Mirror: 0
@@ -148,6 +148,6 @@ AnimatorStateMachine:
   m_StateMachineBehaviours: []
   m_AnyStatePosition: {x: 50, y: 20, z: 0}
   m_EntryPosition: {x: 20, y: 90, z: 0}
-  m_ExitPosition: {x: 230, y: 90, z: 0}
+  m_ExitPosition: {x: 290, y: 300, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 204642174985884507}

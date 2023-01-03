@@ -8,6 +8,7 @@ public class DroneController : MonoBehaviour
     public Senses senses;
     public NavMeshAgent navMeshAgent;
     public GameObject body;
+    public GameObject skinnedMesh;
     [SerializeField] private string currentStateName;
 
     private IDroneState currentState;
@@ -34,6 +35,12 @@ public class DroneController : MonoBehaviour
     private Material scannerMaterial;
     private Material droneMaterial;
     public LevelCanvasControls canvasControl;
+    //public Animator animator;
+
+    // Audio
+    public AudioSource droneRotorAudio;
+    public AudioSource droneAlertAudio;
+    public AudioSource droneInvestigateAudio;
 
     private void Awake()
     {
@@ -64,6 +71,7 @@ public class DroneController : MonoBehaviour
     private void Start()
     {
         body = transform.GetChild(0).gameObject;
+        skinnedMesh = transform.GetChild(1).gameObject;
     }
 
     // Update is called once per frame
