@@ -14,7 +14,6 @@ public class DeactivatedState : IDroneState
         drone.SetScannerColor(Color.red);
         drone.navMeshAgent.enabled = false;
         drone.skinnedMesh.AddComponent<Rigidbody>();
-        drone.rotorAudioPlayer.enabled = false;
 
         // Deactivate scanners and text
         for(int i=0; i<drone.body.transform.childCount; i++)

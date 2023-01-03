@@ -26,7 +26,7 @@ public class Drone_Anim_Script : MonoBehaviour
         animator.SetFloat("movementSpeed", current_speed);
 
         change_rotation = agent.transform.rotation.y - initial_rotation;
-        change_rotation = remap(change_rotation, -0.0075f, 0.0075f, -1f, 1f);
+        change_rotation = remap(change_rotation, -0.005f, 0.005f, -1f, 1f);
         animator.SetFloat("leftRight", change_rotation);
         initial_rotation = agent.transform.rotation.y;
     }
