@@ -35,7 +35,11 @@ public class DroneController : MonoBehaviour
     private Material scannerMaterial;
     private Material droneMaterial;
     public LevelCanvasControls canvasControl;
-    public Animator animator;
+
+    //Audio
+    public AudioSource rotorAudioPlayer;
+    public AudioSource droneAlertAudio;
+    public AudioSource droneInvestigateAudio;
 
     private void Awake()
     {
