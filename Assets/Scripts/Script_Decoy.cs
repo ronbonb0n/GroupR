@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 using System.Threading.Tasks;
+using System;
 public class Script_Decoy : MonoBehaviour
 {
-
+    [SerializeField]
+    private AudioClip[] clips;
+    private AudioSource audioSource;
     public float delay = 2f;
     private float countdown;
     public bool attention = false;
@@ -20,6 +23,10 @@ public class Script_Decoy : MonoBehaviour
         countdown = delay;
     }
 
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -30,11 +37,15 @@ public class Script_Decoy : MonoBehaviour
             attention = true;
         }
     }
-
+    private AudioClip GetClip()
+    {
+        return clips[(0)];
+    }
     async void Explode()
     {
         //Instantiate(Explosion_Effect, transform.position, transform.rotation);
-        
+        AudioClip clip = GetClip();
+        audioSource.PlayOneShot(clip);
         Collider[] colliders = Physics.OverlapSphere(transform.position, radius);
         foreach (Collider c in colliders)
         {
@@ -46,7 +57,7 @@ public class Script_Decoy : MonoBehaviour
                 s.lastSpottedPlayerAt = transform.position;
             }
         }
-        await Task.Delay((int)(5 * 1000));
+        await Task.Delay((int)(7 * 1000));
         Destroy(gameObject);
     }
 }

@@ -37,6 +37,7 @@ public class Script_Player_Control : MonoBehaviour
     public LevelCanvasControls levelCanvasControls;
     private Player_Animation animator;
     private GameObject mainCam;
+    public GameObject characterModel;
 
     void Start()
     {
@@ -51,6 +52,7 @@ public class Script_Player_Control : MonoBehaviour
         animator = GetComponent<Player_Animation>();
         mainCam = GameObject.Find("Main Camera");
         CharacterMaterial = Character.sharedMaterial;
+        characterModel = GameObject.Find("Rigged_Character");
     }
 
     private void Awake()
@@ -132,6 +134,7 @@ public class Script_Player_Control : MonoBehaviour
             CharacterMaterial.SetInt("_isCloaking", 1);
             InventoryManager.instance.itemDecrement("CLOAK");
             levelCanvasControls.onItemUse();
+            characterModel.GetComponent<AudioSource>().enabled = false;
         }
     }
 
@@ -193,6 +196,7 @@ public class Script_Player_Control : MonoBehaviour
         if (Invisble && Activation_Time >= 3)
         {
             Invisble = false;
+            characterModel.GetComponent<AudioSource>().enabled = true;
             //col.a = 1f;
             //character.material.color = col;
             //Character.enabled = true;
