@@ -20,7 +20,7 @@ public class DeactivatedState : IDroneState
         {
             drone.body.transform.GetChild(i).gameObject.SetActive(false);
         }
-
+        drone.droneRotorAudio.enabled= false;
     }
 
     public void onExit(DroneController drone)
