@@ -11,7 +11,7 @@ public class VendorFunctions : MonoBehaviour
     public int[] itemCosts;
     public int totalCost;
     public float timeSinceTalked;
-    //Display Vars
+//Display Vars
     public Transform canvas;
     public TextMeshProUGUI talkText;
     public TextMeshProUGUI salvageText;
@@ -20,7 +20,11 @@ public class VendorFunctions : MonoBehaviour
     public TextMeshProUGUI[] shoppingListText;
     public TextMeshProUGUI[] costText;
     public TextMeshProUGUI[] inventoryText;
-
+    // Talking Vars 
+    public string[] dialogues = {"Hi there! Wow are you another player? Haven’t seen one of you in a while, I’ve seen a few come and go in the past some came back a few times, others I only got to see once.",
+                                 "Don’t worry I won’t hurt you, not sure why but I want to help you. One of others said he had to clear the dungeons to get out. Why would he want to get out?",
+                                 "Anyway, if you come back make sure to bring me some bits and pieces – I’m good at recycling and can make you some useful tools to play with!"};
+    public int dialogueNumber = 0;
 // Display Functions
     // Display price of items
     public void dispPrices() { 
@@ -155,6 +159,12 @@ public class VendorFunctions : MonoBehaviour
         talkText.text = text;
         timeSinceTalked = Time.timeSinceLevelLoad;
     }
+    //
+    public void talkBtn()
+    {
+        talk(dialogues[dialogueNumber]);
+        dialogueNumber = (int) (dialogueNumber + 1) % 3;
+    }
 
     //Quit
     public void QuitToWorldMap()
@@ -188,6 +198,7 @@ public class VendorFunctions : MonoBehaviour
         talkText = canvas.Find("Base").Find("TalkText").GetComponent<TextMeshProUGUI>();
         salvageText = canvas.Find("SalvageTxt").Find("Salvage").GetComponent<TextMeshProUGUI>();
         totalCostText = canvas.Find("TotalCostTxt").Find("TotalCost").GetComponent<TextMeshProUGUI>();
+        dialogueNumber = 0;
     }
 
     public void Start()
@@ -202,7 +213,7 @@ public class VendorFunctions : MonoBehaviour
     }
     private void Update()
     {
-        if (Time.timeSinceLevelLoad-timeSinceTalked > 5)
+        if (Time.timeSinceLevelLoad-timeSinceTalked > 10)
         {
             talkText.text = "How may I help you?"; // replace this by story text strings
         }
