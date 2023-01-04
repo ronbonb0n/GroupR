@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-    public static GAME_STATE State = GAME_STATE.WORLD_MAP;
+    public static GAME_STATE State = GAME_STATE.NARRATIVE;
     public static LEVELS Level = LEVELS.WORLD_MAP;
     public static Vector3 playerInWorldMap;
 
@@ -22,6 +22,15 @@ public class GameManager : MonoBehaviour
             State = (GAME_STATE)PlayerPrefs.GetInt("State");
         }
 
+
+    }
+    private void Start()
+    {
+        if (State == GAME_STATE.NARRATIVE && Level == LEVELS.WORLD_MAP)
+        {
+            NarrativeScript narrativeScript = GameObject.Find("Player").GetComponent<NarrativeScript>();
+            narrativeScript.onNarrativeStart();
+        }
     }
 
     public static void SwitchLevel(LEVELS newlevel)
@@ -35,6 +44,7 @@ public class GameManager : MonoBehaviour
     {
         State = newState;
         PlayerPrefs.SetInt("State", (int)State);
+        
     }
     public static bool CheckNextLevel(LEVELS level)
     {
@@ -53,6 +63,8 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetInt("State", (int)State);
         PlayerPrefs.Save();
     }
+
+
 }
 
     
@@ -62,7 +74,8 @@ public enum GAME_STATE
     DUNGEON_1_COMPLETE,
     DUNGEON_2_COMPLETE,
     DUNGEON_3_COMPLETE,
-    DUNGEON_4_COMPLETE
+    DUNGEON_4_COMPLETE,
+    NARRATIVE
 }
 public enum LEVELS
 {

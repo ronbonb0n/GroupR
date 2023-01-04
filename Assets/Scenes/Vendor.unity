@@ -19005,6 +19005,16 @@ MonoBehaviour:
   shoppingListText: []
   costText: []
   inventoryText: []
+  dialogues:
+  - "Hi there! Wow are you another player? Haven\u2019t seen one of you in a while,
+    I\u2019ve seen a few come and go in the past some came back a few times, others
+    I only got to see once."
+  - "Don\u2019t worry I won\u2019t hurt you, not sure why but I want to help you.
+    One of others said he had to clear the dungeons to get out. Why would he want
+    to get out?"
+  - "Anyway, if you come back make sure to bring me some bits and pieces \u2013 I\u2019m
+    good at recycling and can make you some useful tools to play with!"
+  dialogueNumber: 0
 --- !u!1 &956521567
 GameObject:
   m_ObjectHideFlags: 0
@@ -43817,7 +43827,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 954777849}
         m_TargetAssemblyTypeName: VendorFunctions, Assembly-CSharp
-        m_MethodName: talk
+        m_MethodName: talkBtn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -44282,12 +44292,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
+  m_fontSize: 28
   m_fontSizeBase: 30
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 28
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
