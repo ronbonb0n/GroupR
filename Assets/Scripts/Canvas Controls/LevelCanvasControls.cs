@@ -103,6 +103,11 @@ public class LevelCanvasControls : MonoBehaviour
             }
             PauseScreen.SetActive(isPaused);
             playerController.PauseUnpauseActions(isPaused);
+            foreach(GameObject Audio in GameObject.FindGameObjectsWithTag("Audio"))
+            {
+                //Debug.Log(Audio);
+                Audio.GetComponent<AudioSource>().enabled = !isPaused;
+            }
         }
     }
     public void onContinue()

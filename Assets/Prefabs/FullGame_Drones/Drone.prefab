@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7484242280091576620}
   m_Layer: 0
   m_Name: RotorAudio
-  m_TagString: Untagged
+  m_TagString: Audio
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -482,7 +482,7 @@ GameObject:
   - component: {fileID: 2248599560181895777}
   m_Layer: 0
   m_Name: AlertAudio
-  m_TagString: Untagged
+  m_TagString: Audio
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -694,7 +694,7 @@ GameObject:
   - component: {fileID: 6123667328810790334}
   m_Layer: 0
   m_Name: InvestigateAudio
-  m_TagString: Untagged
+  m_TagString: Audio
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
