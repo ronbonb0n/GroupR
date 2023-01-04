@@ -4,6 +4,7 @@ public class DronesSwitch : MonoBehaviour
 {
     private GameObject[] drones;
     public LevelCanvasControls CanvasControls;
+    public GameObject Salvage;
     
     // Start is called before the first frame update
     void Start()
@@ -13,11 +14,13 @@ public class DronesSwitch : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Player" && !CanvasControls.levelOver)
         {
             foreach (var drone in drones)
             {
-                drone.GetComponent<DroneController>().isActivated = false;
+                drone.GetComponentInParent<DroneController>().isActivated = false;
+                drone.transform.GetChild(1).gameObject.SetActive(false);
+                Instantiate(Salvage, new Vector3(drone.transform.position.x, drone.transform.position.y, drone.transform.position.z), drone.transform.rotation);
             }
             LevelClear();
         }
@@ -26,5 +29,6 @@ public class DronesSwitch : MonoBehaviour
     private void LevelClear()
     {
         CanvasControls.onLevelWon();
+        GameManager.UpdateGameState((GAME_STATE) GameManager.Level);
     }
 }

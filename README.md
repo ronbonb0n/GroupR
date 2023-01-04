@@ -1,6 +1,6 @@
 # About:
 
-This is the game development project repository for the game **Ferŷnier** made by students of MSc Computer Games, Queen Mary University of London.\*
+This is the game development project repository for the game **Ferŷnier** made by students of *MSc Computer Games, Queen Mary University of London.*
 
 # Installation:
 
@@ -124,7 +124,9 @@ Use the tool in the same way as the world map builder - but instead use the RGB 
 **_Note_: A swatch with all of the above colours is included as a JPEG**<br/>
 **_Note_: The greens used for bottom right corner and left wall are very similar and tend to blend- this will be changed in the next update**<br/>
 **_Note_: There are some misaligning pillars - this is an issue with my meshes not the tool. The meshes were made quick and roughly to not waste time on making something look pretty, when it would be changed and upgraded later on anyway**<br/>
-**_Limitations_: Once you start to recognise the colours this is an easy tool to use, but to someone who has never used it before the bitmaps that drive teh tool might be confusing. Consideration into this will be taken, at the very least templates can be built from snippets of the bitmaps to create entire rooms or sections by just copying and pasting pixels - but this might lead to level repetiton. The tool would ideally paired with the WFC algorithm depending on time. With this being said though, with it I can build a level in under 10 minutes. This tool and mindset was inspired by my experience using houdini following work by the likes of Simon Verstraete, see here: https://www.sidefx.com/tutorials/wfc-dungeon-generator/**<br/>
+**_Limitations_: Once you start to recognise the colours this is an easy tool to use, but to someone who has never used it before the bitmaps that drive the tool might be confusing. Consideration into this will be taken, at the very least templates can be built from snippets of the bitmaps to create entire rooms or sections by just copying and pasting pixels - but this might lead to level repetiton. The tool would ideally paired with the WFC algorithm depending on time. With this being said though, with it I can build a level in under 10 minutes. This tool and mindset was inspired by my experience using houdini following work by the likes of Simon Verstraete, see here: https://www.sidefx.com/tutorials/wfc-dungeon-generator/**<br/>
+<br/>
+**_Post Prototype_: Implemented the tile variant Wave Function Collapse Algorithm - This removes the above limitation as all confusion around working with the bitmaps is nullified. The environment artist merely has to run a script and the bitmaps are generated. Furthermore the algorithm is run on coded tile relationships - so no template image is required**<br/>
 
 ## Player controls in world map
 
@@ -181,15 +183,31 @@ Simple script to cap the number of frames - cap is public.<br/>
 
 ### Sight
 
-Drone sight has a radius and angle, implemented by sphere overlap & ray cast
+Drone sight has a radius and angle, implemented by ray cast.
 
 ### States
 
 Using a state machine to switch between behaviors of AI drones:
 
+![Stealth AI - State Machine](https://user-images.githubusercontent.com/45759373/203607165-a875609b-d47d-4df7-af23-b12344cdaa7c.png)
+
 1. *Idle* (initial state)
-2. *Patrol* - Pick random patrol locations and auto-path to them
-3. *Look Around* - Wait for around 2s
-4. *Alert* - Go to *Chase* in 1s, if the player is in sight
-5. *Chase* - Chase the player
-6. *Deactivated* - Shut down & Falls to the ground
+2. *Patrol* - Pick a random patrol location and auto-path to it
+3. *Look Around* - Stay put and look around
+4. *Alert* - Transition state from *Look Around* to *Chase*
+5. *Investigate* - Go to where the player is last seen at
+6. *Chase* - Chase the player
+7. *Deactivated* - Shut down & Fall to the ground
+
+### Map Set Up
+
+- Player
+  - Tag - Player
+- Map plane
+  - Navigation Static
+- Walls
+  - Navigation Static
+- Drone
+  - Tag - Drone
+
+**And, bake the Nav Mesh*.

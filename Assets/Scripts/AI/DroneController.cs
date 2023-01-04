@@ -2,11 +2,13 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.AI;
 
+// reference: The State Pattern (C# and Unity) - Finite State Machine https://www.youtube.com/watch?v=nnrOhb5UdRc
 public class DroneController : MonoBehaviour
 {
-    public FieldOfView fieldOfView;
+    public Senses senses;
     public NavMeshAgent navMeshAgent;
     public GameObject body;
+    public GameObject skinnedMesh;
     [SerializeField] private string currentStateName;
 
     private IDroneState currentState;
@@ -15,26 +17,49 @@ public class DroneController : MonoBehaviour
     public LookAroundState lookAroundState = new();
     public PatrolState patrolState = new();
     public AlertState alertState = new();
+    public InvestigateState investigateState = new();
     public DeactivatedState deactivatedState = new();
+    public StunnedState stunnedState = new();
 
     public bool isActivated = true;
+    public bool isStunned = false;
     public Vector3 initialPosition;
     public float patrolRadius = 20;
     public float lookAroundCountDownTimer = 0;
     public float alertCountDown = 1f;
     public float alertCountDownTimer = 0;
+    public float stunnedCountDown = 5f;
+    public float stunnedCountDownTimer = 0;
     
     public GameObject player;
-    private Material laserMaterial;
+    private Material scannerMaterial;
+    private Material droneMaterial;
     public LevelCanvasControls canvasControl;
+    //public Animator animator;
+
+    // Audio
+    public AudioSource droneRotorAudio;
+    public AudioSource droneAlertAudio;
+    public AudioSource droneInvestigateAudio;
 
     private void Awake()
     {
         initialPosition = transform.position;
         navMeshAgent = GetComponent<NavMeshAgent>();
-        fieldOfView = GetComponent<FieldOfView>();
+        senses = GetComponentInChildren<Senses>();
         player = GameObject.FindGameObjectWithTag("Player");
-        laserMaterial = transform.Find("Body/Laser").gameObject.GetComponent<Renderer>().material;
+
+        scannerMaterial = transform.Find(
+            "Body/Drone_Scanning_Cone").gameObject.GetComponent<
+                Renderer>().material;
+
+        droneMaterial = transform.Find(
+            "Forward_Looking_Scout_Drone/Skinned_Mesh").gameObject.GetComponent<
+                SkinnedMeshRenderer>().material;
+
+        // Debug.Log(scannerMaterial.ToString());
+        
+        canvasControl = GameObject.Find("CanvasControls").GetComponent<LevelCanvasControls>();
     }
 
     private void OnEnable()
@@ -46,6 +71,7 @@ public class DroneController : MonoBehaviour
     private void Start()
     {
         body = transform.GetChild(0).gameObject;
+        skinnedMesh = transform.GetChild(1).gameObject;
     }
 
     // Update is called once per frame
@@ -65,15 +91,6 @@ public class DroneController : MonoBehaviour
 
         currentStateName = currentState.ToString();
     }
-
-    public void SetLinesColor(Color color)
-    {
-        var lines = transform.GetComponentsInChildren<LineRenderer>();
-        foreach (var line in lines)
-        {
-            line.SetColors(color, color);
-        }
-    }
     
     public void SetStateText(string text, Color color)
     {
@@ -82,10 +99,11 @@ public class DroneController : MonoBehaviour
         stateText.color = color;
     }
     
-    public void SetLaserColor(Color color)
+    public void SetScannerColor(Color color)
     {
-        color.a = 0.4f;
-        laserMaterial.color = color;
+        color.a = 1.0f;
+        droneMaterial.SetColor("_EmissionColour", color);
+        scannerMaterial.SetColor("_PulseColour", color);
     }
 
     public void LevelOver()

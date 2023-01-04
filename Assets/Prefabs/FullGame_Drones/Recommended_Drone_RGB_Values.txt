@@ -1,0 +1,3 @@
+Not found: 135, 241, 37 - Green
+Detected/Searching: 243, 184, 86 - Orange
+Targeted/Found: 243, 24, 86 - Red

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -10,8 +11,8 @@ public class Script_Player_Control : MonoBehaviour
     public Rigidbody Rb;
     public float Crouch_Speed = 1000f;
     public float Move_Speed = 1400f;
-    public float Run_Speed = 2000f;
-    public float Rotation_Speed;
+    public float Run_Speed = 2500f;
+    public float Rotation_Speed = 70f;
     public Player_Controls Player_Input;
     private InputAction Move;
     private InputAction Run;
@@ -19,24 +20,39 @@ public class Script_Player_Control : MonoBehaviour
     private Vector2 Move_Direction;
     public bool Is_Running = false;
     public bool Is_Crouching = false;
-    public SphereCollider Collider;
-    private InputAction ability;
-    private MeshRenderer character;
+    private InputAction Cloak;
+    public SkinnedMeshRenderer Character;
+    public Material CharacterMaterial;
     //private SpriteRenderer character; USE IT AFTER SPRITES ARE ADDED
     //private Color col; USE IT FOR TRANSLUCENT COLOR
-    private float activationTime;
-    public bool invisble;
+    private float Activation_Time;
+    public bool Invisble;
     public Transform frontObj;
+    private InputAction EMP;
+    private InputAction Decoy;
+    public float Throw_Force = 40f;
+    public GameObject EMP_Prefab;
+    public GameObject Decoy_Prefab;
+    public GameObject levelCanvasControlsObj;
+    public LevelCanvasControls levelCanvasControls;
+    private Player_Animation animator;
+    private GameObject mainCam;
+    public GameObject characterModel;
 
     void Start()
     {
         Rb = GetComponent<Rigidbody>();
         //character = GetComponent<SpriteRenderer>();
-        character = GetComponent<MeshRenderer>();
-        activationTime = 0;
-        invisble = false;
-
+        // Character = GetComponent<MeshRenderer>();
+        Activation_Time = 0;
+        Invisble = false;
+        levelCanvasControlsObj = GameObject.Find("CanvasControls");
+        levelCanvasControls = levelCanvasControlsObj.GetComponent<LevelCanvasControls>();
         //col = character.material.color;
+        animator = GetComponent<Player_Animation>();
+        mainCam = GameObject.Find("Main Camera");
+        CharacterMaterial = Character.sharedMaterial;
+        characterModel = GameObject.Find("Rigged_Character");
     }
 
     private void Awake()
@@ -45,6 +61,7 @@ public class Script_Player_Control : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false; 
     }
+
 
     private void OnEnable()
     {
@@ -56,9 +73,15 @@ public class Script_Player_Control : MonoBehaviour
         Crouch = Player_Input.Player_Input.Crouch;
         Crouch.Enable();
         Crouch.performed += Crouch_Performed;
-        ability = Player_Input.Player_Input.Abilities;
-        ability.Enable();
-        ability.performed += Abitily_Performed;
+        Cloak = Player_Input.Player_Input.Cloak;
+        Cloak.Enable();
+        Cloak.performed += Cloak_Performed;
+        EMP = Player_Input.Player_Input.EMP;
+        EMP.Enable();
+        EMP.performed += EMP_Performed;
+        Decoy = Player_Input.Player_Input.Decoy;
+        Decoy.Enable();
+        Decoy.performed += Decoy_Performed;
     }
 
 
@@ -67,19 +90,51 @@ public class Script_Player_Control : MonoBehaviour
         Move.Disable();
         Run.Disable();
         Crouch.Disable();
-        ability.Disable();
+        Cloak.Disable();
+        EMP.Disable();
+        Decoy.Disable();
     }
 
-    private void Abitily_Performed(InputAction.CallbackContext context)
+    private async void EMP_Performed(InputAction.CallbackContext context)
     {
-        if (invisble == false)
+        if (InventoryManager.getItemCount("EMP") >= 1)
         {
-            invisble = true;
-            activationTime = 0;
+            animator.Throw();
+            await Task.Delay((int)(1 * 1000));
+            GameObject EMP = Instantiate(EMP_Prefab, transform.position, transform.rotation);
+            Rigidbody RB = EMP.GetComponent<Rigidbody>();
+            RB.AddForce(transform.forward * Throw_Force, ForceMode.VelocityChange);
+            InventoryManager.itemDecrement("EMP");
+            levelCanvasControls.onItemUse();
+        }
+    }
+
+    private async void Decoy_Performed(InputAction.CallbackContext context)
+    {
+        if (InventoryManager.getItemCount("DECOY") >= 1)
+        {
+            animator.Throw();
+            await Task.Delay((int)(1 * 1000));
+            GameObject Decoy = Instantiate(Decoy_Prefab, transform.position, transform.rotation);
+            Rigidbody RB = Decoy.GetComponent<Rigidbody>();
+            RB.AddForce(transform.forward * Throw_Force, ForceMode.VelocityChange);
+            InventoryManager.itemDecrement("DECOY");
+            levelCanvasControls.onItemUse();
+        }
+    }
+
+    private void Cloak_Performed(InputAction.CallbackContext context)
+    {
+        if (Invisble == false && InventoryManager.getItemCount("CLOAK") >= 1)
+        {
+            Invisble = true;
+            Activation_Time = 0;
             //col.a = 0.2f;
             //character.material.color = col;
-            character.enabled = false;
-            Collider.radius = 0f;
+            CharacterMaterial.SetInt("_isCloaking", 1);
+            InventoryManager.itemDecrement("CLOAK");
+            levelCanvasControls.onItemUse();
+            characterModel.GetComponent<AudioSource>().enabled = false;
         }
     }
 
@@ -87,18 +142,18 @@ public class Script_Player_Control : MonoBehaviour
     {
         Is_Running = !Is_Running;
 
-        if (Is_Running && invisble==false)
+        if (Is_Running && Invisble==false)
         { 
             Is_Crouching = false;
-            Collider.radius = 100f; 
         }
-        else if(Is_Running && invisble)
+        else if(Is_Running && Invisble)
         {
             Is_Crouching = false;
         }
-
-        else
-            Collider.radius = 75f;
+        
+        //ANIMATE CALL 
+        animator.Running(Is_Running);
+        animator.Crouching(Is_Crouching);
     }
 
     private void Crouch_Performed(InputAction.CallbackContext context)
@@ -108,45 +163,58 @@ public class Script_Player_Control : MonoBehaviour
         if (Is_Crouching)
         {
             Is_Running = false;
-            Collider.radius = 50f;
         }
-        else if (Is_Crouching && invisble == false)
+        else if (Is_Crouching && Invisble == false)
         {
             Is_Running = false;
         }
+        
+        //ANIMATE CALL
+        animator.Crouching(Is_Crouching);
+        animator.Running(Is_Running);
+    }
+    public void PauseUnpauseActions(bool isPaused)
+    {
+        if (isPaused)
+        {
+            EMP.Disable();
+            Decoy.Disable();
+            Cloak.Disable();
+        }
         else
-            Collider.radius = 75f;
+        {
+            EMP.Enable();
+            Decoy.Enable();
+            Cloak.Enable();
+        }
     }
 
     private void Update()
     {
         Move_Direction = Move.ReadValue<Vector2>();
-        activationTime += Time.deltaTime;
-        if (invisble && activationTime >= 3)
+        Activation_Time += Time.deltaTime;
+        if (Invisble && Activation_Time >= 3)
         {
-            invisble = false;
+            Invisble = false;
+            characterModel.GetComponent<AudioSource>().enabled = true;
             //col.a = 1f;
             //character.material.color = col;
-            character.enabled = true;
-
-            if (Is_Running)
-            {
-                Collider.radius = 100f;
-            }
-            else if (Is_Crouching)
-            {
-                Collider.radius = 50f;
-            }
-            else
-            {
-                Collider.radius = 75f;
-            }
+            //Character.enabled = true;
+            CharacterMaterial.SetInt("_isCloaking", 0);
+            
         }
     }
 
     private void FixedUpdate()
     {
+        Vector3 viewDir = Vector3.Cross(mainCam.transform.right, Vector3.up);
+        transform.forward = viewDir.normalized;
         Vector3 MovementDirection = transform.forward * Move_Direction.y + transform.right * Move_Direction.x;
+        if (MovementDirection != Vector3.zero)
+        {
+            transform.rotation = Quaternion.LookRotation(MovementDirection);
+        }
+
         //if (MovementDirection!= Vector3.zero) gameObject.transform.forward = Vector3.Lerp(gameObject.transform.position, MovementDirection.normalized,Rotation_Speed* Time.deltaTime);
         if (Is_Crouching)
             Rb.AddForce(Crouch_Speed * Time.deltaTime * MovementDirection,ForceMode.Force);
@@ -154,6 +222,13 @@ public class Script_Player_Control : MonoBehaviour
             Rb.AddForce(Run_Speed * Time.deltaTime * MovementDirection,ForceMode.Force);
         else if (Is_Running == false && Is_Crouching == false)
             Rb.AddForce(Move_Speed * Time.deltaTime * MovementDirection,ForceMode.Force);
+
+        //ANIMATE CALL
+        if (Move_Direction.x == 0 && Move_Direction.y == 0)
+        {
+            animator.Walking(false);
+        }
+        else { animator.Walking(true); }
 
     }
 }
