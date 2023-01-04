@@ -61,7 +61,7 @@ For the purpose of level development the bitmaps were exported into Unity's asse
 
 # 3D Art Assets:
 
-A simple directory containing our blender files with the colour swatch required by the static meshes and drones and the texture map required by our character<br/>
+A simple directory containing our blender files with the colour swatch required by the static meshes and drones and the texture map required by our character. If you wish to look through the blender file - make sure to download these bitmaps as well and keep them in the same directory as the downloaded blender file, otherwise you shall just get a purple hue when looking at the material renderings due to missing assets.<br/>
 
 The concept for the level buildings seen within the orthographic world map was inspired by some of the products produced by [MeshTint](https://www.meshtint.com/). All 3D assets are of our own design and artistic creation, I simply used the images from their products as conceptual inspiration.
 
