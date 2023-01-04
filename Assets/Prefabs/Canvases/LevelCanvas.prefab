@@ -1160,8 +1160,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CameraControl: {fileID: 0}
   cameraSensitivitySlider: {fileID: 2334296707573747893}
-  maxSensitivity: 50
-  minSensitivity: 200
+  maxSensitivity: 300
+  minSensitivity: 0
 --- !u!114 &1785118208779094783
 MonoBehaviour:
   m_ObjectHideFlags: 0

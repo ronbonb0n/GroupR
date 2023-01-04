@@ -54,6 +54,11 @@ public class LevelCanvasControls : MonoBehaviour
             levelOver = true;
             playerController.PauseUnpauseActions(true);
             Time.timeScale = 0;
+            foreach (GameObject Audio in GameObject.FindGameObjectsWithTag("Audio"))
+            {
+                //Debug.Log(Audio);
+                Audio.GetComponent<AudioSource>().enabled = false;
+            }
         }
     }
 
@@ -66,6 +71,11 @@ public class LevelCanvasControls : MonoBehaviour
             LevelWonText.SetActive(true);
             levelOver = true;
             playerController.PauseUnpauseActions(true);
+            foreach (GameObject Audio in GameObject.FindGameObjectsWithTag("Audio"))
+            {
+                //Debug.Log(Audio);
+                Audio.GetComponent<AudioSource>().enabled = false;
+            }
         }
     }
 

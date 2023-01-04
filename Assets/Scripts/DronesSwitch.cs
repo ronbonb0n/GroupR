@@ -14,13 +14,13 @@ public class DronesSwitch : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Player" && !CanvasControls.levelOver)
         {
             foreach (var drone in drones)
             {
                 drone.GetComponentInParent<DroneController>().isActivated = false;
                 drone.transform.GetChild(1).gameObject.SetActive(false);
-                Debug.Log(Instantiate(Salvage, new Vector3(drone.transform.position.x, drone.transform.position.y, drone.transform.position.z), drone.transform.rotation));
+                Instantiate(Salvage, new Vector3(drone.transform.position.x, drone.transform.position.y, drone.transform.position.z), drone.transform.rotation);
             }
             LevelClear();
         }
