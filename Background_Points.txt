@@ -1,0 +1,18 @@
+Prologue Start scene (before anything has happened)
+"Well, I drew the short straw, guess it was just my time to be kicked from the party and figure a way out of this place, clear the dungeons and get the keys – a trap to be sure, but I don’t have much choice – Never let it said that Ferŷnier was a quitter"
+SKIP – Move straight into ortho world
+Or CONTINUE with Prologue:
+1.
+“This used to be the hub – a player exclusive area, somewhere you could meet and chat with your friends and jump into a dungeon… it’s a lot smaller now. Only a few dungeons left, and they’re a lot more dangerous than they used to be.”
+2.
+“Either way, I should be safe here, although safe is relative I suppose. I believe there was some kind of shop around here, might be dangerous but that little bot always seemed friendly, you never know might be worth checking in on.”
+3. 
+"I think they said the first dungeon was up here to the left... Well here goes nothing"
+If the player visits the vendor before a dungeon
+Dialogue from vend-bot
+1.
+Hi there! Wow are you another player? Haven’t seen one of you in a while, I’ve seen a few come and go in the past some came back a few times, others I only got to see once.
+2.
+Don’t worry I won’t hurt you, not sure why but I want to help you. One of others said he had to clear the dungeons to get out. Why would he want to get out?
+3.
+Anyway, if you come back make sure to bring me some bits and pieces – I’m good at recycling and can make you some useful tools to play with! 
