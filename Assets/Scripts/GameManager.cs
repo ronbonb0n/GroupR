@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
             State = (GAME_STATE)PlayerPrefs.GetInt("State");
         }
 
+
     }
     private void Start()
     {
@@ -43,6 +44,7 @@ public class GameManager : MonoBehaviour
     {
         State = newState;
         PlayerPrefs.SetInt("State", (int)State);
+        
     }
     public static bool CheckNextLevel(LEVELS level)
     {

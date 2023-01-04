@@ -17,13 +17,13 @@ public class InventoryManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
+            if (PlayerPrefs.HasKey("CLOAK")) Inventory[0] = PlayerPrefs.GetInt("CLOAK");
+            if (PlayerPrefs.HasKey("DECOY")) Inventory[1] = PlayerPrefs.GetInt("DECOY");
+            if (PlayerPrefs.HasKey("EMP")) Inventory[2] = PlayerPrefs.GetInt("EMP");
+            if (PlayerPrefs.HasKey("SALVAGE")) Salvage = PlayerPrefs.GetInt("SALVAGE");
         }
         else { Destroy(this.gameObject); }
 
-        if (PlayerPrefs.HasKey("CLOAK")) Inventory[0] = PlayerPrefs.GetInt("CLOAK");
-        if (PlayerPrefs.HasKey("DECOY")) Inventory[1] = PlayerPrefs.GetInt("DECOY");
-        if (PlayerPrefs.HasKey("EMP")) Inventory[2] = PlayerPrefs.GetInt("EMP");
-        if (PlayerPrefs.HasKey("SALVAGE")) Salvage = PlayerPrefs.GetInt("SALVAGE");
         
     }
     
