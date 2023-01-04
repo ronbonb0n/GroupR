@@ -7,7 +7,7 @@ public class InventoryManager : MonoBehaviour
     public static InventoryManager instance;
     public string[] itemList = { "CLOAK", "DECOY", "EMP"};
     // public static int[] Inventory = new int[3]; // remember to change if more items are added
-    public static int[] Inventory = { 10,10,10}; // remember to change if more items are added
+    public static int[] Inventory = { 0,0,0}; // remember to change if more items are added
 
     //public static int[] SalvageList = new int[3];
     public static int Salvage = 10;
@@ -17,18 +17,21 @@ public class InventoryManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            if (PlayerPrefs.HasKey("CLOAK")) Inventory[0] = PlayerPrefs.GetInt("CLOAK");
-            if (PlayerPrefs.HasKey("DECOY")) Inventory[1] = PlayerPrefs.GetInt("DECOY");
-            if (PlayerPrefs.HasKey("EMP")) Inventory[2] = PlayerPrefs.GetInt("EMP");
-            if (PlayerPrefs.HasKey("SALVAGE")) Salvage = PlayerPrefs.GetInt("SALVAGE");
+
         }
         else { Destroy(this.gameObject); }
-
-        
     }
-    
-    public int getItemCount(string item)
+    private void Start()
     {
+        if (PlayerPrefs.HasKey("CLOAK") && Inventory[0] == 0) Inventory[0] = PlayerPrefs.GetInt("CLOAK");
+        if (PlayerPrefs.HasKey("DECOY") && Inventory[1] == 0) Inventory[1] = PlayerPrefs.GetInt("DECOY");
+        if (PlayerPrefs.HasKey("EMP") && Inventory[2] == 0) Inventory[2] = PlayerPrefs.GetInt("EMP");
+        if (PlayerPrefs.HasKey("SALVAGE") && Salvage == 0) Salvage = PlayerPrefs.GetInt("SALVAGE");
+    }
+
+    public static int getItemCount(string item)
+    {
+        string[] itemList = { "CLOAK", "DECOY", "EMP" };
         int index = System.Array.IndexOf(itemList, item);
         if (index < 0) { return -1; }
         return (int)Inventory[index];
@@ -46,14 +49,16 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
-    public bool itemDecrement(string item)
+    public static bool itemDecrement(string item)
     {
+        string[] itemList = { "CLOAK", "DECOY", "EMP" };
         int index = System.Array.IndexOf(itemList, item);
         if (index >= 0)
         {
             if (Inventory[index] - 1 >= 0)
             {
                 Inventory[index] -= 1;
+                PlayerPrefs.SetInt(item, Inventory[index]);
                 return true;
             }
             else { return false; }
@@ -103,9 +108,10 @@ public class InventoryManager : MonoBehaviour
     {
         Salvage = count;
     }
-    public void SalvageIncrement(int increment)
+    public static void SalvageIncrement(int increment)
     {
         Salvage += increment;
+
     }
     private void OnDestroy()
     {
@@ -113,5 +119,6 @@ public class InventoryManager : MonoBehaviour
         PlayerPrefs.SetInt("DECOY", Inventory[1]);
         PlayerPrefs.SetInt("EMP", Inventory[2]);
         PlayerPrefs.SetInt("SALVAGE", Salvage);
+        PlayerPrefs.Save();
     }
 }

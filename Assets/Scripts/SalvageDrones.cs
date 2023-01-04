@@ -14,7 +14,7 @@ public class SalvageDrones : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            InventoryManager.instance.SalvageIncrement(salvageAmount); //change according to which salvage
+            InventoryManager.SalvageIncrement(salvageAmount); //change according to which salvage
             Destroy(gameObject);
         }
     }

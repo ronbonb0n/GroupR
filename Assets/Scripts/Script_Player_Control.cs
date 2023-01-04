@@ -97,42 +97,42 @@ public class Script_Player_Control : MonoBehaviour
 
     private async void EMP_Performed(InputAction.CallbackContext context)
     {
-        if (InventoryManager.instance.getItemCount("EMP") >= 1)
+        if (InventoryManager.getItemCount("EMP") >= 1)
         {
             animator.Throw();
             await Task.Delay((int)(1 * 1000));
             GameObject EMP = Instantiate(EMP_Prefab, transform.position, transform.rotation);
             Rigidbody RB = EMP.GetComponent<Rigidbody>();
             RB.AddForce(transform.forward * Throw_Force, ForceMode.VelocityChange);
-            InventoryManager.instance.itemDecrement("EMP");
+            InventoryManager.itemDecrement("EMP");
             levelCanvasControls.onItemUse();
         }
     }
 
     private async void Decoy_Performed(InputAction.CallbackContext context)
     {
-        if (InventoryManager.instance.getItemCount("DECOY") >= 1)
+        if (InventoryManager.getItemCount("DECOY") >= 1)
         {
             animator.Throw();
             await Task.Delay((int)(1 * 1000));
             GameObject Decoy = Instantiate(Decoy_Prefab, transform.position, transform.rotation);
             Rigidbody RB = Decoy.GetComponent<Rigidbody>();
             RB.AddForce(transform.forward * Throw_Force, ForceMode.VelocityChange);
-            InventoryManager.instance.itemDecrement("DECOY");
+            InventoryManager.itemDecrement("DECOY");
             levelCanvasControls.onItemUse();
         }
     }
 
     private void Cloak_Performed(InputAction.CallbackContext context)
     {
-        if (Invisble == false && InventoryManager.instance.getItemCount("CLOAK") >= 1)
+        if (Invisble == false && InventoryManager.getItemCount("CLOAK") >= 1)
         {
             Invisble = true;
             Activation_Time = 0;
             //col.a = 0.2f;
             //character.material.color = col;
             CharacterMaterial.SetInt("_isCloaking", 1);
-            InventoryManager.instance.itemDecrement("CLOAK");
+            InventoryManager.itemDecrement("CLOAK");
             levelCanvasControls.onItemUse();
             characterModel.GetComponent<AudioSource>().enabled = false;
         }

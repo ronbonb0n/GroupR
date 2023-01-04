@@ -150,6 +150,12 @@ public class VendorFunctions : MonoBehaviour
         dispSalvage();
         dispTotalCost();
         dispPrices();
+
+        // Save
+        PlayerPrefs.SetInt("CLOAK", InventoryManager.Inventory[0]);
+        PlayerPrefs.SetInt("DECOY", InventoryManager.Inventory[1]);
+        PlayerPrefs.SetInt("EMP", InventoryManager.Inventory[2]);
+        PlayerPrefs.SetInt("SALVAGE", InventoryManager.Salvage);
     }
 
 

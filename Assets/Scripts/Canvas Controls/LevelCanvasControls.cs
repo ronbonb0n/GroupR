@@ -69,7 +69,6 @@ public class LevelCanvasControls : MonoBehaviour
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.Confined;
             LevelWonText.SetActive(true);
-            levelOver = true;
             playerController.PauseUnpauseActions(true);
             foreach (GameObject Audio in GameObject.FindGameObjectsWithTag("Audio"))
             {

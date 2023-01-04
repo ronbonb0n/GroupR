@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
     
     public static void UpdateGameState(GAME_STATE newState)
     {
-        State = newState;
+        if (newState > State) State = newState;
         PlayerPrefs.SetInt("State", (int)State);
         
     }
