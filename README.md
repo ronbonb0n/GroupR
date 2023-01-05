@@ -25,7 +25,7 @@ This is the game development project repository for the game **Ferŷnier** made 
 -   [Cloak Ability](https://www.youtube.com/watch?v=u8gssV_Ec-Y)
 -   [EMP & Decoy](https://www.youtube.com/watch?v=BYL6JtUdEY0)
 
-_\* Currently the project is being developed for prototyping_
+<!-- _\* Currently the project is being developed for prototyping_ -->
 
 # Notes
 
@@ -253,7 +253,7 @@ A simple directory containing our blender files with the colour swatch required 
 
 The concept for the level buildings seen within the orthographic world map was inspired by some of the products produced by [MeshTint](https://www.meshtint.com/). All 3D assets are of our own design and artistic creation, I simply used the images from their products as conceptual inspiration.
 
-# GUI heads up display files:
+## GUI heads up display files:
 Five simple png bitmaps for our in game GUI, produced to provide a sci-fi feel and provide just an aesthetic function
 
 ## Sounds:
