@@ -171,6 +171,7 @@ class define_tiles(object):
             for j in range(len(self.tiles_as_matrices)):
                 target_tile = self.tiles_as_matrices[j]
                 target_left = target_tile[:, 0]
+                # If the compared sides match then in this combination the tiles can fit together
                 if np.array_equal(selected_right, target_left):
                     self.rules[i][0].append(j)
 
@@ -207,6 +208,7 @@ class define_tiles(object):
 
         return self.rules
 
+# The code from here on out was not used but has been left into highlight different thought processes and experimentations that went into this project
     # No manual adjustments used in the end - better results arose from using a clean up parse
     def manual_adjustments(self, verbose = False):
         # Remove option for left doorway to lead directly into right doorway

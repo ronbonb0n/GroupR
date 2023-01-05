@@ -5,6 +5,9 @@
 # Queen Mary University of London                                        #
 # ---------------------------------------------------------------------- #
 # When writing this code personal understanding was of greater import    #
+# As such I wrote it to be easy for me to learn from and understand      #   
+# Pure efficiency was not the end goal of these scripts but instead      #
+# self-edification                                                       #
 # I don't mind that it takes a few seconds to build the level bitmap     #
 # as it doesn't have to run in real time - this is a tool for production #
 # ---------------------------------------------------------------------- #

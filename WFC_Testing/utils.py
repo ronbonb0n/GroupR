@@ -11,6 +11,7 @@ def get_pixel_dec(img, coords: tuple, precision: int):
     r, g, b = round(r/255, precision), round(g/255, precision), round(b/255, precision)
     return r, g, b
 
+# record holds the data on each cell - its number (for debugging purposes), whether it has been collapsed and the possible options it could be based on surrounding tiles 
 def build_grid_records(dims, pixel_types):
     grid = [0] * int(dims ** 2)
     for i in range(dims**2):
@@ -22,6 +23,7 @@ def build_grid_records(dims, pixel_types):
         }
     return grid
 
+# Used to initialise the output matrix
 def build_output_matrix(dims, verbose):
     out = np.zeros(shape = (dims, dims))
     out[:] = np.nan
@@ -36,6 +38,7 @@ def build_output_matrix(dims, verbose):
         print_output(output = out)
     return out
 
+# After we have assessed the entropy if the cell was deemed as collapseable and was collapsed then we populate it with the only possible option
 def update_output(out_array, dims, grid):
     # Update output
     for i in range(dims):
@@ -59,6 +62,7 @@ class build_lookup(object):
         self.pixels = img.load()
         self.string_swatch = {}
         self.int_swatch = {}
+        # string types for debugging only
         self.pixel_types  = [
             # General
             "EmptySpace", "OpenArea", 
@@ -79,6 +83,7 @@ class build_lookup(object):
         self.dims = dims
 
     def build_swatches(self, precision, verbose = False):
+        # Iterate over the provided dungeon-map-generator-swatch and get the RGB values from each pixel
         i = 0
         for y in range(self.height):     
             for x in range(self.width):   
@@ -99,6 +104,8 @@ class populate_cell(object):
     def __init__(self, grid_in) -> None:
         self.grid_copy = grid_in
 
+    # sorts the cells to have lowest entropy first whilst ignoring cells that are collapsed as their entropy will always be lowest 
+    # but upon collapsing them we want to leave these tiles alone
     def sort_grid(self):
         # for dic in grid_copy:
         #    print((dic["collapsed"], dic["options"]))
@@ -117,7 +124,7 @@ class populate_cell(object):
     def select_minimal_entropy(self):
         '''
             By this point grid copy has been sorted and the first element
-            will be the shortest
+            will be the shortest and we select for the tiles with the lowest entropy at the top of the list
         '''
         target_len = len(self.grid_copy[0]['options'])
         stop_index = 0
@@ -130,7 +137,7 @@ class populate_cell(object):
         # for dic in grid_copy:
         #    print((dic["collapsed"], dic["options"]))
         return self
-    
+    # Important to select a random tile if there are multiple options of the same entropy (normally applies at the early stages of the main code loop)
     def select_and_collapse(self):
         cell = random.choice(self.grid_copy)
         cell['collapsed'] = True
@@ -177,13 +184,16 @@ class cleanup_output(object):
 
     def remove_disconnected_clusters(self, pixel_matrices, verbose = False):
         self.pixel_matrices = pixel_matrices
+        # build a 4d matric from the integer values that represent each tile type in the final iteration of the output
+        # do this by looking up the 2d binary matrix in the look up table created in build rules
         four_d_visual = np.zeros((self.dims,self.dims,3,3))
         for i in range(self.dims):
             for j in range(self.dims):
                 tile = self.out[i,j]
                 tile_matrix = self.pixel_matrices[tile]
                 four_d_visual[i,j] = tile_matrix
-                
+        
+        # convert this to a 2d matrix by selecting the ith of each 2d matrix nested within each row of the 4d matrix
         two_d_visual = []
         for row in four_d_visual:
             for i in range(3):
@@ -191,7 +201,9 @@ class cleanup_output(object):
                 two_d_visual.append(values.flatten().tolist())
         two_d_visual = np.array(two_d_visual)
         
+        # invert the 2d matrix and use scipy to determine clusters within the inverted 2d matrix
         lw, num = measurements.label(1-two_d_visual)
+        # determine the most common value (making the largest cluster that isn't empty space)
         counter_dict = {}
         for i in range(lw.shape[0]):
             for j in range(lw.shape[1]):
@@ -204,7 +216,7 @@ class cleanup_output(object):
         most_common = list(counter_dict.keys())[0]
         if most_common == 0:
             most_common = list(counter_dict.keys())[1]
-            
+        # select for this cluster
         for i in range(lw.shape[0]):
             for j in range(lw.shape[1]):
                 lw_val = lw[i,j]
@@ -212,7 +224,7 @@ class cleanup_output(object):
                     two_d_visual[i,j] = 0
                 else:
                     two_d_visual[i,j] = 1
-                    
+        #output to self
         self.cluster_array = two_d_visual
         if verbose:
             def color_sign(x):
@@ -223,7 +235,8 @@ class cleanup_output(object):
                 print(row)
                 
         return self
-                
+    # reverse lookup converting the tiles represented as 2d matrices back to their single integers by effectively useing a cookie cutter approach and slicing 3x3 arrays
+    # from cluster array
     def clusters_to_int(self):
         cleaned_output = np.empty((self.out.shape[0], self.out.shape[1]))
         for i in range(cleaned_output.shape[0]):
@@ -243,7 +256,10 @@ class encode(object):
         self.out = out_array
         self.swatch = integer_swatch
         self.dims = dims
-
+    # convert integer to rgb by using the RGB lookup generated at the start with the dungeon-map-generator-swatch.jpg
+    # for a future implementation it would be worth hardcoding this lookup to not require the image so the tool can act as a standalone 
+    # piece of software without any outside requirements
+    # compiling with cython would be an interesting endeavour or perhaps taking this prototype and building it in full with c++
     def int2rgb(self, verbose = False):
         self.out = self.out.tolist()
         for sublist in self.out:
